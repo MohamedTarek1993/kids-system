@@ -32,7 +32,7 @@
     <section class="system">
         <div class="container-fluid px-0">
             <div class="row">
-                <div class="col-lg-3 col-md-5 col- px-0">
+                <div class="col-lg-2 col-md-5 col- px-0">
                     <!-- strat side bar -->
                     <div class="sidebar">
                         <div class="logo">
@@ -47,7 +47,13 @@
                         </div>
                         <ul class="menu-side-bar">
                             <li class="side-item">
-                                <button class="dropdown-btn btn actives">
+                                <a class="side-link active" href="index.html">
+                                    <i class="bi bi-bar-chart"></i>
+                                    Dashboard
+                                </a>
+                            </li>
+                            <li class="side-item">
+                                <button class="dropdown-btn btn">
                                     <span>
                                         <i class="bi bi-chevron-right"></i>
                                     </span>
@@ -56,7 +62,7 @@
                                 </button>
                                 <!-- drop-menu -->
                                 <div class="dropdown-container">
-                                    <a class="side-link active" href="index.html"> All Admines</a>
+                                    <a class="side-link" href="all-admins.html"> All Admines</a>
                                     <a class="side-link " href="create-admin.html"> Create Admines </a>
                                     <a class="side-link " href="edit-admin.html"> Edit Admines</a>
 
@@ -66,7 +72,7 @@
 
 
                             <li class="side-item">
-                                <button class="dropdown-btn btn actives">
+                                <button class="dropdown-btn btn">
                                     <span>
                                         <i class="bi bi-chevron-right"></i>
                                     </span>
@@ -85,7 +91,7 @@
                             </li>
 
                             <li class="side-item">
-                                <button class="dropdown-btn btn actives">
+                                <button class="dropdown-btn btn">
                                     <span>
                                         <i class="bi bi-chevron-right"></i>
                                     </span>
@@ -98,6 +104,43 @@
                                     <a class="side-link" href="all-branches.html"> All Branches</a>
                                     <a class="side-link" href="create-branche.html"> Create Branches </a>
                                     <a class="side-link" href="edit-branches.html"> Edit Branches</a>
+
+                                </div>
+                                <!-- drop-menu -->
+                            </li>
+
+                            <li class="side-item">
+                                <button class="dropdown-btn btn">
+                                    <span>
+                                        <i class="bi bi-chevron-right"></i>
+                                    </span>
+                                    <i class="bi bi-diagram-2"></i>
+                                    Items
+
+                                </button>
+                                <!-- drop-menu -->
+                                <div class="dropdown-container">
+                                    <a class="side-link" href="all-item.html"> All Items</a>
+                                    <a class="side-link" href="create-item.html"> Create Items </a>
+                                    <a class="side-link" href="edit-item.html"> Edit Items</a>
+
+                                </div>
+                                <!-- drop-menu -->
+                            </li>
+
+                            <li class="side-item">
+                                <button class="dropdown-btn btn">
+                                    <span>
+                                        <i class="bi bi-chevron-right"></i>
+                                    </span>
+                                    <i class="bi bi-brush-fill"></i>
+                                    Arts
+                                </button>
+                                <!-- drop-menu -->
+                                <div class="dropdown-container">
+                                    <a class="side-link" href="all-art.html"> All Arts</a>
+                                    <a class="side-link" href="create-art.html"> Create Arts </a>
+                                    <a class="side-link" href="edit-art.html"> Edit Arts</a>
 
                                 </div>
                                 <!-- drop-menu -->
@@ -120,105 +163,84 @@
                     </div>
                     <!-- strat side bar -->
                 </div>
-                <div class="col-lg-9 col-md-7 col-12 px-0">
+                <div class="col-lg-10 col-md-7 col-12 px-0">
                     <div class="upper_section">
+                        <div class="time">
+                            <span> Time : </span>
+                            <div id="current-time"></div>
+                        </div>
+                        <div class="time">
+                            <span>Date : </span>
+                            <div id="current-date"></div>
+                        </div>
                         <div class="info">
                             <img src="image/per1.png" alt="person">
                             <h6> Admin Name </h6>
                         </div>
+
+
                     </div>
 
-                    <div class="all-order">
-                        <h2 class="head-categ"> All Admines</h2>
+                    <div class="main">
+                        <h2> 😄 Welcome In KidsHup </h2>
+                        <div class="box">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-12">
+                                    <div class="card">
+                                        <img src="image/card1.png" alt="card1">
+                                        <div class="text">
+                                            <h5> Total No.Of Childern </h5>
+                                            <h6>5 Childern </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-12">
+                                    <div class="card">
+                                        <img src="image/card2.png" alt="card2">
+                                        <div class="text">
+                                            <h5> Total Users</h5>
+                                            <h6>5 Users </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-12">
+                                    <div class="card">
+                                        <img src="image/card3.png" alt="card3">
+                                        <div class="text">
+                                            <h5> Total Amount Money </h5>
+                                            <h6>1000 LE </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="statistics">
+                            <div class="row text-center">
+                                <div class="col-12 ">
+                                    <canvas id="myChart">
 
-                        <!-- في حالة  وجود  طلبات -->
-
-                        <table id="tableOrder" style="width:100%" class=" display table-responsive table">
-                            <thead>
-                                <tr>
-                                    <th> ID</th>
-                                    <th> Name</th>
-                                    <th> Phone</th>
-                                    <th>Edit </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-
-                                <tr>
-                                    <td data-label="ID">#251422 </td>
-                                    <td data-label="Name">
-                                        Ahmed </td>
-                                    <td data-label="Phone">010931420</td>
-
-
-                                    <td data-label="Edit">
-                                        <a href="edit-admin.html" class="edit"> <i class="bi bi-pencil-square"></i></a>
-                                        <span onclick="acceptAlert()" class="trash"> <i
-                                                class="bi bi-trash-fill"></i></span>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td data-label="ID">#251422 </td>
-                                    <td data-label="Name">
-                                        Ahmed </td>
-                                    <td data-label="Phone">010931420</td>
-
-
-                                    <td data-label="Edit">
-                                        <a href="edit-admin.html" class="edit"> <i class="bi bi-pencil-square"></i></a>
-                                        <span onclick="acceptAlert()" class="trash"> <i
-                                                class="bi bi-trash-fill"></i></span>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td data-label="ID">#251422 </td>
-                                    <td data-label="Name">
-                                        Ahmed </td>
-                                    <td data-label="Phone">010931420</td>
-
-
-                                    <td data-label="Edit">
-                                        <a href="edit-admin.html" class="edit"> <i class="bi bi-pencil-square"></i></a>
-                                        <span onclick="acceptAlert()" class="trash"> <i
-                                                class="bi bi-trash-fill"></i></span>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td data-label="ID">#251422 </td>
-                                    <td data-label="Name">
-                                        Ahmed </td>
-                                    <td data-label="Phone">010931420</td>
-
-
-                                    <td data-label="Edit">
-                                        <a href="edit-admin.html" class="edit"> <i class="bi bi-pencil-square"></i></a>
-                                        <span onclick="acceptAlert()" class="trash"> <i
-                                                class="bi bi-trash-fill"></i></span>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td data-label="ID">#251422 </td>
-                                    <td data-label="Name">
-                                        Ahmed </td>
-                                    <td data-label="Phone">010931420</td>
-
-
-                                    <td data-label="Edit">
-                                        <a href="edit-admin.html" class="edit"> <i class="bi bi-pencil-square"></i></a>
-                                        <span onclick="acceptAlert()" class="trash"> <i
-                                                class="bi bi-trash-fill"></i></span>
-                                    </td>
-                                </tr>
-
-
-
-                            </tbody>
-                        </table>
-
+                                    </canvas>
+                                </div>
+                                <div class="col-lg-6  col-12 py-5">
+                                    <div class="chart" data-aos="zoom-in-left" data-aos-duration="1000">
+                                        <h6> Charts For monthely Work </h6>
+                                        <p> <img src="image/arrow.png" alt="inc"> Increase
+                                            <span>19.5%</span>
+                                        </p>
+                                        <canvas id="myChart1"></canvas>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6  col-12 py-5">
+                                    <div class="chart" data-aos="zoom-in-right" data-aos-duration="1000">
+                                        <h6> Charts for Daily Profit </h6>
+                                        <p> <img src="image/arrow2.png" alt="inc"> Money Profit
+                                            <span>1.5%</span>
+                                        </p>
+                                        <canvas id="myChart2"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -244,6 +266,9 @@
     <!-- sweet alert -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- sweet alert -->
+    <!-- chart tabel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+    <!-- chart tabel -->
     <!-- data table -->
     <script src="js/data-table.js"></script>
     <script>
@@ -276,6 +301,233 @@
         };
     </script>
     <!-- sweet alert for add favorit -->
+
+    <!-- chart tabel -->
+    <script>
+        const zyx = document.getElementById("myChart").getContext('2d');
+        const labels2 = [
+            'Jan',
+            'Feb',
+            'Mar',
+            'Apr',
+            'May',
+            'June',
+            'July',
+            'Aug',
+            'Sep',
+            'Oct',
+            'Nov',
+            'Dec'
+        ];
+        const data2 = {
+            labels: labels2,
+            datasets: [
+                {
+                    label: 'Achieved',
+                    data: [65, 59, 80, 81, 56, 55, 40, 80, 30, 20, 70, 60],
+                    backgroundColor: [
+                        'rgba(27, 46, 49, 1)',
+
+                    ],
+                    borderColor: [
+                        'rgba(27, 46, 49, 1)',
+                    ],
+                    borderWidth: 1,
+                    barPercentage: 1,
+                    barThickness: 15,
+                    // maxBarThickness: 8,
+                    minBarLength: 3,
+                }, {
+                    type: 'bar',
+                    label: 'Increase',
+                    data: [85, 79, 90, 91, 56, 85, 60, 90, 40, 30, 40, 50],
+                    backgroundColor: [
+                        'rgb(250,105,157,1)'
+                    ],
+                    fill: true,
+                    borderColor: 'rgb(250,105,157,1)',
+                    borderWidth: 1,
+                    barPercentage: 0.5,
+                    barThickness: 15,
+                }]
+        };
+        const config2 = {
+            type: 'bar',
+            data: data2,
+
+            options: {
+                animations: {
+                    tension: {
+                        duration: 4000,
+                        easing: 'linear',
+                        from: 1,
+                        to: 0,
+                        loop: true
+                    }
+                },
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'No Of Childern On Year'
+                    },
+                    legend: {
+                        labels: {
+                            // This more specific font property overrides the global property
+                            font: {
+                                size: 25
+                            }
+                        }
+                    }
+                },
+                responsive: true,
+                interaction: {
+                    intersect: false,
+                },
+                scales: {
+                    x: {
+                        stacked: true,
+                    },
+                    y: {
+                        stacked: true
+                    }
+                }
+            },
+        };
+        const myChart2 = new Chart(zyx, config2);
+    </script>
+    <!--chart tabel-->
+    <!-- chart tabel1 -->
+    <script>
+        const zy = document.getElementById("myChart1").getContext('2d');
+        const labels3 = [
+            '5 Jan',
+            '10 Jan',
+            '15 Jan',
+            '20 Jan',
+            '25 Jan',
+            '30 Jan',
+            '5 Feb',
+            '10 Feb',
+            '15 Feb',
+            '20 Feb',
+
+        ];
+        const data3 = {
+            labels: labels3,
+            datasets: [
+                {
+                    label: 'Achieved',
+                    data: [80, 81, 56, 55, 40, 80, 30, 20, 70, 60],
+                    backgroundColor: [
+                        'rgba(85, 66, 264, 1)',
+
+                    ],
+                    borderColor: [
+                        'rgba(85, 66, 264, 1)',
+                    ],
+                    borderWidth: 1,
+                    barPercentage: 1,
+                    barThickness: 15,
+                    // maxBarThickness: 8,
+                    minBarLength: 3,
+                }]
+        };
+        const config3 = {
+            type: 'line',
+            data: data3,
+
+            options: {
+                animations: {
+                    tension: {
+                        duration: 4000,
+                        easing: 'linear',
+                        from: 1,
+                        to: 0,
+                        loop: true
+                    }
+                },
+                responsive: true,
+                interaction: {
+                    intersect: false,
+                },
+                scales: {
+                    x: {
+                        stacked: true,
+                    },
+                    y: {
+                        stacked: true
+                    }
+                }
+            },
+        };
+        const myChart3 = new Chart(zy, config3);
+    </script>
+    <!--chart tabel1-->
+    <!-- chart tabel2 -->
+    <script>
+        const z = document.getElementById("myChart2").getContext('2d');
+        const labels4 = [
+            '5 Jan',
+            '10 Jan',
+            '15 Jan',
+            '20 Jan',
+            '25 Jan',
+            '30 Jan',
+            '5 Feb',
+
+
+        ];
+        const data4 = {
+            labels: labels4,
+            datasets: [
+                {
+                    label: 'Achieved',
+                    data: [55, 40, 80, 30, 20, 70, 60],
+                    backgroundColor: [
+                        'rgba(85, 66, 264, 1)',
+
+                    ],
+                    borderColor: [
+                        'rgba(85, 66, 264, 1)',
+                    ],
+                    borderWidth: 1,
+                    barPercentage: 1,
+                    barThickness: 15,
+                    // maxBarThickness: 8,
+                    minBarLength: 3,
+                }]
+        };
+        const config4 = {
+            type: 'line',
+            data: data3,
+
+            options: {
+                animations: {
+                    tension: {
+                        duration: 1000,
+                        easing: 'linear',
+                        from: 1,
+                        to: 0,
+                        loop: true
+                    }
+                },
+                responsive: true,
+                interaction: {
+                    intersect: false,
+                },
+                scales: {
+                    x: {
+                        stacked: true,
+                    },
+                    y: {
+                        stacked: true
+                    }
+                }
+            },
+        };
+        const myChart4 = new Chart(z, config4);
+    </script>
+    <!--chart tabel2-->
 
 </body>
 

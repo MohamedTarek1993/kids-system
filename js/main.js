@@ -49,3 +49,31 @@ for (i = 0; i < dropdown.length; i++) {
     }
   });
 }
+function updateDateTime() {
+  const currentTimeElement = document.getElementById("current-time");
+  const currentDateElement = document.getElementById("current-date");
+  const currentDayElement = document.getElementById("current-day");
+
+  const now = new Date();
+
+  // Get current time
+  const hours = now.getHours().toString().padStart(2, "0");
+  const minutes = now.getMinutes().toString().padStart(2, "0");
+  const seconds = now.getSeconds().toString().padStart(2, "0");
+  const currentTime = hours + ":" + minutes + ":" + seconds;
+
+  // Get current date
+  const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+  const currentDate = now.toLocaleDateString(undefined, options);
+
+  // Get current day
+  const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  const currentDay = daysOfWeek[now.getDay()];
+
+  // Update displayed time, date, and day
+  currentTimeElement.textContent = currentTime;
+  currentDateElement.textContent = currentDate;
+  currentDayElement.textContent = currentDay;
+}
+
+setInterval(updateDateTime, 1000);
