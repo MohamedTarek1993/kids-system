@@ -234,25 +234,27 @@ p {
     }
   }
 }
-.main_head{
+
+.main_head {
   text-align: start;
- padding: 10px 20px;
- border-radius: 15px;
- width: 100%;
+  padding: 10px 20px;
+  border-radius: 15px;
+  width: 100%;
   background-color: rgba($color: #94f2ba, $alpha: 0.4);
   font-size: 1.8rem;
   font-family: "bold";
   color: #000;
 }
+
 .main_title {
   position: relative;
   text-align: start;
- padding: 10px 20px;
- border-radius: 15px;
- width: 100%;
+  padding: 10px 20px;
+  border-radius: 15px;
+  width: 100%;
   background-color: rgba($color: #94f2ba, $alpha: 0.4);
 
- 
+
 
   h2 {
     font-size: 1.8rem;
@@ -309,7 +311,8 @@ p {
     left: 0.3rem;
     top: 58%;
     z-index: 1000;
-    i{
+
+    i {
       font-size: 1.2rem;
       color: #b7b7b7;
     }
@@ -642,7 +645,7 @@ input {
 /* finish sidebar */
 .sidebar {
   position: relative;
-  height:100%;
+  height: 100%;
   // margin-top: 12%;
   padding: 2% 1%;
   background-color: rgba($color: #000000, $alpha: 0.7);
@@ -706,7 +709,7 @@ input {
       font-family: "semi-bold";
       color: var(--color-third);
       position: relative;
-          padding: 4%;
+      padding: 4%;
       transition: 0.25s all ease;
 
       i {
@@ -797,31 +800,36 @@ input {
 .upper_section {
   background-color: rgba($color: #000000, $alpha: 0.7);
   padding: 2% 3%;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-content: center;
-align-items: center;
-.time{
   display: flex;
-  width: 30%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
   align-items: center;
-  span{
-    font-size: 1.3rem;
-    color: white;
-    font-family: 'regular';
-    width: 20%;
+
+  .time {
+    display: flex;
+    width: 30%;
+    align-items: center;
+
+    span {
+      font-size: 1.3rem;
+      color: white;
+      font-family: 'regular';
+      width: 20%;
+    }
+
+    div {
+      font-size: 1.2rem;
+      font-family: "regular";
+      color: var(--color-third);
+    }
   }
-  div{
-    font-size: 1.2rem;
-    font-family: "regular";
-    color: var(--color-third);
-  }
-}
+
   .info {
     text-align: end;
     padding-inline-end: 5%;
-width: 30%;
+    width: 30%;
+
     img {
       border-radius: 50%;
       border: 3px dashed var(--color-third);
@@ -911,6 +919,7 @@ order {
     background-color: var(--color-white);
     padding: 3%;
     border-radius: 8px;
+
     .dataTables_filter {
       margin-bottom: 15px;
     }
@@ -923,6 +932,7 @@ order {
     background-color: var(--color-white);
     padding: 3%;
     border-radius: 8px;
+
     .dataTables_length {
       margin-bottom: 15px;
     }
@@ -930,17 +940,18 @@ order {
 }
 
 .all-order {
- 
- h2{
-  font-size: 1.4rem;
-  color: #000;
-  font-family: 'regular';
- }
+
+  h2 {
+    font-size: 1.4rem;
+    color: #000;
+    font-family: 'regular';
+  }
+
   .table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
-    
+
 
     tbody {
       td {
@@ -971,17 +982,20 @@ order {
       font-size: 15px;
       padding: 10px;
       color: var(--color-secound);
-      background-color: rgba($color:#94f2ba, $alpha: 0.05);
-      .edit{
-        i{
+      background-color: rgba($color: #94f2ba, $alpha: 0.05);
+
+      .edit {
+        i {
           color: green;
           font-size: 1rem;
         }
 
       }
-      .trash{
+
+      .trash {
         cursor: pointer;
-        i{
+
+        i {
           color: red;
           font-size: 1rem;
         }
@@ -989,7 +1003,7 @@ order {
     }
 
     th {
-      background-color: rgba($color:#94f2ba, $alpha: 0.05);
+      background-color: rgba($color: #94f2ba, $alpha: 0.05);
       color: var(--color-primary);
       font-family: 'medium';
       border: none;
@@ -999,7 +1013,7 @@ order {
 }
 
 /* data table */
-.upper_section_res{
+.upper_section_res {
   display: none;
 }
 
@@ -1010,12 +1024,14 @@ order {
   margin: 4% 0;
   border-radius: 8px;
 }
+
 .system .main h2 {
   font-size: 32px;
   color: #000;
   font-family: "bold";
   padding-bottom: 4%;
 }
+
 .system .main .card {
   display: flex;
   justify-content: center;
@@ -1028,32 +1044,40 @@ order {
   border-color: transparent;
   margin-bottom: 4%;
 }
+
 .system .main .card:hover {
   transform: scale(1.07);
 }
+
 .system .main .card img {
   width: 50px;
   height: 50px;
 }
+
 .system .main .card .text {
   margin-inline-start: 4%;
 }
+
 .system .main .card h5 {
   font-size: 16px;
   font-family: "medium";
   color: #3f3f44;
 }
+
 .system .main .card h6 {
   font-size: 18px;
   font-family: "semi-bold";
 }
+
 .system .statistics {
   margin-top: 5%;
 }
+
 #myChart {
   background-color: var(--background2);
   border-radius: 8px;
 }
+
 .system .statistics .chart {
   display: flex;
   justify-content: center;
@@ -1064,35 +1088,43 @@ order {
   padding: 4% 2%;
   border-radius: 8px;
 }
+
 .system .statistics .chart h6 {
   font-family: "semibold";
   color: #2e2c34;
   font-size: 16px;
 }
+
 .system .statistics .chart p {
   font-size: 12px;
   font-family: "regular";
 }
+
 .system .statistics .chart p span {
   font-family: "bold";
 }
+
 .system .statistics .chart p img {
   margin-left: 2%;
 }
+
 .system .statistics .chart .img {
   width: 100%;
   height: 120px;
 }
 
-.create_admin{
+.create_admin {
   margin: 5%;
   background-color: var(--color-white);
   border-radius: 8px;
   padding: 3%;
-  form{
+
+  form {
     padding: 2% 8%;
-    .input-group-upload{
+
+    .input-group-upload {
       width: 20%;
+
       .profile-image {
         width: 150px;
         height: 150px;
@@ -1101,6 +1133,7 @@ order {
         cursor: pointer;
         border: 2px solid var(--color-third);
       }
+
       .upload-icon {
         position: absolute;
         display: flex;
@@ -1114,21 +1147,88 @@ order {
         bottom: 0;
         right: 8%;
         cursor: pointer;
-        i{
+
+        i {
           color: #000;
           font-size: 1.5rem;
         }
       }
-      
+
       .hidden {
         display: none;
       }
     }
-    .input-group{
+
+    .input-group {}
+  }
+}
+
+.regular_visit {
+  background-color: white;
+  margin: 5%;
+  padding: 3%;
+  border-radius: 8px;
+
+  .parent_detilas {
+    margin: 4% 0;
+
+    p {
+      color: #000000;
+      font-size: 1rem;
+      font-family: 'bold';
+      cursor: pointer;
+      text-align: center;
+
+      i {
+        font-size: 1.2rem;
+      }
+    }
+
+    .input-group {
+      .form-control {
+        padding-inline-start: 7%;
+      }
+
+      .remove-icon {
+        color: red;
+        margin: 5px 6px;
+      }
+
+      textarea {
+        width: 100%;
+        border-radius: 8px !important;
+      }
+    }
+
+    .input-group-width {
+      width: 86%;
+    }
+
+    .form-check {
+      width: 15%;
+      padding-left: 0;
+
+      .form-check-input {
+        float: left;
+        margin-inline-end: 3%;
+      }
+      .form-check-label{
+     font-size: 1.2rem;
+     color: #000;
+     font-family: 'bold';
+      }
+    }
+    .add_row{
+      width: 100%;
+      height: 30px;
+      display: flex;
+      justify-content: flex-end;
+      cursor: pointer;
+      i{
+        font-size: 1.8rem;
+        color: var(--color-third);
+      }
 
     }
   }
 }
-
-
-
