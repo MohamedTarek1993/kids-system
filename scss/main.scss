@@ -1212,19 +1212,22 @@ order {
         float: left;
         margin-inline-end: 3%;
       }
-      .form-check-label{
-     font-size: 1.2rem;
-     color: #000;
-     font-family: 'bold';
+
+      .form-check-label {
+        font-size: 1.2rem;
+        color: #000;
+        font-family: 'bold';
       }
     }
-    .add_row{
+
+    .add_row {
       width: 100%;
       height: 30px;
       display: flex;
       justify-content: flex-end;
       cursor: pointer;
-      i{
+
+      i {
         font-size: 1.8rem;
         color: var(--color-third);
       }
@@ -1232,21 +1235,64 @@ order {
     }
   }
 }
-.remove_row{
+
+.remove_row {
   width: 100%;
   height: 44px;
   display: flex;
   justify-content: end;
   cursor: pointer;
-  i{
+
+  i {
     font-size: 2rem;
     color: red;
   }
 }
-.row_det{
+
+.row_det {
   border-bottom: 1px solid #b2b2b2;
   padding: 3% 0;
-  &:last-child{
-    border-bottom: unset ;
+
+  &:last-child {
+    border-bottom: unset;
   }
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login-form {
+  padding: 40px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+  h3 {
+    font-family: 'bold';
+  }
+
+  .form-group {
+    margin: 5% 0;
+    position: relative;
+    .lock-icon{
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 56%;
+  display: flex;
+  justify-content: center;
+  width: 30px;
+  height: 100%;
+    }
+
+  }
+}
+
+.lottie {
+  width: 100%;
+  height: 600px;
 }

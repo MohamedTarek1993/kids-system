@@ -334,6 +334,11 @@
 
                             </tbody>
                         </table>
+
+                        <div class="button">
+                            <button data-bs-toggle="modal" data-bs-target="#exampleModal1" class="add"> Add Child <i
+                                    class="bi bi-plus"></i> </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -352,7 +357,6 @@
     <!---------------------- finish footer -------------------------------------------->
 
     <!---------------------- start Modal for edit chuld -------------------------------------------->
-
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -393,7 +397,7 @@
                             <label class="form-label">
                                 Notes
                             </label>
-                            <textarea class="w-100" ></textarea>
+                            <textarea class="w-100"></textarea>
                         </div>
 
                         <div class="button">
@@ -407,6 +411,62 @@
         </div>
     </div>
     <!---------------------- finish Modal for edit chuld -------------------------------------------->
+
+    <!---------------------- start Modal for add chuld -------------------------------------------->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" 1 aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add Child </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="parent_detilas" action="#">
+
+
+                        <div class="input-group w-100">
+                            <label class="form-label">
+                                Child Name
+                            </label>
+                            <input type="text" class="form-control">
+                            <span class="icon_form"><i class="bi bi-person-fill"></i></span>
+
+                        </div>
+
+                        <div class="input-group w-100">
+                            <label class="form-label">
+                                Child Age
+                            </label>
+                            <input type="number" class="form-control" min="0" max="15">
+                            <span class="icon_form"><i class="bi bi-circle-fill"></i></span>
+                        </div>
+                        <div class="input-group w-100">
+                            <label class="form-label">
+                                Child School
+                            </label>
+                            <input type="text" class="form-control">
+                            <span class="icon_form"><i class="bi bi-building"></i></span>
+                        </div>
+
+
+                        <div class="input-group w-100">
+                            <label class="form-label">
+                                Notes
+                            </label>
+                            <textarea class="w-100"></textarea>
+                        </div>
+
+                        <div class="button">
+                            <button id="submitButton" class="btn first w-100">Submit</button>
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!---------------------- finish Modal for add chuld -------------------------------------------->
 
 
     <!-- main js -->
