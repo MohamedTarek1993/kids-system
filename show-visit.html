@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Index</title>
+    <title> New Visit</title>
     <!-- main css -->
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -47,7 +47,7 @@
                         </div>
                         <ul class="menu-side-bar">
                             <li class="side-item">
-                                <a class="side-link active" href="index.html">
+                                <a class="side-link " href="index.html">
                                     <i class="bi bi-bar-chart"></i>
                                     Dashboard
                                 </a>
@@ -79,20 +79,19 @@
                                 <div class="dropdown-container">
                                     <a class="side-link" href="all-users.html"> All Users</a>
                                     <a class="side-link" href="create-user.html"> Create Users </a>
-                                 
+
 
                                 </div>
                                 <!-- drop-menu -->
                             </li>
                             <li class="side-item">
-                                <a class="side-link" href="regular-visits.htmlss">
+                                <a class="side-link active" href="#">
                                     <i class="bi bi-card-heading"></i>
                                     Regular Visits
                                 </a>
                             </li>
-
                             <li class="side-item">
-                                <a class="side-link" href="new-visit.html">
+                                <a class="side-link " href="new-visit.html">
                                     <i class="bi bi-file-earmark-plus-fill"></i>
                                     New Visit
                                 </a>
@@ -111,7 +110,7 @@
                                 <div class="dropdown-container">
                                     <a class="side-link" href="all-branches.html"> All Branches</a>
                                     <a class="side-link" href="create-branche.html"> Create Branches </a>
-                                 
+
 
                                 </div>
                                 <!-- drop-menu -->
@@ -146,7 +145,7 @@
                                 <div class="dropdown-container">
                                     <a class="side-link" href="all-art.html"> All Arts</a>
                                     <a class="side-link" href="create-arts.html l "> Create Arts </a>
-                                   
+
 
                                 </div>
                                 <!-- drop-menu -->
@@ -187,66 +186,73 @@
 
                     </div>
 
-                    <div class="main">
-                        <h2> 😄 Welcome In KidsHup </h2>
-                        <div class="box">
-                            <div class="row">
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="card">
-                                        <img src="image/card1.png" alt="card1">
-                                        <div class="text">
-                                            <h5> Total No.Of Childern </h5>
-                                            <h6>5 Childern </h6>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="card">
-                                        <img src="image/card2.png" alt="card2">
-                                        <div class="text">
-                                            <h5> Total Users</h5>
-                                            <h6>5 Users </h6>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-12">
-                                    <div class="card">
-                                        <img src="image/card3.png" alt="card3">
-                                        <div class="text">
-                                            <h5> Total Amount Money </h5>
-                                            <h6>1000 LE </h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="statistics">
-                            <div class="row text-center">
-                                <div class="col-12 ">
-                                    <canvas id="myChart">
+                    <div class="all-order">
+                        <ul class="tabs_visis">
+                            <li>
+                                <a href="regular-visits.html"> Daily Visits</a>
 
-                                    </canvas>
-                                </div>
-                                <div class="col-lg-6  col-12 py-5">
-                                    <div class="chart" data-aos="zoom-in-left" data-aos-duration="1000">
-                                        <h6> Charts For monthely Work </h6>
-                                        <p> <img src="image/arrow.png" alt="inc"> Increase
-                                            <span>19.5%</span>
-                                        </p>
-                                        <canvas id="myChart1"></canvas>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6  col-12 py-5">
-                                    <div class="chart" data-aos="zoom-in-right" data-aos-duration="1000">
-                                        <h6> Charts for Daily Profit </h6>
-                                        <p> <img src="image/arrow2.png" alt="inc"> Money Profit
-                                            <span>1.5%</span>
-                                        </p>
-                                        <canvas id="myChart2"></canvas>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                            </li>
+                            <li class="active">
+                                <a href="new-visit.html"> New Visit</a>
+
+                            </li>
+                        </ul>
+                        <h2 class="main_head"> New Visit</h2>
+
+                        <!-- في حالة  وجود  طلبات -->
+
+                        <table id="tableOrder" style="width:100%" class=" display table-responsive table">
+                            <thead>
+                                <tr>
+                                    <th> No</th>
+                                    <th> Childs</th>
+                                    <th> Parent</th>
+                                    <th> Phone</th>
+                                    <th> Check-In</th>
+                                    <th> Check-Out</th>
+                                    <th> Status</th>
+                                    <th>Edit </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr>
+                                    <td data-label="No">#251422 </td>
+                                    <td data-label="Childs">
+                                        Ahmed,Mohammed,Ali </td>
+                                    <td data-label="Parent">
+                                        Ahmed </td>
+                                    <td data-label="Phone">010931420</td>
+                                    <td data-label="Check-In">19/5/2023</td>
+                                    <td data-label="Check-In"> </td>
+                                    <td data-label="Status">
+                                        <span class="check">Check Out</span>
+                                    </td>
+                                    <td data-label="Edit">
+                                        <a href="edit-user.html" class="edit"> <i class="bi bi-pencil-square"></i></a>
+                                        <a href="edit-user.html" class="edit"> <i class="bi bi-eye"></i></a>
+
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td data-label="No">#251422 </td>
+                                    <td data-label="Childs">
+                                        Ahmed,Mohammed,Ali </td>
+                                    <td data-label="Parent">
+                                        Ahmed </td>
+                                    <td data-label="Phone">010931420</td>
+                                    <td data-label="Check-In">19/5/2023</td>
+                                    <td data-label="Check-In"> 19/5/2023 11:15PM </td>
+                                    <td data-label="Status">
+                                        <span class="closed">Visit Closed</span>
+                                    </td>
+                                    <td data-label="Edit">
+                                        <a href="edit-user.html" class="edit"> <i class="bi bi-pencil-square"></i></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
