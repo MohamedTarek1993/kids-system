@@ -9,6 +9,7 @@
     <!-- main css -->
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-select.min.css" />
     <link rel="stylesheet" href="scss/main.min.css" />
     <!-- responsive -->
     <link rel="stylesheet" href="css/responsive.css">
@@ -187,72 +188,183 @@
                     </div>
 
                     <div class="all-order">
-                        <ul class="tabs_visis">
-                            <li>
-                                <a href="regular-visits.html"> Daily Visits</a>
 
-                            </li>
-                            <li class="active">
-                                <a href="new-visit.html"> New Visit</a>
+                        <h2 class="main_head"> Show Child</h2>
 
-                            </li>
-                        </ul>
-                        <h2 class="main_head"> New Visit</h2>
+                        <!-- child detials -->
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Child Name : Ahmed
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="row row_det">
 
-                        <!-- في حالة  وجود  طلبات -->
+                                            <div class="col-lg-6 col-12">
+                                                <div class="input-group">
+                                                    <label class="form-label">
+                                                        Check-In
+                                                    </label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="input-group">
+                                                    <label class="form-label">
+                                                        Check-Out
+                                                    </label>
+                                                    <input type="text" class="form-control">
 
-                        <table id="tableOrder" style="width:100%" class=" display table-responsive table">
-                            <thead>
-                                <tr>
-                                    <th> No</th>
-                                    <th> Childs</th>
-                                    <th> Parent</th>
-                                    <th> Phone</th>
-                                    <th> Check-In</th>
-                                    <th> Check-Out</th>
-                                    <th> Status</th>
-                                    <th>Edit </th>
-                                </tr>
-                            </thead>
-                            <tbody>
+                                                </div>
+                                                <button class="btn check">Make Check-Out</button>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="input-group input-group-width">
+                                                    <label class="form-label">
+                                                        Add Item
+                                                    </label>
+                                                    <select id="item-select" class="selectpicker" multiple
+                                                        data-selected-text-format="count > 1" data-icon="bi bi-trash"
+                                                        data-live-search="true">
+                                                        <option value="1">Item1</option>
+                                                        <option value="2">Item2</option>
+                                                        <option value="3">Item3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="input-group">
+                                                    <label class="form-label">
+                                                        Item Name
+                                                    </label>
+                                                    <input disabled id="text-input" type="text" class="form-control">
+                                                </div>
 
-                                <tr>
-                                    <td data-label="No">#251422 </td>
-                                    <td data-label="Childs">
-                                        Ahmed,Mohammed,Ali </td>
-                                    <td data-label="Parent">
-                                        Ahmed </td>
-                                    <td data-label="Phone">010931420</td>
-                                    <td data-label="Check-In">19/5/2023</td>
-                                    <td data-label="Check-In"> </td>
-                                    <td data-label="Status">
-                                        <span class="check">Check Out</span>
-                                    </td>
-                                    <td data-label="Edit">
-                                        <a href="edit-user.html" class="edit"> <i class="bi bi-pencil-square"></i></a>
-                                        <a href="edit-user.html" class="edit"> <i class="bi bi-eye"></i></a>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="input-group">
+                                                    <label class="form-label">
+                                                        Item Price
+                                                    </label>
+                                                    <input disabled type="number" class="form-control">
+                                                </div>
 
-                                    </td>
-                                </tr>
+                                            </div>
 
-                                <tr>
-                                    <td data-label="No">#251422 </td>
-                                    <td data-label="Childs">
-                                        Ahmed,Mohammed,Ali </td>
-                                    <td data-label="Parent">
-                                        Ahmed </td>
-                                    <td data-label="Phone">010931420</td>
-                                    <td data-label="Check-In">19/5/2023</td>
-                                    <td data-label="Check-In"> 19/5/2023 11:15PM </td>
-                                    <td data-label="Status">
-                                        <span class="closed">Visit Closed</span>
-                                    </td>
-                                    <td data-label="Edit">
-                                        <a href="edit-user.html" class="edit"> <i class="bi bi-pencil-square"></i></a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                                            <div class="col-12">
+                                                <div class="form-check">
+
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Add Art
+                                                    </label>
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                        Child Name : Ahmed
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="row row_det">
+
+                                            <div class="col-lg-6 col-12">
+                                                <div class="input-group">
+                                                    <label class="form-label">
+                                                        Check-In
+                                                    </label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="input-group">
+                                                    <label class="form-label">
+                                                        Check-Out
+                                                    </label>
+                                                    <input type="text" class="form-control">
+
+                                                </div>
+                                                <button class="btn check">Make Check-Out</button>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="input-group input-group-width">
+                                                    <label class="form-label">
+                                                        Add Item
+                                                    </label>
+                                                    <select id="item-select" class="selectpicker" multiple
+                                                        data-selected-text-format="count > 1" data-icon="bi bi-trash"
+                                                        data-live-search="true">
+                                                        <option value="1">Item1</option>
+                                                        <option value="2">Item2</option>
+                                                        <option value="3">Item3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="input-group">
+                                                    <label class="form-label">
+                                                        Item Name
+                                                    </label>
+                                                    <input disabled id="text-input" type="text" class="form-control">
+                                                </div>
+
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="input-group">
+                                                    <label class="form-label">
+                                                        Item Price
+                                                    </label>
+                                                    <input disabled type="number" class="form-control">
+                                                </div>
+
+                                            </div>
+
+                                            <div class="col-12">
+                                                <div class="form-check">
+
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Add Art
+                                                    </label>
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- child detials -->
+
+
+
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="button w-100 justify-content-center">
+                                    <button id="submitButton" class="btn first w-50">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
             </div>
@@ -273,6 +385,7 @@
     <!-- main js -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
     <script src="js/main.js"></script>
     <!-- main js -->
     <!-- sweet alert -->
@@ -290,256 +403,37 @@
     </script>
 
     <!-- data table -->
-    <!-- sweet alert for add favorit -->
     <script>
-        function acceptAlert() {
-            Swal.fire({
-                title: 'Are you sure?',
-                text: "You won't be able to revert this!",
-                icon: 'warning',
-                showCancelButton: true,
-                confirmButtonColor: '#3085d6',
-                cancelButtonColor: '#d33',
-                confirmButtonText: 'Yes, delete it!'
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    Swal.fire(
-                        'Deleted!',
-                        'Your file has been deleted.',
-                        'success'
-                    )
-                }
-            })
-        };
-    </script>
-    <!-- sweet alert for add favorit -->
+        $(document).ready(function () {
+            $('.form-select').selectpicker();
+        });
 
-    <!-- chart tabel -->
+    </script>
+
+    <!-- clone item -->
     <script>
-        const zyx = document.getElementById("myChart").getContext('2d');
-        const labels2 = [
-            'Jan',
-            'Feb',
-            'Mar',
-            'Apr',
-            'May',
-            'June',
-            'July',
-            'Aug',
-            'Sep',
-            'Oct',
-            'Nov',
-            'Dec'
-        ];
-        const data2 = {
-            labels: labels2,
-            datasets: [
-                {
-                    label: 'Achieved',
-                    data: [65, 59, 80, 81, 56, 55, 40, 80, 30, 20, 70, 60],
-                    backgroundColor: [
-                        'rgba(27, 46, 49, 1)',
+        document.addEventListener('DOMContentLoaded', function () {
+            var selectElement = document.getElementById('item-select');
+            var textInput = document.getElementById('text-input');
 
-                    ],
-                    borderColor: [
-                        'rgba(27, 46, 49, 1)',
-                    ],
-                    borderWidth: 1,
-                    barPercentage: 1,
-                    barThickness: 15,
-                    // maxBarThickness: 8,
-                    minBarLength: 3,
-                }, {
-                    type: 'bar',
-                    label: 'Increase',
-                    data: [85, 79, 90, 91, 56, 85, 60, 90, 40, 30, 40, 50],
-                    backgroundColor: [
-                        'rgb(250,105,157,1)'
-                    ],
-                    fill: true,
-                    borderColor: 'rgb(250,105,157,1)',
-                    borderWidth: 1,
-                    barPercentage: 0.5,
-                    barThickness: 15,
-                }]
-        };
-        const config2 = {
-            type: 'bar',
-            data: data2,
+            selectElement.addEventListener('change', function () {
+                var selectedOptions = Array.from(selectElement.selectedOptions);
 
-            options: {
-                animations: {
-                    tension: {
-                        duration: 4000,
-                        easing: 'linear',
-                        from: 1,
-                        to: 0,
-                        loop: true
-                    }
-                },
-                plugins: {
-                    title: {
-                        display: true,
-                        text: 'No Of Childern On Year'
-                    },
-                    legend: {
-                        labels: {
-                            // This more specific font property overrides the global property
-                            font: {
-                                size: 25
-                            }
-                        }
-                    }
-                },
-                responsive: true,
-                interaction: {
-                    intersect: false,
-                },
-                scales: {
-                    x: {
-                        stacked: true,
-                    },
-                    y: {
-                        stacked: true
-                    }
-                }
-            },
-        };
-        const myChart2 = new Chart(zyx, config2);
+                // Clear previous text input value
+                textInput.value = '';
+
+                selectedOptions.forEach(function (option) {
+                    var selectedText = option.text;
+
+                    // Append selected option text to the text input value
+                    textInput.value += selectedText + ' ';
+                });
+            });
+        });
     </script>
-    <!--chart tabel-->
-    <!-- chart tabel1 -->
-    <script>
-        const zy = document.getElementById("myChart1").getContext('2d');
-        const labels3 = [
-            '5 Jan',
-            '10 Jan',
-            '15 Jan',
-            '20 Jan',
-            '25 Jan',
-            '30 Jan',
-            '5 Feb',
-            '10 Feb',
-            '15 Feb',
-            '20 Feb',
-
-        ];
-        const data3 = {
-            labels: labels3,
-            datasets: [
-                {
-                    label: 'Achieved',
-                    data: [80, 81, 56, 55, 40, 80, 30, 20, 70, 60],
-                    backgroundColor: [
-                        'rgba(85, 66, 264, 1)',
-
-                    ],
-                    borderColor: [
-                        'rgba(85, 66, 264, 1)',
-                    ],
-                    borderWidth: 1,
-                    barPercentage: 1,
-                    barThickness: 15,
-                    // maxBarThickness: 8,
-                    minBarLength: 3,
-                }]
-        };
-        const config3 = {
-            type: 'line',
-            data: data3,
-
-            options: {
-                animations: {
-                    tension: {
-                        duration: 4000,
-                        easing: 'linear',
-                        from: 1,
-                        to: 0,
-                        loop: true
-                    }
-                },
-                responsive: true,
-                interaction: {
-                    intersect: false,
-                },
-                scales: {
-                    x: {
-                        stacked: true,
-                    },
-                    y: {
-                        stacked: true
-                    }
-                }
-            },
-        };
-        const myChart3 = new Chart(zy, config3);
-    </script>
-    <!--chart tabel1-->
-    <!-- chart tabel2 -->
-    <script>
-        const z = document.getElementById("myChart2").getContext('2d');
-        const labels4 = [
-            '5 Jan',
-            '10 Jan',
-            '15 Jan',
-            '20 Jan',
-            '25 Jan',
-            '30 Jan',
-            '5 Feb',
 
 
-        ];
-        const data4 = {
-            labels: labels4,
-            datasets: [
-                {
-                    label: 'Achieved',
-                    data: [55, 40, 80, 30, 20, 70, 60],
-                    backgroundColor: [
-                        'rgba(85, 66, 264, 1)',
 
-                    ],
-                    borderColor: [
-                        'rgba(85, 66, 264, 1)',
-                    ],
-                    borderWidth: 1,
-                    barPercentage: 1,
-                    barThickness: 15,
-                    // maxBarThickness: 8,
-                    minBarLength: 3,
-                }]
-        };
-        const config4 = {
-            type: 'line',
-            data: data3,
-
-            options: {
-                animations: {
-                    tension: {
-                        duration: 1000,
-                        easing: 'linear',
-                        from: 1,
-                        to: 0,
-                        loop: true
-                    }
-                },
-                responsive: true,
-                interaction: {
-                    intersect: false,
-                },
-                scales: {
-                    x: {
-                        stacked: true,
-                    },
-                    y: {
-                        stacked: true
-                    }
-                }
-            },
-        };
-        const myChart4 = new Chart(z, config4);
-    </script>
-    <!--chart tabel2-->
 
 </body>
 
