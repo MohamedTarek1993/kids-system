@@ -73,7 +73,72 @@ function updateDateTime() {
   // Update displayed time, date, and day
   currentTimeElement.textContent = currentTime;
   currentDateElement.textContent = currentDate;
-  currentDayElement.textContent = currentDay;
+  // currentDayElement.textContent = currentDay;
 }
 
 setInterval(updateDateTime, 1000);
+
+
+
+// check for saved 'darkMode' in localStorage
+let darkMode = localStorage.getItem('darkMode');
+const darkModeToggle = document.getElementById('toggle');
+const dark = document.getElementById('dark');
+const light = document.getElementById('light');
+// const logoLight = document.getElementById('logoLight');
+// const logoDark = document.getElementById('logoDark');
+const enableDarkMode = () => {
+  // 1. Add the class to the body
+  document.body.classList.add('darkmode');
+   // 2. toggle classes
+  dark.style.display = "none";
+  light.style.display = "block";
+  // 3. Update darkMode in localStorage
+  localStorage.setItem('darkMode', 'enabled');
+ 
+  
+}
+const disableDarkMode = () => {
+  // 1. Remove the class from the body
+  document.body.classList.remove('darkmode');
+       // 2. toggle classes
+
+  light.style.display = "none";
+  dark.style.display = "block";
+  // 3. Update darkMode in localStorage 
+  localStorage.setItem('darkMode', null);
+}
+// If the user already visited and enabled darkMode
+// start things off with it on
+if (darkMode === 'enabled') {
+  enableDarkMode();
+}
+// toggle icon
+// When someone clicks the button
+darkModeToggle.addEventListener('click', () => {
+  // get their darkMode setting
+  darkMode = localStorage.getItem('darkMode');
+  // logoLight.style.display = "block";
+  // logoDark.style.display = "none";
+  
+
+
+  // if it not current enabled, enable it
+  if (darkMode !== 'enabled') {
+    enableDarkMode();
+    // if it has been enabled, turn it off  
+    // change logo 
+    // logoLight.style.display = "none";
+    // logoDark.style.display = "block";
+   
+
+
+  } else {
+    disableDarkMode();
+ 
+
+  }
+});
+
+//    light&& dark
+
