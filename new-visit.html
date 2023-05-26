@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Regular Visits</title>
+    <title> New Visits</title>
     <!-- main css -->
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -319,58 +319,54 @@
                                         aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
                                             <div class="row row_det">
-                                                <span class="add_row"><i class="bi bi-plus-circle"></i></span>
+                                                <div class="col-12">
+                                                    <div class="form-check diseab_child">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="disabledChildCheckbox">
+                                                        <label class="form-check-label" for="disabledChildCheckbox">
+                                                            Disabled Child
+                                                        </label>
+                                                    </div>
+                                                </div>
                                                 <div class="col-lg-6 col-12">
                                                     <div class="input-group">
                                                         <label class="form-label">
                                                             Child Name
                                                         </label>
-                                                        <input type="text" class="form-control">
+                                                        <input id="childNameInput" type="text" class="form-control">
                                                         <span class="icon_form"><i class="bi bi-person-fill"></i></span>
-
                                                     </div>
                                                 </div>
-
                                                 <div class="col-lg-6 col-12">
                                                     <div class="input-group">
                                                         <label class="form-label">
                                                             Child Age
                                                         </label>
-                                                        <input type="number" class="form-control" min="0" max="15">
+                                                        <input id="childAgeInput" type="number" class="form-control"
+                                                            min="0" max="15">
                                                         <span class="icon_form"><i class="bi bi-circle-fill"></i></span>
                                                     </div>
                                                 </div>
-                                                <div class="col-12">
-
-
-                                                </div>
+                                                <div class="col-12"></div>
                                                 <div class="col-12">
                                                     <div class="input-group input-group-width">
                                                         <label class="form-label">
                                                             Notes
                                                         </label>
-                                                        <textarea></textarea>
+                                                        <textarea id="notesTextarea"></textarea>
                                                     </div>
                                                 </div>
-                                                <div class="col-12">
-                                                    <div class="form-check">
 
-                                                        <label class="form-check-label" for="flexCheckDefault">
-                                                            Add Art
-                                                        </label>
-                                                        <input class="form-check-input" type="checkbox" value=""
-                                                            id="flexCheckDefault">
-                                                    </div>
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="button">
-                                    <button data-bs-toggle="modal" data-bs-target="#exampleModal1" class=" btn add"> Add
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class=" btn add"> Add
                                         Child <i class="bi bi-plus"></i> </button>
                                 </div>
+                              
                             </div>
                         </div>
 
@@ -390,64 +386,10 @@
 
     <!---------------------- finish footer -------------------------------------------->
 
-    <!---------------------- start Modal for edit chuld -------------------------------------------->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Edit Child </h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form class="parent_detilas" action="#">
 
-
-                        <div class="input-group w-100">
-                            <label class="form-label">
-                                Child Name
-                            </label>
-                            <input type="text" class="form-control">
-                            <span class="icon_form"><i class="bi bi-person-fill"></i></span>
-
-                        </div>
-
-                        <div class="input-group w-100">
-                            <label class="form-label">
-                                Child Age
-                            </label>
-                            <input type="number" class="form-control" min="0" max="15">
-                            <span class="icon_form"><i class="bi bi-circle-fill"></i></span>
-                        </div>
-                        <div class="input-group w-100">
-                            <label class="form-label">
-                                Child School
-                            </label>
-                            <input type="text" class="form-control">
-                            <span class="icon_form"><i class="bi bi-building"></i></span>
-                        </div>
-
-
-                        <div class="input-group w-100">
-                            <label class="form-label">
-                                Notes
-                            </label>
-                            <textarea class="w-100"></textarea>
-                        </div>
-
-                        <div class="button">
-                            <button id="submitButton" class="btn first w-100">Submit</button>
-                        </div>
-
-                    </form>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!---------------------- finish Modal for edit chuld -------------------------------------------->
 
     <!---------------------- start Modal for add chuld -------------------------------------------->
-    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" 1 aria-hidden="true">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -633,21 +575,7 @@
 
     </script>
     <!-- add anther row -->
-    <!-- sweetalert for art checkbox -->
-    <script>
-        const checkbox = document.getElementById('myCheckbox');
 
-        checkbox.addEventListener('change', function () {
-            if (this.checked) {
-                Swal.fire({
-                    title: 'Checkbox Checked!',
-                    text: 'The checkbox has been checked.',
-                    icon: 'success'
-                });
-            }
-        });
-    </script>
-    <!-- sweetalert for art checkbox -->
     <!-- sweet alert for delete -->
     <script>
         function acceptAlert() {
@@ -671,6 +599,23 @@
         };
     </script>
     <!-- sweet alert for add favorit -->
+    <!-- checked box and deasibled input -->
+    <script>
+        var disabledChildCheckbox = document.getElementById("disabledChildCheckbox");
+        var childNameInput = document.getElementById("childNameInput");
+        var childAgeInput = document.getElementById("childAgeInput");
+        var notesTextarea = document.getElementById("notesTextarea");
+
+        disabledChildCheckbox.addEventListener("change", function () {
+            var checked = disabledChildCheckbox.checked;
+
+            childNameInput.disabled = checked;
+            childAgeInput.disabled = checked;
+            notesTextarea.disabled = checked;
+        });
+    </script>
+    <!-- checked box and deasibled input -->
+
 
 </body>
 

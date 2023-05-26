@@ -186,137 +186,185 @@
 
 
                     </div>
-                    <form class="parent_detilas" action="#"></form>
+                    <form class="parent_detilas" action="#">
+                        <!-- parent detials -->
+                        <div class="all-order">
+                            <ul class="tabs_visis">
+                                <li>
+                                    <a href="regular-visits.html"> Daily Visits</a>
 
-                    <div class="all-order">
-                        <ul class="tabs_visis">
-                            <li>
-                                <a href="regular-visits.html"> Daily Visits</a>
+                                </li>
+                                <li class="active">
+                                    <a href="new-visit.html"> New Visit</a>
 
-                            </li>
-                            <li class="active">
-                                <a href="new-visit.html"> New Visit</a>
+                                </li>
+                            </ul>
+                            <h2 class="main_head"> Edit Parent</h2>
 
-                            </li>
-                        </ul>
-                        <h2 class="main_head"> Edit Parent</h2>
+                            <div class="row">
+                                <div class="col-lg-6 col-12">
+                                    <div class="input-group input-phone">
+                                        <label class="form-label">
+                                            Parent Phone
+                                        </label>
+                                        <input type="tel" class="form-control">
+                                        <span class="icon_form"><i class="bi bi-phone-fill"></i></span>
 
-                        <div class="row">
-                            <div class="col-lg-6 col-12">
-                                <div class="input-group input-phone">
-                                    <label class="form-label">
-                                        Parent Phone
-                                    </label>
-                                    <input type="tel" class="form-control">
-                                    <span class="icon_form"><i class="bi bi-phone-fill"></i></span>
-
-                                </div>
-                                <div class="input-group">
-                                    <label class="form-label">
-                                        Add Nannies
-                                    </label>
-                                    <input type="number" class="form-control">
-                                    <span class="icon_form"><i class="bi bi-person-fill"></i></span>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-6 col-12">
-                                <div class="input-group">
-                                    <label class="form-label">
-                                        Parent Name
-                                    </label>
-                                    <input type="text" class="form-control">
-                                    <span class="icon_form"><i class="bi bi-person-fill"></i></span>
+                                    </div>
+                                    <div class="input-group">
+                                        <label class="form-label">
+                                            Add Nannies
+                                        </label>
+                                        <input type="number" class="form-control">
+                                        <span class="icon_form"><i class="bi bi-person-fill"></i></span>
+                                    </div>
                                 </div>
 
-                                <div class="input-group">
+                                <div class="col-lg-6 col-12">
+                                    <div class="input-group">
+                                        <label class="form-label">
+                                            Parent Name
+                                        </label>
+                                        <input type="text" class="form-control">
+                                        <span class="icon_form"><i class="bi bi-person-fill"></i></span>
+                                    </div>
+
+                                    <!-- <div class="input-group">
                                     <label class="form-label">
                                         Promo Code
                                     </label>
                                     <input type="number" class="form-control">
                                     <span class="icon_form"><i class="bi bi-upc"></i></span>
+                                </div> -->
                                 </div>
                             </div>
+
+
                         </div>
+                        <!-- parent detials -->
+                        <!-- child detials -->
+                        <div class="all-order">
 
-
-                    </div>
-
-                    <div class="all-order">
-
-                        <h2 class="main_head"> Edit Child</h2>
+                            <h2 class="main_head"> Edit Child</h2>
 
 
 
-                        <div class="row row_det">
-                            <div class="col-lg-6 col-12">
-                                <div class="input-group">
-                                    <label class="form-label">
-                                        Child Name
-                                    </label>
-                                    <input type="text" class="form-control">
-                                    <span class="icon_form"><i class="bi bi-person-fill"></i></span>
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="false"
+                                            aria-controls="collapseOne">
+                                            Child Name : Ahmed
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="row row_det">
+
+                                                <div class="col-lg-6 col-12">
+                                                    <div class="input-group">
+                                                        <label class="form-label">
+                                                            Child Name
+                                                        </label>
+                                                        <input id="childNameInput" type="text" class="form-control">
+                                                        <span class="icon_form"><i class="bi bi-person-fill"></i></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-12">
+                                                    <div class="input-group">
+                                                        <label class="form-label">
+                                                            Child Age
+                                                        </label>
+                                                        <input id="childAgeInput" type="number" class="form-control"
+                                                            min="0" max="15">
+                                                        <span class="icon_form"><i class="bi bi-circle-fill"></i></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12"></div>
+                                                <div class="col-12">
+                                                    <div class="input-group input-group-width">
+                                                        <label class="form-label">
+                                                            Notes
+                                                        </label>
+                                                        <textarea id="notesTextarea"></textarea>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">
+                                            Child Name : Ali
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="row row_det">
+
+                                                <div class="col-lg-6 col-12">
+                                                    <div class="input-group">
+                                                        <label class="form-label">
+                                                            Child Name
+                                                        </label>
+                                                        <input id="childNameInput" type="text" class="form-control">
+                                                        <span class="icon_form"><i class="bi bi-person-fill"></i></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-12">
+                                                    <div class="input-group">
+                                                        <label class="form-label">
+                                                            Child Age
+                                                        </label>
+                                                        <input id="childAgeInput" type="number" class="form-control"
+                                                            min="0" max="15">
+                                                        <span class="icon_form"><i class="bi bi-circle-fill"></i></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12"></div>
+                                                <div class="col-12">
+                                                    <div class="input-group input-group-width">
+                                                        <label class="form-label">
+                                                            Notes
+                                                        </label>
+                                                        <textarea id="notesTextarea"></textarea>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
 
                                 </div>
                             </div>
 
-                            <div class="col-lg-6 col-12">
-                                <div class="input-group">
-                                    <label class="form-label">
-                                        Child Age
-                                    </label>
-                                    <input type="number" class="form-control" min="0" max="15">
-                                    <span class="icon_form"><i class="bi bi-circle-fill"></i></span>
-                                </div>
-                            </div>
-                            
-                            <!-- <div class="col-lg-6 col-12">
-                                <div class="input-group">
-                                    <label class="form-label">
-                                        Check-In
-                                    </label>
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-12">
-                                <div class="input-group">
-                                    <label class="form-label">
-                                        Check-Out
-                                    </label>
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div> -->
-                          
-                            <div class="col-12">
-                                <div class="input-group input-group-width">
-                                    <label class="form-label">
-                                        Notes
-                                    </label>
-                                    <textarea class="w-100" ></textarea>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-check">
 
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        Add Art
-                                    </label>
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="button">
+                                        <button id="submitButton" class="btn first">Submit</button>
+                                    </div>
                                 </div>
                             </div>
+
+
                         </div>
+                        <!-- child detials -->
 
-
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="button">
-                                    <button id="submitButton" class="btn first">Submit</button>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>

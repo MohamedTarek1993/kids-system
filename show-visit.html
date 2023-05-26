@@ -186,186 +186,193 @@
 
 
                     </div>
+                    <form action="">
 
-                    <div class="all-order">
 
-                        <h2 class="main_head"> Show Child</h2>
+                        <div class="all-order">
 
-                        <!-- child detials -->
-                        <div class="accordion" id="accordionExample">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        Child Name : Ahmed
-                                    </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse show"
-                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <div class="row row_det">
+                            <h2 class="main_head"> Show Child</h2>
 
-                                            <div class="col-lg-6 col-12">
-                                                <div class="input-group">
-                                                    <label class="form-label">
-                                                        Check-In
-                                                    </label>
-                                                    <input type="text" class="form-control">
+                            <!-- child detials -->
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            Child Name : Ahmed
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="row row_det">
+
+                                                <div class="col-lg-6 col-12">
+                                                    <div class="input-group">
+                                                        <label class="form-label">
+                                                            Check-In
+                                                        </label>
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-12">
+                                                    <div class="input-group">
+                                                        <label class="form-label">
+                                                            Check-Out
+                                                        </label>
+                                                        <input type="text" class="form-control">
+
+                                                    </div>
+                                                    <button class="btn check">Make Check-Out</button>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="input-group input-group-width">
+                                                        <label class="form-label">
+                                                            Add Item
+                                                        </label>
+                                                        <select id="item-select" class="selectpicker" multiple
+                                                            data-selected-text-format="count > 1"
+                                                            data-icon="bi bi-trash" data-live-search="true">
+                                                            <option value="1">Item1</option>
+                                                            <option value="2">Item2</option>
+                                                            <option value="3">Item3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-12">
+                                                    <div class="input-group">
+                                                        <label class="form-label">
+                                                            Item Name
+                                                        </label>
+                                                        <input disabled id="text-input" type="text"
+                                                            class="form-control">
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-lg-6 col-12">
+                                                    <div class="input-group">
+                                                        <label class="form-label">
+                                                            Item Price
+                                                        </label>
+                                                        <input disabled type="number" class="form-control">
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <div class="form-check">
+
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                            Add Art
+                                                        </label>
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault">
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-6 col-12">
-                                                <div class="input-group">
-                                                    <label class="form-label">
-                                                        Check-Out
-                                                    </label>
-                                                    <input type="text" class="form-control">
 
-                                                </div>
-                                                <button class="btn check">Make Check-Out</button>
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="input-group input-group-width">
-                                                    <label class="form-label">
-                                                        Add Item
-                                                    </label>
-                                                    <select id="item-select" class="selectpicker" multiple
-                                                        data-selected-text-format="count > 1" data-icon="bi bi-trash"
-                                                        data-live-search="true">
-                                                        <option value="1">Item1</option>
-                                                        <option value="2">Item2</option>
-                                                        <option value="3">Item3</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6 col-12">
-                                                <div class="input-group">
-                                                    <label class="form-label">
-                                                        Item Name
-                                                    </label>
-                                                    <input disabled id="text-input" type="text" class="form-control">
-                                                </div>
-
-                                            </div>
-                                            <div class="col-lg-6 col-12">
-                                                <div class="input-group">
-                                                    <label class="form-label">
-                                                        Item Price
-                                                    </label>
-                                                    <input disabled type="number" class="form-control">
-                                                </div>
-
-                                            </div>
-
-                                            <div class="col-12">
-                                                <div class="form-check">
-
-                                                    <label class="form-check-label" for="flexCheckDefault">
-                                                        Add Art
-                                                    </label>
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="flexCheckDefault">
-                                                </div>
-                                            </div>
                                         </div>
+                                    </div>
+                                </div>
 
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTwo" aria-expanded="true"
+                                            aria-controls="collapseTwo">
+                                            Child Name : Ahmed
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="row row_det">
+
+                                                <div class="col-lg-6 col-12">
+                                                    <div class="input-group">
+                                                        <label class="form-label">
+                                                            Check-In
+                                                        </label>
+                                                        <input type="text" class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-12">
+                                                    <div class="input-group">
+                                                        <label class="form-label">
+                                                            Check-Out
+                                                        </label>
+                                                        <input type="text" class="form-control">
+
+                                                    </div>
+                                                    <button class="btn check">Make Check-Out</button>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="input-group input-group-width">
+                                                        <label class="form-label">
+                                                            Add Item
+                                                        </label>
+                                                        <select id="item-select" class="selectpicker" multiple
+                                                            data-selected-text-format="count > 1"
+                                                            data-icon="bi bi-trash" data-live-search="true">
+                                                            <option value="1">Item1</option>
+                                                            <option value="2">Item2</option>
+                                                            <option value="3">Item3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-12">
+                                                    <div class="input-group">
+                                                        <label class="form-label">
+                                                            Item Name
+                                                        </label>
+                                                        <input disabled id="text-input" type="text"
+                                                            class="form-control">
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-lg-6 col-12">
+                                                    <div class="input-group">
+                                                        <label class="form-label">
+                                                            Item Price
+                                                        </label>
+                                                        <input disabled type="number" class="form-control">
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <div class="form-check">
+
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                            Add Art
+                                                        </label>
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- child detials -->
+
+
+
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="button w-100 justify-content-center">
+                                        <button id="submitButton" class="btn first w-50">Submit</button>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                                        Child Name : Ahmed
-                                    </button>
-                                </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse show"
-                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        <div class="row row_det">
 
-                                            <div class="col-lg-6 col-12">
-                                                <div class="input-group">
-                                                    <label class="form-label">
-                                                        Check-In
-                                                    </label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6 col-12">
-                                                <div class="input-group">
-                                                    <label class="form-label">
-                                                        Check-Out
-                                                    </label>
-                                                    <input type="text" class="form-control">
-
-                                                </div>
-                                                <button class="btn check">Make Check-Out</button>
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="input-group input-group-width">
-                                                    <label class="form-label">
-                                                        Add Item
-                                                    </label>
-                                                    <select id="item-select" class="selectpicker" multiple
-                                                        data-selected-text-format="count > 1" data-icon="bi bi-trash"
-                                                        data-live-search="true">
-                                                        <option value="1">Item1</option>
-                                                        <option value="2">Item2</option>
-                                                        <option value="3">Item3</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6 col-12">
-                                                <div class="input-group">
-                                                    <label class="form-label">
-                                                        Item Name
-                                                    </label>
-                                                    <input disabled id="text-input" type="text" class="form-control">
-                                                </div>
-
-                                            </div>
-                                            <div class="col-lg-6 col-12">
-                                                <div class="input-group">
-                                                    <label class="form-label">
-                                                        Item Price
-                                                    </label>
-                                                    <input disabled type="number" class="form-control">
-                                                </div>
-
-                                            </div>
-
-                                            <div class="col-12">
-                                                <div class="form-check">
-
-                                                    <label class="form-check-label" for="flexCheckDefault">
-                                                        Add Art
-                                                    </label>
-                                                    <input class="form-check-input" type="checkbox" value=""
-                                                        id="flexCheckDefault">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
                         </div>
-                        <!-- child detials -->
-
-
-
-
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="button w-100 justify-content-center">
-                                    <button id="submitButton" class="btn first w-50">Submit</button>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
