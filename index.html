@@ -201,6 +201,157 @@
 
                     <div class="main">
                         <h2> 😄 Welcome In KidsHup </h2>
+                        <div class="information create_admin">
+                            <h2 class="main_head">
+                                Daily Statistics
+                            </h2>
+                            <div class="d-flex align-items-start">
+                                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                                    aria-orientation="vertical">
+                                    <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-home" type="button" role="tab"
+                                        aria-controls="v-pills-home" aria-selected="true">All Branches</button>
+                                    <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-profile" type="button" role="tab"
+                                        aria-controls="v-pills-profile" aria-selected="false">Branch 1</button>
+                                    <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-messages" type="button" role="tab"
+                                        aria-controls="v-pills-messages" aria-selected="false">Branch 2</button>
+                                    <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-settings" type="button" role="tab"
+                                        aria-controls="v-pills-settings" aria-selected="false">Branch 3</button>
+                                </div>
+                                <div class="tab-content" id="v-pills-tabContent">
+                                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                                        aria-labelledby="v-pills-home-tab">
+                                        <div class="card">
+                                            <img src="image/card1.png" alt="card1">
+                                            <div class="text">
+                                                <h5> Total No.Of Childern </h5>
+                                                <h6>5 Childern / 6 Vists </h6>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <img src="image/card2.png" alt="card2">
+                                            <div class="text">
+                                                <h5> Total Sales</h5>
+                                                <h6>500 Sales </h6>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <img src="image/card3.png" alt="card3">
+                                            <div class="text">
+                                                <h5> Art</h5>
+                                                <h6>1000 LE /64 Unites</h6>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <img src="image/card3.png" alt="card3">
+                                            <div class="text">
+                                                <h5> Snackes</h5>
+                                                <h6>1000 LE /64 Unites</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                                        aria-labelledby="v-pills-profile-tab">
+
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                                        aria-labelledby="v-pills-messages-tab">...</div>
+                                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                                        aria-labelledby="v-pills-settings-tab">...</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div id="tabs">
+                            <button class="tablink" onclick="openTab('stats', this)">Statistics</button>
+                        </div>
+
+                        <div id="stats" class="tabcontent">
+                            <table id="statsTable">
+                                <tr>
+                                    <th>Category</th>
+                                    <th>Branch A</th>
+                                    <th>Branch B</th>
+                                    <th>Branch C</th>
+                                </tr>
+                                <tr>
+                                    <td>Number of Kids</td>
+                                    <td>50</td>
+                                    <td>40</td>
+                                    <td>30</td>
+                                </tr>
+                                <tr>
+                                    <td>Number of Visits</td>
+                                    <td>1000</td>
+                                    <td>800</td>
+                                    <td>500</td>
+                                </tr>
+                                <tr>
+                                    <td>Total Sales</td>
+                                    <td>200</td>
+                                    <td>150</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr>
+                                    <td>Total Art</td>
+                                    <td>100</td>
+                                    <td>80</td>
+                                    <td>50</td>
+                                </tr>
+                                <tr>
+                                    <td>Total Snacks</td>
+                                    <td>80</td>
+                                    <td>60</td>
+                                    <td>40</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div id="branches" class="tabcontent">
+                            <table id="comparisonTable">
+                                <tr>
+                                    <th>Branch</th>
+                                    <th>Number of Kids</th>
+                                    <th>Number of Visits</th>
+                                    <th>Total Sales</th>
+                                    <th>Total Art</th>
+                                    <th>Total Snacks</th>
+                                </tr>
+                                <tr id="branchA">
+                                    <td>Branch A</td>
+                                    <td>50</td>
+                                    <td>1000</td>
+                                    <td>200</td>
+                                    <td>100</td>
+                                    <td>80</td>
+                                </tr>
+                                <tr id="branchB">
+                                    <td>Branch B</td>
+                                    <td>40</td>
+                                    <td>800</td>
+                                    <td>150</td>
+                                    <td>80</td>
+                                    <td>60</td>
+                                </tr>
+                                <tr id="branchC">
+                                    <td>Branch C</td>
+                                    <td>30</td>
+                                    <td>500</td>
+                                    <td>100</td>
+                                    <td>50</td>
+                                    <td>40</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div id="chartContainer">
+                            <canvas id="chart"></canvas>
+                        </div>
+
                         <div class="box">
                             <div class="row">
                                 <div class="col-lg-4 col-md-6 col-12">
@@ -546,6 +697,81 @@
         const myChart4 = new Chart(z, config4);
     </script>
     <!--chart tabel2-->
+    <script>
+        var chart = null;
+
+        function openTab(tabName, element) {
+            // Hide all tab contents and remove active class from tab links
+            var tabContents = document.getElementsByClassName("tabcontent");
+            for (var i = 0; i < tabContents.length; i++) {
+                tabContents[i].style.display = "none";
+            }
+
+            var tabLinks = document.getElementsByClassName("tablink");
+            for (var i = 0; i < tabLinks.length; i++) {
+                tabLinks[i].classList.remove("active");
+            }
+
+            // Show the selected tab content and add active class to the clicked tab link
+            document.getElementById(tabName).style.display = "block";
+            element.classList.add("active");
+
+            // Destroy existing chart if it exists
+            if (chart) {
+                chart.destroy();
+            }
+
+            if (tabName === "branches") {
+                var branch = document.getElementById("comparisonTable").rows[1].id;
+                displayChart(branch);
+            }
+        }
+
+        function displayChart(branch) {
+            var data = [];
+            var labels = ['Number of Kids', 'Number of Visits', 'Total Sales', 'Total Art', 'Total Snacks'];
+
+            switch (branch) {
+                case 'branchA':
+                    data = [50, 1000, 200, 100, 80];
+                    break;
+                case 'branchB':
+                    data = [40, 800, 150, 80, 60];
+                    break;
+                case 'branchC':
+                    data = [30, 500, 100, 50, 40];
+                    break;
+                default:
+                    data = [];
+            }
+
+            var ctx = document.getElementById('chart').getContext('2d');
+            chart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: branch,
+                        data: data,
+                        backgroundColor: ['rgba(54, 162, 235, 0.5)', 'rgba(75, 192, 192, 0.5)', 'rgba(255, 206, 86, 0.5)', 'rgba(255, 99, 132, 0.5)', 'rgba(153, 102, 255, 0.5)'],
+                        borderColor: ['rgba(54, 162, 235, 1)', 'rgba(75, 192, 192, 1)', 'rgba(255, 206, 86, 1)', 'rgba(255, 99, 132, 1)', 'rgba(153, 102, 255, 1)'],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        }
+
+        // Display the initial chart for the first branch
+        displayChart("branchA");
+    </script>
+
 
 </body>
 
