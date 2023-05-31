@@ -265,7 +265,7 @@ p {
   padding: 10px 20px;
   border-radius: 15px;
   width: 100%;
-  background-color:  rgba(#94f2ba, $alpha: 0.4) ;
+  background-color: rgba(#94f2ba, $alpha: 0.4);
   font-size: 1.8rem;
   font-family: "bold";
   color: var(--color-dark);
@@ -1047,7 +1047,6 @@ order {
   font-size: 32px;
   color: var(--color-dark);
   font-family: "bold";
-  padding-bottom: 4%;
 }
 
 .system .main .card {
@@ -1539,4 +1538,91 @@ span.closed {
   display: none;
 }
 
+.information {
+  margin: 3% 0;
+
+  .tab_info {
+    width: 30%;
+    padding: 4% 0;
+
+    .nav-link {
+      border: 1px solid var(--color-third);
+      background-color: var(--color-white);
+      font-size: 1rem;
+      font-family: 'regular';
+      transition: .25s all ease-in-out;
+      color: var(--color-dark);
+      margin-bottom: 3%;
+      border-radius: 15px;
+
+      &:hover {
+        border: 1px solid var(--color-third);
+        font-family: 'bold';
+        background-color: rgba(#94f2ba, $alpha: 0.34);
+      }
+    }
+
+    .nav-link.active {
+      border: 1px solid var(--color-third);
+      font-family: 'bold';
+      background-color: rgba(#94f2ba, $alpha: 0.34);
+    }
+  }
+
+  .tab-content {
+    padding-inline-start: 3%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+
+    .tab-pane {
+      .box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .card{
+          width: 45%;
+          margin-inline-end: 2%;
+          margin-bottom: 2%;
+        }
+      }
+    }
+  }
+}
+
+.copmrision{
+  margin: 3% 0;
+  .tab-content{
+    width:60%;
+    #myChart1{
+      width: 100% !important;
+    }
+  }
+  .nav{
+    width: 30%;
+    padding-inline-start: 4%;
+    margin: 3% 0;
+    .nav-link {
+      border: 1px solid var(--color-third);
+      background-color: var(--color-white);
+      font-size: 1rem;
+      font-family: 'regular';
+      transition: .25s all ease-in-out;
+      color: var(--color-dark);
+      margin-bottom: 3%;
+      border-radius: 15px;
+
+      &:hover {
+        border: 1px solid var(--color-third);
+        font-family: 'bold';
+        background-color: rgba(#94f2ba, $alpha: 0.34);
+      }
+    }
+
+    .nav-link.active {
+      border: 1px solid var(--color-third);
+      font-family: 'bold';
+      background-color: rgba(#94f2ba, $alpha: 0.34);
+    }
+  }
+}
 /* finish dark && light  */
