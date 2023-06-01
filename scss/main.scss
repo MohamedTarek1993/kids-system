@@ -1626,3 +1626,19 @@ span.closed {
   }
 }
 /* finish dark && light  */
+
+.container_page{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  .sidebar{
+    width: 20%;
+    height: 100%;
+  }
+  .contect_side{
+    width: 80%;
+    // padding-inline-start: 3%;
+  }
+}
