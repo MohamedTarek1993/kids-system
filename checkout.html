@@ -5,10 +5,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Regular Visit</title>
+    <title> Ckeckout</title>
     <!-- main css -->
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-select.min.css" />
     <link rel="stylesheet" href="scss/main.min.css" />
     <!-- responsive -->
     <link rel="stylesheet" href="css/responsive.css">
@@ -185,84 +186,90 @@
 
 
                     </div>
+                    <form action="">
+                        <div class="all-order">
 
-                    <div class="all-order">
-                        <ul class="tabs_visis">
-                            <li>
-                                <a href="regular-visits.html"> Daily Visits</a>
+                            <h2 class="main_head"> checkout</h2>
+                            <div class="checkout">
 
-                            </li>
-                            <li class="active">
-                                <a href="new-visit.html"> New Visit</a>
 
-                            </li>
-                        </ul>
-                        <h2 class="main_head"> Dialy Visit</h2>
+                                <P>- you used <span>20Hours</span> , none were prepaid for Total <span>1500 LE
+                                        ,<span>0:00</span> prepaid hoursleft</P>
+                                <h2>total hours activity(hout used by each child)</h2>
 
-                        <!-- في حالة  وجود  طلبات -->
+                                <table id="tableOrder" style="width:100%" class=" display table-responsive table">
+                                    <thead>
+                                        <tr>
+                                            <th> Child</th>
+                                            <th> Time In</th>
+                                            <th> Time Out</th>
+                                            <th>Elapsed </th>
+                                            <th>Charged </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
 
-                        <table id="tableOrder" style="width:100%" class=" display table-responsive table">
-                            <thead>
-                                <tr>
-                                    <th> No</th>
-                                    <th> Childs</th>
-                                    <th> Parent</th>
-                                    <th> Phone</th>
-                                    <th> Check-In</th>
-                                    <th> Check-Out</th>
-                                    <th> Status</th>
-                                    <th>Edit </th>
-                                </tr>
-                            </thead>
-                            <tbody>
+                                        <tr>
+                                            <td data-label="Child">Awab Mohamed </td>
+                                            <td data-label="Time In">
+                                                1:30 A:M </td>
+                                            <td data-label="Time Out">3:30 A:M </td>
+                                            <td data-label="Elapsed">7500 </td>
+                                            <td data-label="Charged">8500</td>
 
-                                <tr>
-                                    <td data-label="No">#251422 </td>
-                                    <td data-label="Childs">
-                                        Ahmed,Mohammed,Ali </td>
-                                    <td data-label="Parent">
-                                        Ahmed </td>
-                                    <td data-label="Phone">010931420</td>
-                                    <td data-label="Check-In">19/5/2023</td>
-                                    <td data-label="Check-In"> </td>
-                                    <td data-label="Status">
-                                     <a href="checkout.html">  <span class="check">Check Out</span> </a>     
-                                    </td>
-                                    <td data-label="Edit">
-                                        <a data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Edit Visit"
-                                            href="edit-visit.html" class="edit"> <i class="bi bi-pencil-square"></i></a>
-                                        <a data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Show Visit"
-                                            href="show-visit.html" class="edit"> <i class="bi bi-eye"></i></a>
 
-                                    </td>
-                                </tr>
+                                        </tr>
 
-                                <tr>
-                                    <td data-label="No">#251422 </td>
-                                    <td data-label="Childs">
-                                        Ahmed,Mohammed,Ali </td>
-                                    <td data-label="Parent">
-                                        Ahmed </td>
-                                    <td data-label="Phone">010931420</td>
-                                    <td data-label="Check-In">19/5/2023</td>
-                                    <td data-label="Check-In"> 19/5/2023 11:15PM </td>
-                                    <td data-label="Status">
-                                        <span class="closed">Visit Closed</span>
-                                    </td>
-                                    <td data-label="Edit">
-                                        <a data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Show Visit"
-                                            href="show-visit.html" class="edit"> <i class="bi bi-eye"></i></a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+
+
+                                    </tbody>
+                                </table>
+
+                                <h2>todays Hourlys billing</h2>
+                                <table id="tableOrder1" style="width:100%" class=" display table-responsive table">
+                                    <thead>
+                                        <tr>
+                                            <th> Action</th>
+                                            <th> Hours Applied</th>
+                                            <th> Nannies</th>
+                                            <th>Art </th>
+                                            <th>Item </th>
+                                            <th>Cost </th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        <tr>
+                                            <td data-label="Action">Buy </td>
+                                            <td data-label="Hours Applied">
+                                                5.30</td>
+                                            <td data-label="Nannies"></td>
+                                            <td data-label="Art">7500 </td>
+                                            <td data-label="Item">8500</td>
+                                            <td data-label="Item">18500</td>
+
+
+                                        </tr>
+
+
+
+                                    </tbody>
+                                </table>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" name="" id="" placeholder="Applied Cupon">
+                                    <button class="btn first"> Applied</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+
+                    </form>
                 </div>
             </div>
         </div>
     </section>
-
-
     <div class="lower_footer">
         <div class="container">
             <p style="text-align: center; color: white;">© 2023 <a style="color: #f2a922;"
@@ -270,30 +277,127 @@
             </p>
         </div>
     </div>
-
     <!---------------------- finish footer -------------------------------------------->
+
+    <!-- modal check out -->
+    <div class="modal modal_checkout fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <P>- you used <span>20Hours</span> , none were prepaid for Total <span>1500 LE ,<span>0:00</span>
+                            prepaid hoursleft</P>
+                    <h2>total hours activity(hout used by each child)</h2>
+
+                    <table id="tableOrder" style="width:100%" class=" display table-responsive table">
+                        <thead>
+                            <tr>
+                                <th> Child</th>
+                                <th> Time In</th>
+                                <th> Time Out</th>
+                                <th>Elapsed </th>
+                                <th>Charged </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td data-label="Child">Awab Mohamed </td>
+                                <td data-label="Time In">
+                                    1:30 A:M </td>
+                                <td data-label="Time Out">3:30 A:M </td>
+                                <td data-label="Elapsed">7500 </td>
+                                <td data-label="Charged">8500</td>
+
+
+                            </tr>
+
+
+
+                        </tbody>
+                    </table>
+
+                    <h2>todays Hourlys billing</h2>
+                    <table id="tableOrder1" style="width:100%" class=" display table-responsive table">
+                        <thead>
+                            <tr>
+                                <th> Action</th>
+                                <th> Hours Applied</th>
+                                <th> Nannies</th>
+                                <th>Art </th>
+                                <th>Item </th>
+                                <th>Cost </th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td data-label="Action">Buy </td>
+                                <td data-label="Hours Applied">
+                                    5.30</td>
+                                <td data-label="Nannies"></td>
+                                <td data-label="Art">7500 </td>
+                                <td data-label="Item">8500</td>
+                                <td data-label="Item">18500</td>
+
+
+                            </tr>
+
+
+
+                        </tbody>
+                    </table>
+                    <div class="input-group">
+                        <input type="text" class="form-control" name="" id="" placeholder="Applied Cupon">
+                        <button class="btn first"> Applied</button>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal check out -->
+
 
     <!-- main js -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
     <script src="js/main.js"></script>
     <!-- main js -->
     <!-- sweet alert -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- sweet alert -->
+    <!-- chart tabel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+    <!-- chart tabel -->
     <!-- data table -->
     <script src="js/data-table.js"></script>
     <script>
         $(document).ready(function () {
-            $('#tableOrder').DataTable();
+            $('#tableOrder').DataTable({
+                searching: false, // Remove search box
+                paging: false, // Remove pagination
+                info: false // Remove table information
+            });
+        });
+
+        $(document).ready(function () {
+            $('#tableOrder1').DataTable({
+                searching: false, // Remove search box
+                paging: false, // Remove pagination
+                info: false // Remove table information
+            });
         });
     </script>
 
-    <!-- data table -->
-    <script>
-        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-    </script>
 
 
 </body>

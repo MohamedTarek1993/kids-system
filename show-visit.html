@@ -208,30 +208,32 @@
                                         <div class="accordion-body">
                                             <div class="row row_det">
 
-                                                <div class="col-lg-6 col-12">
-                                                    <div class="input-group">
+                                                <div class="col-lg-4 col-12">
+                                                    <div class="input-group input-group-width">
                                                         <label class="form-label">
                                                             Check-In
                                                         </label>
-                                                        <input type="text" class="form-control">
+                                                        <input type="text" class="form-control w-100">
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-6 col-12">
-                                                    <div class="input-group">
+                                                <div class="col-lg-4 col-12">
+                                                    <div class="input-group input-group-width">
                                                         <label class="form-label">
                                                             Check-Out
                                                         </label>
-                                                        <input type="text" class="form-control">
+                                                        <input type="text" class="form-control w-100">
 
                                                     </div>
-                                                    <button class="btn check">Make Check-Out</button>
+                                                    <button type="button" data-bs-toggle="modal"
+                                                        data-bs-target="#exampleModal" class="btn check">Make
+                                                        Check-Out</button>
                                                 </div>
-                                                <div class="col-12">
+                                                <div class="col-lg-4 col-12 ">
                                                     <div class="input-group input-group-width">
                                                         <label class="form-label">
                                                             Add Item
                                                         </label>
-                                                        <select id="item-select" class="selectpicker" multiple
+                                                        <select id="item-select" class="selectpicker " multiple
                                                             data-selected-text-format="count > 1"
                                                             data-icon="bi bi-trash" data-live-search="true">
                                                             <option value="1">Item1</option>
@@ -289,7 +291,7 @@
                                         <div class="accordion-body">
                                             <div class="row row_det">
 
-                                                <div class="col-lg-6 col-12">
+                                                <div class="col-lg-4 col-12">
                                                     <div class="input-group">
                                                         <label class="form-label">
                                                             Check-In
@@ -297,7 +299,7 @@
                                                         <input type="text" class="form-control">
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-6 col-12">
+                                                <div class="col-lg-4 col-12">
                                                     <div class="input-group">
                                                         <label class="form-label">
                                                             Check-Out
@@ -307,7 +309,7 @@
                                                     </div>
                                                     <button class="btn check">Make Check-Out</button>
                                                 </div>
-                                                <div class="col-12">
+                                                <div class="col-lg-4 col-12">
                                                     <div class="input-group input-group-width">
                                                         <label class="form-label">
                                                             Add Item
@@ -386,6 +388,92 @@
     </div>
     <!---------------------- finish footer -------------------------------------------->
 
+    <!-- modal check out -->
+    <div class="modal modal_checkout fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <P>- you used <span>20Hours</span> , none were prepaid for Total <span>1500 LE  ,<span>0:00</span> prepaid hoursleft</P>
+                        <h2>total hours activity(hout used by each child)</h2>
+
+                    <table id="tableOrder" style="width:100%" class=" display table-responsive table">
+                        <thead>
+                            <tr>
+                                <th> Child</th>
+                                <th> Time In</th>
+                                <th> Time Out</th>
+                                <th>Elapsed </th>
+                                <th>Charged </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td data-label="Child">Awab Mohamed </td>
+                                <td data-label="Time In">
+                                    1:30 A:M </td>
+                                <td data-label="Time Out">3:30 A:M </td>
+                                <td data-label="Elapsed">7500 </td>
+                                <td data-label="Charged">8500</td>
+
+
+                            </tr>
+
+
+
+                        </tbody>
+                    </table>
+
+                    <h2>todays Hourlys billing</h2>
+                    <table id="tableOrder1" style="width:100%" class=" display table-responsive table">
+                        <thead>
+                            <tr>
+                                <th> Action</th>
+                                <th> Hours Applied</th>
+                                <th> Nannies</th>
+                                <th>Art </th>
+                                <th>Item </th>
+                                <th>Cost </th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td data-label="Action">Buy </td>
+                                <td data-label="Hours Applied">
+                                    5.30</td>
+                                <td data-label="Nannies"></td>
+                                <td data-label="Art">7500 </td>
+                                <td data-label="Item">8500</td>
+                                <td data-label="Item">18500</td>
+
+
+                            </tr>
+
+
+
+                        </tbody>
+                    </table>
+                <div class="input-group">
+                    <input type="text"  class="form-control" name="" id="" placeholder="Applied Cupon">
+                    <button class="btn first" > Applied</button>
+                </div>
+                
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal check out -->
+
+
     <!-- main js -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-3.5.1.min.js"></script>
@@ -402,7 +490,19 @@
     <script src="js/data-table.js"></script>
     <script>
         $(document).ready(function () {
-            $('#tableOrder').DataTable();
+            $('#tableOrder').DataTable({
+                searching: false, // Remove search box
+                paging: false, // Remove pagination
+                info: false // Remove table information
+            });
+        });
+
+        $(document).ready(function () {
+            $('#tableOrder1').DataTable({
+                searching: false, // Remove search box
+                paging: false, // Remove pagination
+                info: false // Remove table information
+            });
         });
     </script>
 

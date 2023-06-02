@@ -46,12 +46,12 @@
             <div class="container_page">
                 <!-- <div class="col-lg-2 col-md-5 col- px-0"> -->
                 <!-- strat side bar -->
-                <div class="sidebar">
-                    <div class="logo">
+                <div class="sidebar collapsed  ">
+                    <div class="logo ">
                         <img src="image/Icon-Grey.png" alt="">
-                        <span class="toggle_menu">
+                        <div class="toggle_menu">
                             <i class="bi bi-list"></i>
-                        </span>
+                        </div>
                         <div class="upper_section_res">
                             <div class="info">
                                 <img src="image/per1.png" alt="person">
@@ -63,7 +63,7 @@
                     <ul class="menu-side-bar">
                         <li class="side-item">
                             <a class="side-link active" href="index.html">
-                                
+                                <i class="bi bi-person-square"></i>
                                 Dashboard
                             </a>
                         </li>
@@ -73,6 +73,7 @@
                                     <i class="bi bi-chevron-right"></i>
                                 </span>
                                 <i class="bi bi-person-square"></i>
+
                                 Admines
                             </button>
                             <!-- drop-menu -->
@@ -183,9 +184,145 @@
                     </ul>
                 </div>
                 <!-- strat side bar -->
+
+                <!-- start sidebar collapsed -->
+                <div class="sidebar sidebar_resize ">
+                    <div class="logo ">
+                        <img src="image/Icon-Grey.png" alt="">
+                        <div class="toggle_menu">
+                            <i class="bi bi-list"></i>
+                        </div>
+                        <!-- <div class="upper_section_res">
+                            <div class="info">
+                                <img src="image/per1.png" alt="person">
+                                <h6> Admin Name </h6>
+                            </div>
+                        </div> -->
+
+                    </div>
+                    <ul class="menu-side-bar">
+                        <li class="side-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Dashboard">
+                            <a class="side-link active" href="index.html">
+                                <i class="bi bi-person-square"></i>
+
+                            </a>
+                        </li>
+                        <li class="side-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Admin">
+                            <button class="dropdown-btn btn">
+                                <span>
+                                    <i class="bi bi-chevron-right"></i>
+                                </span>
+                                <i class="bi bi-person-square"></i>
+
+                            </button>
+                            <!-- drop-menu -->
+                            <div class="dropdown-container">
+                                <a class="side-link" href="all-admins.html"> All Admines</a>
+                                <a class="side-link " href="create-admin.html"> Create Admines </a>
+                            </div>
+                            <!-- drop-menu -->
+                        </li>
+                        <li class="side-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Users">
+                            <button class="dropdown-btn btn">
+                                <span>
+                                    <i class="bi bi-chevron-right"></i>
+                                </span>
+                                <i class="bi bi-person-fill"></i>
+
+                            </button>
+                            <!-- drop-menu -->
+                            <div class="dropdown-container">
+                                <a class="side-link" href="all-users.html"> All Users</a>
+                                <a class="side-link" href="create-user.html"> Create Users </a>
+
+
+                            </div>
+                            <!-- drop-menu -->
+                        </li>
+                        <li class="side-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Regular Visits">
+                            <a class="side-link" href="regular-visits.html">
+                                <i class="bi bi-card-heading"></i>
+
+                            </a>
+                        </li>
+
+                        <li class="side-item" data-bs-toggle="tooltip" data-bs-placement="right" title="New Visit">
+                            <a class="side-link" href="new-visit.html">
+                                <i class="bi bi-file-earmark-plus-fill"></i>
+
+                            </a>
+                        </li>
+
+                        <li class="side-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Branches">
+                            <button class="dropdown-btn btn">
+                                <span>
+                                    <i class="bi bi-chevron-right"></i>
+                                </span>
+                                <i class="bi bi-bar-chart-steps"></i>
+
+
+                            </button>
+                            <!-- drop-menu -->
+                            <div class="dropdown-container">
+                                <a class="side-link" href="all-branches.html"> All Branches</a>
+                                <a class="side-link" href="create-branche.html"> Create Branches </a>
+
+
+                            </div>
+                            <!-- drop-menu -->
+                        </li>
+
+                        <li class="side-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Items">
+                            <button class="dropdown-btn btn">
+                                <span>
+                                    <i class="bi bi-chevron-right"></i>
+                                </span>
+                                <i class="bi bi-diagram-2"></i>
+                            </button>
+                            <!-- drop-menu -->
+                            <div class="dropdown-container">
+                                <a class="side-link" href="all-item.html"> All Items</a>
+                                <a class="side-link" href="create-item.html"> Create Items </a>
+                            </div>
+                            <!-- drop-menu -->
+                        </li>
+
+                        <li class="side-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Arts">
+                            <button class="dropdown-btn btn">
+                                <span>
+                                    <i class="bi bi-chevron-right"></i>
+                                </span>
+                                <i class="bi bi-brush-fill"></i>
+
+                            </button>
+                            <!-- drop-menu -->
+                            <div class="dropdown-container">
+                                <a class="side-link" href="all-art.html"> All Arts</a>
+                                <a class="side-link" href="create-arts.html l "> Create Arts </a>
+                            </div>
+                            <!-- drop-menu -->
+                        </li>
+
+                        <li class="side-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Settings">
+                            <a class="side-link" href="settings.html">
+                                <i class="bi bi-gear-fill"></i>
+
+                            </a>
+                        </li>
+                        <li class="side-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Logout">
+                            <a class="side-link" href="#">
+                                <i class="bi bi-box-arrow-left"></i>
+
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- start sidebar collapsed -->
+
                 <!-- </div> -->
                 <!-- <div class="col-lg-10 col-md-7 col-12 px-0"> -->
-                <div class="contect_side">
+                <div class="contect_side change">
                     <div class="upper_section">
                         <div class="time">
                             <span> Time : </span>
@@ -208,6 +345,168 @@
                         <div class="information create_admin">
                             <h2 class="main_head">
                                 Daily Statistics
+                            </h2>
+                            <!-- start daily report -->
+                            <div class="d-flex align-items-start">
+                                <div class="nav flex-column nav-pills me-3 tab_info" id="v-pills-tab" role="tablist"
+                                    aria-orientation="vertical">
+                                    <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-home" type="button" role="tab"
+                                        aria-controls="v-pills-home" aria-selected="true">All Branches</button>
+                                    <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-profile" type="button" role="tab"
+                                        aria-controls="v-pills-profile" aria-selected="false">Branch 1</button>
+                                    <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-messages" type="button" role="tab"
+                                        aria-controls="v-pills-messages" aria-selected="false">Branch 2</button>
+                                    <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-settings" type="button" role="tab"
+                                        aria-controls="v-pills-settings" aria-selected="false">Branch 3</button>
+                                </div>
+                                <div class="tab-content" id="v-pills-tabContent">
+                                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                                        aria-labelledby="v-pills-home-tab">
+                                        <div class="box">
+                                            <div class="card">
+                                                <img src="image/card1.png" alt="card1">
+                                                <div class="text">
+                                                    <h5> Total No.Of Childern </h5>
+                                                    <h6>5 Childern / 6 Vists </h6>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <img src="image/card2.png" alt="card2">
+                                                <div class="text">
+                                                    <h5> Total Sales</h5>
+                                                    <h6>500 Sales </h6>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <img src="image/card3.png" alt="card3">
+                                                <div class="text">
+                                                    <h5> Art</h5>
+                                                    <h6>1000 LE /64 Unites</h6>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <img src="image/card3.png" alt="card3">
+                                                <div class="text">
+                                                    <h5> Snackes</h5>
+                                                    <h6>1000 LE /64 Unites</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                                        aria-labelledby="v-pills-profile-tab">
+                                        <div class="box">
+                                            <div class="card">
+                                                <img src="image/card1.png" alt="card1">
+                                                <div class="text">
+                                                    <h5> Total No.Of Childern </h5>
+                                                    <h6>5 Childern / 6 Vists </h6>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <img src="image/card2.png" alt="card2">
+                                                <div class="text">
+                                                    <h5> Total Sales</h5>
+                                                    <h6>500 Sales </h6>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <img src="image/card3.png" alt="card3">
+                                                <div class="text">
+                                                    <h5> Art</h5>
+                                                    <h6>1000 LE /64 Unites</h6>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <img src="image/card3.png" alt="card3">
+                                                <div class="text">
+                                                    <h5> Snackes</h5>
+                                                    <h6>1000 LE /64 Unites</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                                        aria-labelledby="v-pills-messages-tab">
+                                        <div class="box">
+                                            <div class="card">
+                                                <img src="image/card1.png" alt="card1">
+                                                <div class="text">
+                                                    <h5> Total No.Of Childern </h5>
+                                                    <h6>5 Childern / 6 Vists </h6>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <img src="image/card2.png" alt="card2">
+                                                <div class="text">
+                                                    <h5> Total Sales</h5>
+                                                    <h6>500 Sales </h6>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <img src="image/card3.png" alt="card3">
+                                                <div class="text">
+                                                    <h5> Art</h5>
+                                                    <h6>1000 LE /64 Unites</h6>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <img src="image/card3.png" alt="card3">
+                                                <div class="text">
+                                                    <h5> Snackes</h5>
+                                                    <h6>1000 LE /64 Unites</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                                        aria-labelledby="v-pills-settings-tab">
+                                        <div class="box">
+                                            <div class="card">
+                                                <img src="image/card1.png" alt="card1">
+                                                <div class="text">
+                                                    <h5> Total No.Of Childern </h5>
+                                                    <h6>5 Childern / 6 Vists </h6>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <img src="image/card2.png" alt="card2">
+                                                <div class="text">
+                                                    <h5> Total Sales</h5>
+                                                    <h6>500 Sales </h6>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <img src="image/card3.png" alt="card3">
+                                                <div class="text">
+                                                    <h5> Art</h5>
+                                                    <h6>1000 LE /64 Unites</h6>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <img src="image/card3.png" alt="card3">
+                                                <div class="text">
+                                                    <h5> Snackes</h5>
+                                                    <h6>1000 LE /64 Unites</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- finish daily report -->
+
+                        </div>
+
+
+                        <div class="information create_admin">
+                            <h2 class="main_head">
+                                Current Statistics
                             </h2>
                             <!-- start daily report -->
                             <div class="d-flex align-items-start">
@@ -433,6 +732,36 @@
 
                         </div>
                         <!-- finish coprision branches -->
+                        <!-- start best selling unite -->
+                        <div class="selling_unites create_admin">
+                            <h2 class="main_head">
+                                Selling Unites
+                            </h2>
+                            <div class="filter_sec">
+                                <div class="row">
+                                    <div class="col-lg-4 col-12">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- finish best selling unite -->
+
+                        <!-- start parent visit -->
+                        <div class="parent_visit                             create_admin">
+                            <h2 class="main_head">
+                                Parent Visit
+                            </h2>
+                            <div class="filter_sec">
+                                <div class="row">
+                                    <div class="col-lg-4 col-12">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- finish parent visit -->
+
                     </div>
                 </div>
 
@@ -688,8 +1017,34 @@
         });
     </script>
 
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var toggleButton = document.querySelectorAll('.toggle_menu');
+            var sidebarExpanded = document.querySelector('.sidebar:not(.sidebar_resize)');
+            var sidebarCollapsed = document.querySelector('.sidebar_resize');
+            var contentCollapsed = document.querySelector('.contect_side');
 
 
+            toggleButton.forEach(function (button) {
+                button.addEventListener('click', function () {
+                    sidebarExpanded.classList.toggle('collapsed');
+                    sidebarCollapsed.classList.toggle('collapsed');
+                    contentCollapsed.classList.toggle('change');
+
+                });
+            });
+        });
+    </script>
+
+
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+
+    </script>
 
 
 </body>

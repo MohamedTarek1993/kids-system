@@ -133,7 +133,7 @@ p {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  margin-top: 3rem;
+  margin-top: 10px;
   width: 70%;
 
   .first {
@@ -689,7 +689,7 @@ input {
     align-items: flex-start;
     flex-direction: column;
     padding: 3% 0% 1% 2%;
-    margin: 7% 0;
+    margin: 24% 0 8%;
 
     .side-item {
       width: 100%;
@@ -946,9 +946,9 @@ order {
 
 .system {
   .all-order {
-    margin: 5%;
+    margin: 3%;
     background-color: var(--color-white);
-    padding: 3%;
+    padding: 1%;
     border-radius: 8px;
 
     .dataTables_length {
@@ -1320,7 +1320,7 @@ order {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin: 5% 0;
+  margin: 2% 0;
 
   li {
     background-color: var(--color-third);
@@ -1579,7 +1579,8 @@ span.closed {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        .card{
+
+        .card {
           width: 45%;
           margin-inline-end: 2%;
           margin-bottom: 2%;
@@ -1589,18 +1590,22 @@ span.closed {
   }
 }
 
-.copmrision{
+.copmrision {
   margin: 3% 0;
-  .tab-content{
-    width:60%;
-    #myChart1{
+
+  .tab-content {
+    width: 60%;
+
+    #myChart1 {
       width: 100% !important;
     }
   }
-  .nav{
+
+  .nav {
     width: 30%;
     padding-inline-start: 4%;
     margin: 3% 0;
+
     .nav-link {
       border: 1px solid var(--color-third);
       background-color: var(--color-white);
@@ -1625,20 +1630,171 @@ span.closed {
     }
   }
 }
+
 /* finish dark && light  */
 
-.container_page{
+.container_page {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
   width: 100%;
-  .sidebar{
-    width: 20%;
+
+  .sidebar {
     height: 100%;
+    width: 20%;
   }
-  .contect_side{
+
+  .contect_side {
     width: 80%;
     // padding-inline-start: 3%;
+  }
+}
+
+.sidebar.collapsed {
+  width: 20% !important;
+  transition: all 0.3s ease;
+  display: none;
+  /* Initially hide the first sidebar */
+}
+
+.sidebar.show {
+  display: block;
+  /* Show the first sidebar when the "show" class is added */
+}
+
+.sidebar_resize {
+  width: 6% !important;
+  transition: .25s all ease-in;
+}
+
+.logo {}
+
+.logo img {}
+
+.toggle_menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-third);
+  color: var(--color-dark);
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  padding: 10px;
+  transition: .25s all ease-in;
+  border-radius: 10px;
+}
+
+.toggle_menu:hover {
+  background-color: #e4f0f2;
+}
+
+.contect_side.change {
+  width: 94%;
+  transition: .25s all ease-in;
+}
+
+.sidebar.sidebar_resize {
+  .logo {
+    width: 100%;
+    height: 49px;
+    object-fit: cover;
+    transition: .25s all ease-in;
+
+  }
+
+  .menu-side-bar {
+    margin-top: 70px;
+
+    .side-link {
+      font-size: .6rem;
+    }
+  }
+
+  .toggle_menu {
+    width: 29px;
+    height: 32px;
+  }
+}
+
+.modal_checkout {
+  .modal-dialog {
+    max-width: 830px;
+
+    .modal-content {
+      .modal-body {
+        p {
+          color: var(--color-siven);
+          font-size: 1rem;
+          font-family: 'light';
+          text-transform: capitalize;
+
+          span {
+            color: var(--color-dark);
+            font-family: 'regular';
+            font-size: 1.2rem;
+          }
+        }
+
+        h2 {
+          font-size: 1.3rem;
+          color: var(--color-dark);
+          font-family: 'bold';
+          text-transform: capitalize;
+          margin-top: 3%;
+
+        }
+
+        .input-group {
+          .first {
+            border: 1px solid var(--color-third);
+            margin-inline-start: 4%;
+            font-size: 1rem;
+            font-family: 'regular';
+          }
+        }
+      }
+    }
+  }
+}
+
+table.dataTable.display tbody tr.odd>.sorting_1,
+table.dataTable.system-column.stripe tbody tr.odd>.sorting_1 {
+  color: var(--color-dark);
+}
+
+.all-order {
+  .checkout {
+    p {
+      color: var(--color-siven);
+      font-size: 1rem;
+      font-family: 'light';
+      text-transform: capitalize;
+
+      span {
+        color: var(--color-dark);
+        font-family: 'regular';
+        font-size: 1.2rem;
+      }
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      color: var(--color-dark);
+      font-family: 'bold';
+      text-transform: capitalize;
+      margin-top: 3%;
+
+    }
+
+    .input-group {
+      .first {
+        border: 1px solid var(--color-third);
+        margin-inline-start: 4%;
+        font-size: 1rem;
+        font-family: 'regular';
+      }
+    }
   }
 }

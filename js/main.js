@@ -90,18 +90,18 @@ const light = document.getElementById('light');
 const enableDarkMode = () => {
   // 1. Add the class to the body
   document.body.classList.add('darkmode');
-   // 2. toggle classes
+  // 2. toggle classes
   dark.style.display = "none";
   light.style.display = "block";
   // 3. Update darkMode in localStorage
   localStorage.setItem('darkMode', 'enabled');
- 
-  
+
+
 }
 const disableDarkMode = () => {
   // 1. Remove the class from the body
   document.body.classList.remove('darkmode');
-       // 2. toggle classes
+  // 2. toggle classes
 
   light.style.display = "none";
   dark.style.display = "block";
@@ -120,7 +120,7 @@ darkModeToggle.addEventListener('click', () => {
   darkMode = localStorage.getItem('darkMode');
   // logoLight.style.display = "block";
   // logoDark.style.display = "none";
-  
+
 
 
   // if it not current enabled, enable it
@@ -130,15 +130,30 @@ darkModeToggle.addEventListener('click', () => {
     // change logo 
     // logoLight.style.display = "none";
     // logoDark.style.display = "block";
-   
+
 
 
   } else {
     disableDarkMode();
- 
 
   }
 });
 
 //    light&& dark
+
+document.addEventListener('DOMContentLoaded', function() {
+  var toggleButton = document.querySelector('.toggle_menu');
+  var sidebarExpanded = document.querySelector('.collapsed');
+  var sidebarCollapsed = document.querySelector('.sidebar_resize');
+  var contentCollapsed = document.querySelector('.contect_side');
+
+  toggleButton.addEventListener('click', function() {
+    sidebarExpanded.classList.toggle('show');
+    sidebarCollapsed.classList.toggle('show');
+    contentCollapsed.classList.toggle('change');
+
+    
+  });
+});
+
 
