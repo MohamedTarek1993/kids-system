@@ -9,7 +9,12 @@
     <!-- main css -->
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-select.min.css" />
     <link rel="stylesheet" href="scss/main.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.css"
+        integrity="sha512-YdYyWQf8AS4WSB0WWdc3FbQ3Ypdm0QCWD2k4hgfqbQbRCJBEgX0iAegkl2S1Evma5ImaVXLBeUkIlP6hQ1eYKQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css" />
     <!-- responsive -->
     <link rel="stylesheet" href="css/responsive.css">
     <!-- data table -->
@@ -740,22 +745,76 @@
                             <div class="filter_sec">
                                 <div class="row">
                                     <div class="col-lg-4 col-12">
+                                        <div class="input-group">
+                                        <label  class="form-label"> Choose Label </label>
+                                            <select class="selectpicker" multiple data-selected-text-format="count > 1"
+                                                data-icon="bi bi-trash" data-live-search="true">
 
+                                                <option value="1">Branch 1</option>
+                                                <option value="2">Branch 2</option>
+                                                <option value="3">Branch 3</option>
+                                                <option value="3">Over All</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-12">
+                                        <label  class="form-label"> Choose Date </label>
+                                        <input class="form-control" type="text" id="datepicker" readonly>
+                                        <button class="btn" id="openCalendarButton">Date</button>
+                                    </div>
+                                    <div class="col-lg-4 col-12">
+                                        <label  class="form-label"> Choose Topic </label>
+                                        <div class="input-group">
+                                            <select class="selectpicker" multiple data-selected-text-format="count > 1"
+                                                data-icon="bi bi-trash" data-live-search="true">
+
+                                                <option value="1">Hours</option>
+                                                <option value="2"> Arts</option>
+                                                <option value="3">Item</option>
+
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
+                                <table id="tableOrder" style="width:100%" class=" display table-responsive table">
+                                    <thead>
+                                        <tr>
+                                            <th> Item</th>
+                                            <th> Unites</th>
+                                            <th> Value</th>
+
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        <tr>
+                                            <td data-label="Item">#251422 </td>
+                                            <td data-label="Unites">
+                                                Ahmed </td>
+                                            <td data-label="Value">010931420</td>
+
+
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                         <!-- finish best selling unite -->
 
                         <!-- start parent visit -->
-                        <div class="parent_visit                             create_admin">
+                        <div class="parent_visit  create_admin">
                             <h2 class="main_head">
                                 Parent Visit
                             </h2>
                             <div class="filter_sec">
                                 <div class="row">
-                                    <div class="col-lg-4 col-12">
-
+                                    <div class="chart" data-aos="zoom-in-left" data-aos-duration="1000">
+                                        <h6> Staticks for parent Visits per Hours in every weekdays</h6>
+                                        
+                                        <canvas id="myChart2"></canvas>
                                     </div>
                                 </div>
                             </div>
@@ -792,6 +851,13 @@
     <!-- chart tabel -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- chart tabel -->
+    <!-- data picker -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.js"
+        integrity="sha512-RCgrAvvoLpP7KVgTkTctrUdv7C6t7Un3p1iaoPr1++3pybCyCsCZZN7QEHMZTcJTmcJ7jzexTO+eFpHk4OCFAg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+    <!-- data picker -->
+    <script src="js/bootstrap-select.min.js"></script>
     <!-- data table -->
     <script src="js/data-table.js"></script>
     <script>
@@ -801,6 +867,13 @@
     </script>
 
     <!-- data table -->
+
+    <script>
+        $(document).ready(function () {
+            $('.form-select').selectpicker();
+        });
+
+    </script>
     <!-- sweet alert for add favorit -->
     <script>
         function acceptAlert() {
@@ -824,146 +897,30 @@
         };
     </script>
     <!-- sweet alert for add favorit -->
-    <!-- charts for no of kids -->
-    <!-- <script>
-        // Create a chart
-        var ctx1 = document.getElementById('myChart1').getContext('2d');
-        var myChart1 = new Chart(ctx1, {
-            type: 'bar',
-            data: {
-                labels: ['Branch 1', 'Branch 2', 'Branch 3'],
-                datasets: [{
-                    label: 'My Dataset',
-                    data: [12, 19, 3],
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 0.2)', // Color for Branch 1
-                        'rgba(54, 162, 235, 0.2)',  // Color for Branch 2
-                        'rgba(255, 206, 86, 0.2)'   // Color for Branch 3
-                    ],
-                    borderColor: [
-                        'rgba(255, 99, 132, 1)',    // Border color for Branch 1
-                        'rgba(54, 162, 235, 1)',    // Border color for Branch 2
-                        'rgba(255, 206, 86, 1)'     // Border color for Branch 3
-                    ],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true,
-                        ticks: {
-                            callback: function (value, index, values) {
-                                return value + 'k';
-                            }
-                        }
-                    }
-                },
-                plugins: {
-                    datalabels: {
-                        anchor: 'end',
-                        align: 'end',
-                        color: 'black',
-                        font: {
-                            weight: 'bold'
-                        },
-                        formatter: function (value, context) {
-                            return value + 'k';
-                        }
-                    }
+
+    <!-- calender js -->
+    <script>
+        $(document).ready(function () {
+            $("#datepicker").datepicker({
+                dateFormat: "yy-mm-dd", // Format the selected date
+                showOn: "button", // Show the datepicker when the button is clicked
+                buttonText: "Select Date", // Button text
+                buttonImageOnly: true, // Only show the button image
+                buttonImage: "https://code.jquery.com/ui/1.13.0/themes/base/images/calendar.svg", // Calendar button image
+                onSelect: function (dateText) {
+                    console.log("Selected date: " + dateText);
                 }
-            }
+            });
+
+            $("#openCalendarButton").on("click", function () {
+                $("#datepicker").datepicker("show"); // Show the datepicker when the button is clicked
+            });
         });
-    </script> -->
-    <!-- charts for no of kids -->
 
-    <!-- charts for no of visit -->
-    <!-- <script>
-        // Create a chart
-        var ctx2 = document.getElementById(' ').getContext('2d');
-        var myChart2 = new Chart(ctx2, {
-            type: 'bar',
-            data: {
-                labels: ['Branch 1', 'Branch 2', 'Branch 3'],
-                datasets: [{
-                    label: 'My Dataset',
-                    data: [12, 19, 3],
-                    backgroundColor: [
-                        'rgba(255, 99, 132, 0.2)', // Color for Branch 1
-                        'rgba(54, 162, 235, 0.2)',  // Color for Branch 2
-                        'rgba(255, 206, 86, 0.2)'   // Color for Branch 3
-                    ],
-                    borderColor: [
-                        'rgba(255, 99, 132, 1)',    // Border color for Branch 1
-                        'rgba(54, 162, 235, 1)',    // Border color for Branch 2
-                        'rgba(255, 206, 86, 1)'     // Border color for Branch 3
-                    ],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true,
-                        ticks: {
-                            callback: function (value, index, values) {
-                                return value + 'k';
-                            }
-                        }
-                    }
-                },
-                plugins: {
-                    datalabels: {
-                        anchor: 'end',
-                        align: 'end',
-                        color: 'black',
-                        font: {
-                            weight: 'bold'
-                        },
-                        formatter: function (value, context) {
-                            return value + 'k';
-                        }
-                    }
-                }
-            }
-        });
-    </script> -->
-    <!-- <script>
-        const DATA_COUNT = 5;
-        const NUMBER_CFG = { count: DATA_COUNT, min: 0, max: 100 };
+    </script>
+    <!-- calender js -->
 
-        const data = {
-            labels: ['Red', 'Orange', 'Yellow', 'Green', 'Blue'],
-            datasets: [
-                {
-                    label: 'Dataset 1',
-                    data: Utils.numbers(NUMBER_CFG),
-                    backgroundColor: Object.values(Utils.CHART_COLORS),
-                }
-            ]
-        };
 
-        const config = {
-            type: 'doughnut',
-            data: data,
-            options: {
-                responsive: true,
-                plugins: {
-                    legend: {
-                        position: 'top',
-                    },
-                    title: {
-                        display: true,
-                        text: 'Chart.js Doughnut Chart'
-                    }
-                }
-            },
-        };
-
-        // Create a chart
-        var ctx = document.getElementById('myChart').getContext('2d');
-        var myChart = new Chart(ctx, config);
-    </script> -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const ctx = document.getElementById("myChart1").getContext("2d");
@@ -1045,7 +1002,83 @@
         })
 
     </script>
+    <!--parent visit-->
 
+    <script>
+        const zy = document.getElementById("myChart2").getContext('2d');
+        const weekdays = [
+            'Sunday',
+            'Monday',
+            'Tuesday',
+            'Wednesday',
+            'Thursday',
+            'Friday',
+            'Saturday'
+        ];
+
+        // Generate labels for hours from 12 PM to 12 AM
+        const hours = [];
+        for (let i = 0; i <= 12; i++) {
+            const hour = (i === 0) ? 12 : i;
+            const label = `${hour} ${i < 12 ? 'AM' : 'PM'}`;
+            hours.push(label);
+        }
+
+        const data3 = {
+            labels: weekdays,
+            datasets: []
+        };
+
+        // Define an array of colors
+        const colors = [
+            'rgba(85, 66, 264, 0.6)',
+            'rgba(255, 99, 132, 0.6)',
+            'rgba(54, 162, 235, 0.6)',
+            'rgba(255, 206, 86, 0.6)',
+            'rgba(75, 192, 192, 0.6)',
+            'rgba(153, 102, 255, 0.6)',
+            'rgba(255, 159, 64, 0.6)'
+        ];
+
+        // Generate a dataset for each hour
+        for (let i = 0; i < hours.length; i++) {
+            const dataset = {
+                label: hours[i],
+                data: [
+                    80, 81, 56, 55, 40, 80, 30 // Replace with actual data values for each weekday and hour
+                ],
+                backgroundColor: colors[i % colors.length], // Assign a different color to each dataset
+                borderColor: 'rgba(85, 66, 264, 1)',
+                borderWidth: 1
+            };
+
+            data3.datasets.push(dataset);
+        }
+
+        const config3 = {
+            type: 'bar',
+            data: data3,
+            options: {
+                responsive: true,
+                indexAxis: 'y', // Set the index axis to y-axis
+                scales: {
+                    x: {
+                        stacked: true,
+                        beginAtZero: true
+                    },
+                    y: {
+                        stacked: true
+                    }
+                }
+            }
+        };
+
+        const myChart3 = new Chart(zy, config3);
+
+
+
+    </script>
+    <!--parent visit-->
 
 </body>
 
