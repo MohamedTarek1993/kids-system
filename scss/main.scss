@@ -813,6 +813,11 @@ input {
   background-color: var(--color-dark);
   position: relative;
   z-index: 100;
+  p{
+    text-align: center;
+     color: white;
+     font-family: 'regular';
+  }
 }
 
 .upper_section {
@@ -1807,4 +1812,8 @@ table.dataTable.system-column.stripe tbody tr.odd>.sorting_1 {
       }
     }
   }
+}
+
+table.dataTable thead th, table.dataTable thead td{
+  color: var(--color-dark);
 }
