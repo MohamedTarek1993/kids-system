@@ -299,3 +299,19 @@
 </body>
 
 </html>
+
+document.addEventListener('DOMContentLoaded', function() {
+    var toggleButton = document.querySelector('.toggle_menu');
+    var sidebarExpanded = document.querySelector('.collapsed');
+    var sidebarCollapsed = document.querySelector('.sidebar_resize');
+    var contentCollapsed = document.querySelector('.contect_side');
+  
+    toggleButton.addEventListener('click', function() {
+      sidebarExpanded.classList.toggle('show');
+      sidebarCollapsed.classList.toggle('show');
+      contentCollapsed.classList.toggle('change');
+  
+      
+    });
+  });
+  

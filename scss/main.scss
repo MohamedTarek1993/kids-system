@@ -1505,7 +1505,7 @@ span.closed {
   }
 
   .bi-moon-fill {
-    color: var(--color-white) !important;
+    color: var(--color-third) !important;
   }
 
 
@@ -1669,7 +1669,7 @@ span.closed {
 }
 
 .sidebar.show {
-  display: block;
+  // display: block;
   /* Show the first sidebar when the "show" class is added */
 }
 

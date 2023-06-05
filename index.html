@@ -974,34 +974,7 @@
         });
     </script>
 
-    <script>
-
-        document.addEventListener('DOMContentLoaded', function () {
-            var toggleButton = document.querySelectorAll('.toggle_menu');
-            var sidebarExpanded = document.querySelector('.sidebar:not(.sidebar_resize)');
-            var sidebarCollapsed = document.querySelector('.sidebar_resize');
-            var contentCollapsed = document.querySelector('.contect_side');
-
-
-            toggleButton.forEach(function (button) {
-                button.addEventListener('click', function () {
-                    sidebarExpanded.classList.toggle('collapsed');
-                    sidebarCollapsed.classList.toggle('collapsed');
-                    contentCollapsed.classList.toggle('change');
-
-                });
-            });
-        });
-    </script>
-
-
-    <script>
-        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-            return new bootstrap.Tooltip(tooltipTriggerEl)
-        })
-
-    </script>
+  
     <!--parent visit-->
 
     <script>
