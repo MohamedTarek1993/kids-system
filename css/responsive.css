@@ -23,6 +23,11 @@
   .sidebar .menu-side-bar {
     margin: 41% 0 8%;
   }
+  .sidebar{
+    /* position: relative; */
+    height: 80vh;
+    min-height: 100%;
+  }
   .upper_section {
     flex-wrap: wrap;
   }
@@ -58,8 +63,12 @@
   .dropdown-btn span {
     right: -5px;
   }
+  span.check, span.closed {
+    width: 29%;}
+    
 }
-
+@media only screen and (max-width: 425px) {
+}
 /* Extra small devices (phones, 767px and down) */
 @media only screen and (max-width: 425px) {
   .sidebar.collapsed{
@@ -86,9 +95,12 @@
 }
 .sidebar{
   margin-bottom: 0;
+  position: relative;
+  min-height: unset;
 }
 .contect_side.change{
   width: 100%;
+  margin-inline-start: 0;
 }
 .upper_section .time{
   width: 100%;
@@ -101,6 +113,13 @@
 }
 .sidebar .menu-side-bar .side-link ,.sidebar .menu-side-bar .dropdown-btn {
   padding: 2% 4%;
+}
+.tabs_visis{
+  flex-wrap: wrap;
+}
+.tabs_visis li{
+width: 50%;
+margin-bottom: 2%;
 }
 }
 
