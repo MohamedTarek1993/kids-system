@@ -1792,9 +1792,13 @@ table.dataTable.system-column.stripe tbody tr.odd>.sorting_1 {
       text-transform: capitalize;
 
       span {
-        color: var(--color-dark);
+        color: var(--color-white);
         font-family: 'regular';
         font-size: 1.2rem;
+        background-color: var(--color-third);
+        border-radius: 10px;
+        padding: 3px;
+
       }
     }
 
@@ -1820,4 +1824,41 @@ table.dataTable.system-column.stripe tbody tr.odd>.sorting_1 {
 
 table.dataTable thead th, table.dataTable thead td{
   color: var(--color-dark);
+}
+.box_budget{
+  margin: 3% 0;
+h6{
+  background-color: var(--color-third);
+  color: var(--color-white);
+  padding: 2%;
+  border-radius: 10px;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-family: 'regular';
+}
+span{
+  display: inline-block;
+  margin-inline-start: 3%;
+  color: var(--color-dark);
+  font-size: 1.2rem;
+  font-family: 'bold';
+}
+}
+
+.checkout_page{
+  .input-group{
+    .form-check-input{
+      background-color: var(--color-third);
+      border-color: var(--color-third);
+    }
+    i{
+      color: var(--color-third);
+      font-size: 1rem;
+    }
+    .form-check-label{
+     color: var(--color-dark);
+     font-size: 1rem;
+     font-family: 'regular';
+    }
+  }
 }

@@ -187,85 +187,159 @@
 
                     </div>
                     <form action="">
-                        <div class="all-order">
+                        <div class="all-order checkout_page ">
 
                             <h2 class="main_head"> checkout</h2>
                             <div class="checkout">
+                                <div class="row">
+                                    <div class="col-lg-4 col-12">
+                                        <div class="box_budget">
+                                            <h6>Parent Name :</h6>
+                                            <span>Ahmed Hassan</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-12">
+                                        <div class="box_budget">
+                                            <h6>Visits NO :</h6>
+                                            <span>7777</span>
+                                        </div>
+                                    </div>
 
+                                    <div class="col-lg-4 col-12">
+                                        <div class="box_budget">
+                                            <h6>No Of Kids:</h6>
+                                            <span>1</span>
+                                        </div>
+                                    </div>
+                                </div>
 
                                 <P>- you used <span>20Hours</span> , none were prepaid for Total <span>1500 LE
                                         ,<span>0:00</span> prepaid hoursleft</P>
-                                <h2>total hours activity(hout used by each child)</h2>
 
-                                <table id="tableOrder" style="width:100%" class=" display table-responsive table">
-                                    <thead>
-                                        <tr>
-                                            <th> Child</th>
-                                            <th> Time In</th>
-                                            <th> Time Out</th>
-                                            <th>Elapsed </th>
-                                            <th>Charged </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
+                               
 
-                                        <tr>
-                                            <td data-label="Child">Awab Mohamed </td>
-                                            <td data-label="Time In">
-                                                1:30 A:M </td>
-                                            <td data-label="Time Out">3:30 A:M </td>
-                                            <td data-label="Elapsed">7500 </td>
-                                            <td data-label="Charged">8500</td>
+                                <div class="row">
+                                    <div class="col-lg-6 col-12">
+                                        <h2>total hours activity(hout used by each child)</h2>
+                                        <table id="tableOrder"
+                                            style="width:100% ; border: 1px solid black; border-collapse: collapse;"
+                                            class=" display table-responsive table">
+                                            <thead>
+                                                <tr>
+                                                    <th> Child</th>
+                                                    <th> Time In</th>
 
+                                                    <th> Time Out</th>
+                                                    <th>Elapsed </th>
+                                                    <th>Charged </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
 
-                                        </tr>
-
-
-
-                                    </tbody>
-                                </table>
-
-                                <h2>todays Hourlys billing</h2>
-                                <table id="tableOrder1" style="width:100%" class=" display table-responsive table">
-                                    <thead>
-                                        <tr>
-                                            <th> Action</th>
-                                            <th> Hours Applied</th>
-                                            <th> Nannies</th>
-                                            <th>Art </th>
-                                            <th>Item </th>
-                                            <th>Cost </th>
-
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-
-                                        <tr>
-                                            <td data-label="Action">Buy </td>
-                                            <td data-label="Hours Applied">
-                                                5.30</td>
-                                            <td data-label="Nannies"></td>
-                                            <td data-label="Art">7500 </td>
-                                            <td data-label="Item">8500</td>
-                                            <td data-label="Item">18500</td>
+                                                <tr>
+                                                    <td data-label="Child">Awab Mohamed </td>
+                                                    <td data-label="Time In">
+                                                        1:30 A:M </td>
+                                                    <td data-label="Time Out">3:30 A:M </td>
+                                                    <td data-label="Elapsed">7500 </td>
+                                                    <td data-label="Charged">8500</td>
 
 
-                                        </tr>
+                                                </tr>
 
 
 
-                                    </tbody>
-                                </table>
-                                <div class="input-group">
-                                    <input type="text" class="form-control" name="" id="" placeholder="Applied Cupon">
-                                    <button class="btn first"> Applied</button>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="col-lg-6 col-12">
+                                        <h2>todays Hourlys billing</h2>
+                                        <table id="tableOrder1"
+                                            style="width:100% ;border: 1px solid black; border-collapse: collapse; "
+                                            class=" display table-responsive table">
+                                            <thead>
+                                                <tr>
+                                                    <th> Action</th>
+                                                    <th> Hours Applied</th>
+                                                    <th> Nannies</th>
+                                                    <th>Art </th>
+                                                    <th>Item </th>
+                                                    <th>Cost </th>
+
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                                <tr>
+                                                    <td data-label="Action">Buy </td>
+                                                    <td data-label="Hours Applied">
+                                                        5.30</td>
+                                                    <td data-label="Nannies"></td>
+                                                    <td data-label="Art">7500 </td>
+                                                    <td data-label="Item">8500</td>
+                                                    <td data-label="Item">18500</td>
+
+
+                                                </tr>
+
+
+
+                                            </tbody>
+                                        </table>
+                                        <h2>Payment methods</h2>
+                                        <div class="input-group w-100 row">
+                                            <div class="col-lg-4 col-12">
+
+                                                <i class="bi bi-cash"></i>
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                    id="flexRadioDefault1">
+                                                <label class="form-check-label" for="flexRadioDefault1">
+                                                    Cash
+                                                </label>
+                                            </div>
+                                            <div class="col-lg-8 col-12">
+                                                <input class="form-control" type="number">
+                                            </div>
+                                        </div>
+                                        <div class="input-group w-100 row">
+                                            <div class="col-lg-4 col-12">
+                                                <i class="bi bi-credit-card"></i>
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                    id="flexRadioDefault2" checked>
+                                                <label class="form-check-label" for="flexRadioDefault2">
+                                                    Visa
+                                                </label>
+                                            </div>
+                                            <div class="col-lg-4 col-12">
+                                                <input placeholder="" class="form-control" type="number">
+                                            </div>
+                                            <div class="col-lg-4 col-12">
+                                                <input placeholder="enter visa no" class="form-control" type="number">
+                                            </div>
+                                        </div>
+
+
+                                        <h2>Aplly Cupon</h2>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" name="" id=""
+                                                placeholder="Applied Cupon">
+                                            <button class="btn first"> Applied</button>
+                                        </div>
+
+
+                                    </div>
                                 </div>
+
+
+
+
 
                             </div>
                             <button type="button" class="btn btn-success">Save changes</button>
-                            <a href="print.html" class="btn btn-info" > Print </a>
+                            <a href="print.html" class="btn btn-info"> Print </a>
                         </div>
-                       
+
 
                     </form>
                 </div>
