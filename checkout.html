@@ -216,7 +216,7 @@
                                 <P>- you used <span>20Hours</span> , none were prepaid for Total <span>1500 LE
                                         ,<span>0:00</span> prepaid hoursleft</P>
 
-                               
+
 
                                 <div class="row">
                                     <div class="col-lg-6 col-12">
@@ -251,11 +251,43 @@
 
                                             </tbody>
                                         </table>
+
+
+                                        <h2>total Extra( used by each child)</h2>
+                                        <table id="tableOrder1"
+                                            style="width:100% ; border: 1px solid black; border-collapse: collapse;"
+                                            class=" display table-responsive table">
+                                            <thead>
+                                                <tr>
+                                                    <th> Child Name</th>
+                                                    <th> Art</th>
+                                                    <th> Snakes</th>
+                                                    <th>Total Snakes </th>
+                                                    <th>Total Extra </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                                <tr>
+                                                    <td data-label="Child Name">Awab Mohamed </td>
+                                                    <td data-label="Art">
+                                                        1:30 A:M </td>
+                                                    <td data-label="Snakes">3:30 A:M </td>
+                                                    <td data-label="Total Snakes">7500 </td>
+                                                    <td data-label="Total Extra">8500</td>
+
+
+                                                </tr>
+
+
+
+                                            </tbody>
+                                        </table>
                                     </div>
 
                                     <div class="col-lg-6 col-12">
                                         <h2>todays Hourlys billing</h2>
-                                        <table id="tableOrder1"
+                                        <table id="tableOrder2"
                                             style="width:100% ;border: 1px solid black; border-collapse: collapse; "
                                             class=" display table-responsive table">
                                             <thead>
@@ -292,6 +324,43 @@
                                             <div class="col-lg-4 col-12">
 
                                                 <i class="bi bi-cash"></i>
+                                                <input class="form-check-input" type="checkbox" name="flexRadioDefault1"
+                                                    id="flexRadioDefault1">
+                                                <label class="form-check-label" for="flexRadioDefault1">
+                                                    Cash
+                                                </label>
+                                            </div>
+                                            <div class="col-lg-8 col-12">
+                                                <input class="form-control" type="number">
+                                            </div>
+                                        </div>
+                                        <div class="input-group w-100 row">
+                                            <div class="col-lg-4 col-12">
+                                                <i class="bi bi-credit-card"></i>
+                                                <input class="form-check-input" type="checkbox" name="flexRadioDefault2"
+                                                    id="flexRadioDefault2" checked>
+                                                <label class="form-check-label" for="flexRadioDefault2">
+                                                    Visa
+                                                </label>
+                                            </div>
+                                            <div class="col-lg-4 col-12">
+                                                <input placeholder="" class="form-control" type="number">
+                                            </div>
+                                            <div class="col-lg-4 col-12">
+                                                <input placeholder="enter Recipet no" class="form-control"
+                                                    type="number">
+                                            </div>
+
+                                        </div>
+
+
+
+                                        <!-- discount detials -->
+                                        <h2>Discoun Detials</h2>
+                                        <div class="input-group w-100 row">
+                                            <div class="col-lg-4 col-12">
+
+                                                <i class="bi bi-cash"></i>
                                                 <input class="form-check-input" type="radio" name="flexRadioDefault"
                                                     id="flexRadioDefault">
                                                 <label class="form-check-label" for="flexRadioDefault">
@@ -304,35 +373,35 @@
                                         </div>
                                         <div class="input-group w-100 row">
                                             <div class="col-lg-4 col-12">
-                                                <i class="bi bi-credit-card"></i>
+                                                <i class="bi bi-percent"></i>
                                                 <input class="form-check-input" type="radio" name="flexRadioDefault"
                                                     id="flexRadioDefault2" checked>
                                                 <label class="form-check-label" for="flexRadioDefault2">
-                                                    Visa
+                                                    Discount
                                                 </label>
                                             </div>
-                                            <div class="col-lg-4 col-12">
+                                            <div class="col-lg-8 col-12">
                                                 <input placeholder="" class="form-control" type="number">
                                             </div>
-                                            <div class="col-lg-4 col-12">
-                                                <input placeholder="enter Recipet no" class="form-control" type="number">
-                                            </div>
+                                           
                                         </div>
+
                                         <div class="input-group w-100 row">
                                             <label class="form-check-label" for="flexRadioDefault1">
-                                            Discounts Notes
+                                                Discounts Notes
                                             </label>
                                             <textarea name="
                                             " id="" cols="30" rows="10"></textarea>
                                         </div>
-
-
-                                        <h2>Aplly Cupon</h2>
+                                         <!-- discount detials -->
+                                          <!-- cupon detials -->
+                                        <h2>Apply Cupon</h2>
                                         <div class="input-group">
                                             <input type="text" class="form-control" name="" id=""
                                                 placeholder="Applied Cupon">
                                             <button class="btn first"> Applied</button>
                                         </div>
+                                         <!-- cupon detials -->
 
 
                                     </div>
@@ -362,91 +431,6 @@
     </div>
     <!---------------------- finish footer -------------------------------------------->
 
-    <!-- modal check out -->
-    <div class="modal modal_checkout fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <P>- you used <span>20Hours</span> , none were prepaid for Total <span>1500 LE ,<span>0:00</span>
-                            prepaid hoursleft</P>
-                    <h2>total hours activity(hout used by each child)</h2>
-
-                    <table id="tableOrder" style="width:100%" class=" display table-responsive table">
-                        <thead>
-                            <tr>
-                                <th> Child</th>
-                                <th> Time In</th>
-                                <th> Time Out</th>
-                                <th>Elapsed </th>
-                                <th>Charged </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-
-                            <tr>
-                                <td data-label="Child">Awab Mohamed </td>
-                                <td data-label="Time In">
-                                    1:30 A:M </td>
-                                <td data-label="Time Out">3:30 A:M </td>
-                                <td data-label="Elapsed">7500 </td>
-                                <td data-label="Charged">8500</td>
-
-
-                            </tr>
-
-
-
-                        </tbody>
-                    </table>
-
-                    <h2>todays Hourlys billing</h2>
-                    <table id="tableOrder1" style="width:100%" class=" display table-responsive table">
-                        <thead>
-                            <tr>
-                                <th> Action</th>
-                                <th> Hours Applied</th>
-                                <th> Nannies</th>
-                                <th>Art </th>
-                                <th>Item </th>
-                                <th>Cost </th>
-
-                            </tr>
-                        </thead>
-                        <tbody>
-
-                            <tr>
-                                <td data-label="Action">Buy </td>
-                                <td data-label="Hours Applied">
-                                    5.30</td>
-                                <td data-label="Nannies"></td>
-                                <td data-label="Art">7500 </td>
-                                <td data-label="Item">8500</td>
-                                <td data-label="Item">18500</td>
-
-
-                            </tr>
-
-
-
-                        </tbody>
-                    </table>
-                    <div class="input-group">
-                        <input type="text" class="form-control" name="" id="" placeholder="Applied Cupon">
-                        <button class="btn first"> Applied</button>
-                    </div>
-
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- modal check out -->
 
 
     <!-- main js -->
@@ -474,6 +458,13 @@
 
         $(document).ready(function () {
             $('#tableOrder1').DataTable({
+                searching: false, // Remove search box
+                paging: false, // Remove pagination
+                info: false // Remove table information
+            });
+        });
+        $(document).ready(function () {
+            $('#tableOrder2').DataTable({
                 searching: false, // Remove search box
                 paging: false, // Remove pagination
                 info: false // Remove table information
