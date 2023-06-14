@@ -1862,3 +1862,13 @@ span{
     }
   }
 }
+.ui-datepicker-trigger{
+  background-color: var(--color-third);
+  color: var(--color-white);
+  border: 1pc solid var(--color-third);
+  border-radius: 10px !important;
+  font-family: 'regular';
+  margin-top: 10px;
+  padding: 1px;
+  height: 55px;
+}
