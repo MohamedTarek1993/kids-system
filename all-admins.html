@@ -27,142 +27,305 @@
     <!---------------------- start scroll-up -------------------------------------------->
     <a id="button" class="scroll-up"><i class="bi bi-chevron-up"></i></a>
     <!---------------------- finish scroll-up -------------------------------------------->
+    <!---------------------- start dark && light mood -------------------------------------------->
+    <div id="toggle">
+        <span class="light " id="light">
+            <i class="bi bi-brightness-high"></i>
+        </span>
+        <span class="dark" id="dark">
+            <i class="bi bi-moon-fill "></i>
+        </span>
+        <div class="indicator">
+        </div>
+    </div>
+    <!---------------------- finish dark && light mood -------------------------------------------->
 
 
     <section class="system">
         <div class="container-fluid px-0">
-            <div class="row">
-                <div class="col-lg-2 col-md-5 col- px-0">
-                    <!-- strat side bar -->
-                    <div class="sidebar">
-                        <div class="logo">
-                            <img src="image/Icon-Grey.png" alt="">
-                            <div class="upper_section_res">
-                                <div class="info">
-                                    <img src="image/per1.png" alt="person">
-                                    <h6> Admin Name </h6>
-                                </div>
-                            </div>
-
+            <div class="container_page">
+                <!-- strat side bar -->
+                <div class="sidebar collapsed  ">
+                    <div class="logo ">
+                        <img src="image/Icon-Grey.png" alt="">
+                        <div class="toggle_menu">
+                            <i class="bi bi-list"></i>
                         </div>
-                        <ul class="menu-side-bar">
-                            <li class="side-item">
-                                <a class="side-link" href="index.html">
-                                    <i class="bi bi-bar-chart"></i>
-                                    Dashboard
-                                </a>
-                            </li>
-                            <li class="side-item">
-                                <button class="dropdown-btn btn actives">
-                                    <span>
-                                        <i class="bi bi-chevron-right"></i>
-                                    </span>
-                                    <i class="bi bi-person-square"></i>
-                                    Admines
-                                </button>
-                                <!-- drop-menu -->
-                                <div class="dropdown-container">
-                                    <a class="side-link active" href="all-admins.html"> All Admines</a>
-                                    <a class="side-link " href="create-admin.html"> Create Admines </a>
-                                    
+                        <div class="upper_section_res">
+                            <div class="info">
+                                <img src="image/per1.png" alt="person">
+                                <h6> Admin Name </h6>
+                            </div>
+                        </div>
 
-                                </div>
-                                <!-- drop-menu -->
-                            </li>
-
-
-                            <li class="side-item">
-                                <button class="dropdown-btn btn">
-                                    <span>
-                                        <i class="bi bi-chevron-right"></i>
-                                    </span>
-                                    <i class="bi bi-person-fill"></i>
-                                    Users
-
-                                </button>
-                                <!-- drop-menu -->
-                                <div class="dropdown-container">
-                                    <a class="side-link" href="all-users.html"> All Users</a>
-                                    <a class="side-link" href="create-user.html"> Create Users </a>
-                                    
-
-                                </div>
-                                <!-- drop-menu -->
-                            </li>
-
-                            <li class="side-item">
-                                <button class="dropdown-btn btn">
-                                    <span>
-                                        <i class="bi bi-chevron-right"></i>
-                                    </span>
-                                    <i class="bi bi-bar-chart-steps"></i>
-                                    Branches
-
-                                </button>
-                                <!-- drop-menu -->
-                                <div class="dropdown-container">
-                                    <a class="side-link" href="all-branches.html"> All Branches</a>
-                                    <a class="side-link" href="create-branche.html"> Create Branches </a>
-                                    
-
-                                </div>
-                                <!-- drop-menu -->
-                            </li>
-                            <li class="side-item">
-                                <button class="dropdown-btn btn">
-                                    <span>
-                                        <i class="bi bi-chevron-right"></i>
-                                    </span>
-                                    <i class="bi bi-diagram-2"></i>
-                                    Items
-
-                                </button>
-                                <!-- drop-menu -->
-                                <div class="dropdown-container">
-                                    <a class="side-link" href="all-item.html"> All Items</a>
-                                    <a class="side-link" href="create-item.html"> Create Items </a>
-                                    
-
-                                </div>
-                                <!-- drop-menu -->
-                            </li>
-
-                            <li class="side-item">
-                                <button class="dropdown-btn btn">
-                                    <span>
-                                        <i class="bi bi-chevron-right"></i>
-                                    </span>
-                                    <i class="bi bi-brush-fill"></i>
-                                    Arts
-                                </button>
-                                <!-- drop-menu -->
-                                <div class="dropdown-container">
-                                    <a class="side-link" href="all-art.html"> All Arts</a>
-                                    <a class="side-link" href="create-arts.html l "> Create Arts </a>
-                               
-
-                                </div>
-                                <!-- drop-menu -->
-                            </li>
-
-                            <li class="side-item">
-                                <a class="side-link" href="settings.html">
-                                    <i class="bi bi-gear-fill"></i>
-                                    Settings
-                                </a>
-                            </li>
-                            <li class="side-item">
-                                <a class="side-link" href="#">
-                                    <i class="bi bi-box-arrow-left"></i>
-                                    Logout
-                                </a>
-                            </li>
-
-                        </ul>
                     </div>
-                    <!-- strat side bar -->
+                    <ul class="menu-side-bar">
+                        <li class="side-item">
+                            <a class="side-link active" href="index.html">
+                                <i class="bi bi-bar-chart"></i>
+                                Dashboard
+
+                            </a>
+                        </li>
+                        <li class="side-item">
+                            <button class="dropdown-btn btn">
+                                <span>
+                                    <i class="bi bi-chevron-right"></i>
+                                </span>
+                                <i class="bi bi-person-square"></i>
+
+                                Admines
+                            </button>
+                            <!-- drop-menu -->
+                            <div class="dropdown-container">
+                                <a class="side-link" href="all-admins.html"> All Admines</a>
+                                <a class="side-link " href="create-admin.html"> Create Admines </a>
+                            </div>
+                            <!-- drop-menu -->
+                        </li>
+                        <li class="side-item">
+                            <button class="dropdown-btn btn">
+                                <span>
+                                    <i class="bi bi-chevron-right"></i>
+                                </span>
+                                <i class="bi bi-person-fill"></i>
+                                Users
+                            </button>
+                            <!-- drop-menu -->
+                            <div class="dropdown-container">
+                                <a class="side-link" href="all-users.html"> All Users</a>
+                                <a class="side-link" href="create-user.html"> Create Users </a>
+
+
+                            </div>
+                            <!-- drop-menu -->
+                        </li>
+                        <li class="side-item">
+                            <a class="side-link" href="regular-visits.html">
+                                <i class="bi bi-card-heading"></i>
+                                Regular Visits
+                            </a>
+                        </li>
+
+                        <li class="side-item">
+                            <a class="side-link" href="new-visit.html">
+                                <i class="bi bi-file-earmark-plus-fill"></i>
+                                New Visit
+                            </a>
+                        </li>
+                        <li class="side-item">
+                            <a class="side-link" href="acountant.html">
+                                <i class="bi bi-calculator"></i>
+                                Accountant
+                            </a>
+                        </li>
+
+                        <li class="side-item">
+                            <button class="dropdown-btn btn">
+                                <span>
+                                    <i class="bi bi-chevron-right"></i>
+                                </span>
+                                <i class="bi bi-bar-chart-steps"></i>
+                                Branches
+
+                            </button>
+                            <!-- drop-menu -->
+                            <div class="dropdown-container">
+                                <a class="side-link" href="all-branches.html"> All Branches</a>
+                                <a class="side-link" href="create-branche.html"> Create Branches </a>
+
+
+                            </div>
+                            <!-- drop-menu -->
+                        </li>
+
+                        <li class="side-item">
+                            <button class="dropdown-btn btn">
+                                <span>
+                                    <i class="bi bi-chevron-right"></i>
+                                </span>
+                                <i class="bi bi-diagram-2"></i>
+                                Items
+
+                            </button>
+                            <!-- drop-menu -->
+                            <div class="dropdown-container">
+                                <a class="side-link" href="all-item.html"> All Items</a>
+                                <a class="side-link" href="create-item.html"> Create Items </a>
+                            </div>
+                            <!-- drop-menu -->
+                        </li>
+
+                        <li class="side-item">
+                            <button class="dropdown-btn btn">
+                                <span>
+                                    <i class="bi bi-chevron-right"></i>
+                                </span>
+                                <i class="bi bi-brush-fill"></i>
+                                Arts
+                            </button>
+                            <!-- drop-menu -->
+                            <div class="dropdown-container">
+                                <a class="side-link" href="all-art.html"> All Arts</a>
+                                <a class="side-link" href="create-arts.html l "> Create Arts </a>
+
+
+                            </div>
+                            <!-- drop-menu -->
+                        </li>
+
+                        <li class="side-item">
+                            <a class="side-link" href="settings.html">
+                                <i class="bi bi-gear-fill"></i>
+                                Settings
+                            </a>
+                        </li>
+                        <li class="side-item">
+                            <a class="side-link" href="#">
+                                <i class="bi bi-box-arrow-left"></i>
+                                Logout
+                            </a>
+                        </li>
+
+                    </ul>
                 </div>
-                <div class="col-lg-10 col-md-7 col-12 px-0">
+                <!-- strat side bar -->
+
+                <!-- start sidebar collapsed -->
+                <div class="sidebar sidebar_resize ">
+                    <div class="logo ">
+                        <img src="image/Icon-Grey.png" alt="">
+                        <div class="toggle_menu">
+                            <i class="bi bi-list"></i>
+                        </div>
+                        <div class="upper_section_res">
+                            <div class="info">
+                                <img src="image/per1.png" alt="person">
+                                <h6> Admin Name </h6>
+                            </div>
+                        </div>
+
+                    </div>
+                    <ul class="menu-side-bar">
+                        <li class="side-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Dashboard">
+                            <a class="side-link active" href="index.html">
+                                <i class="bi bi-bar-chart"></i>
+
+                            </a>
+                        </li>
+                        <li class="side-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Admin">
+                            <button class="dropdown-btn btn">
+                                <span>
+                                    <i class="bi bi-chevron-right"></i>
+                                </span>
+                                <i class="bi bi-person-square"></i>
+
+                            </button>
+                            <!-- drop-menu -->
+                            <div class="dropdown-container">
+                                <a class="side-link" href="all-admins.html"> All Admines</a>
+                                <a class="side-link " href="create-admin.html"> Create Admines </a>
+                            </div>
+                            <!-- drop-menu -->
+                        </li>
+                        <li class="side-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Users">
+                            <button class="dropdown-btn btn">
+                                <span>
+                                    <i class="bi bi-chevron-right"></i>
+                                </span>
+                                <i class="bi bi-person-fill"></i>
+
+                            </button>
+                            <!-- drop-menu -->
+                            <div class="dropdown-container">
+                                <a class="side-link" href="all-users.html"> All Users</a>
+                                <a class="side-link" href="create-user.html"> Create Users </a>
+
+
+                            </div>
+                            <!-- drop-menu -->
+                        </li>
+                        <li class="side-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Regular Visits">
+                            <a class="side-link" href="regular-visits.html">
+                                <i class="bi bi-card-heading"></i>
+
+                            </a>
+                        </li>
+
+                        <li class="side-item" data-bs-toggle="tooltip" data-bs-placement="right" title="New Visit">
+                            <a class="side-link" href="new-visit.html">
+                                <i class="bi bi-file-earmark-plus-fill"></i>
+
+                            </a>
+                        </li>
+
+                        <li class="side-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Branches">
+                            <button class="dropdown-btn btn">
+                                <span>
+                                    <i class="bi bi-chevron-right"></i>
+                                </span>
+                                <i class="bi bi-bar-chart-steps"></i>
+
+
+                            </button>
+                            <!-- drop-menu -->
+                            <div class="dropdown-container">
+                                <a class="side-link" href="all-branches.html"> All Branches</a>
+                                <a class="side-link" href="create-branche.html"> Create Branches </a>
+
+
+                            </div>
+                            <!-- drop-menu -->
+                        </li>
+
+                        <li class="side-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Items">
+                            <button class="dropdown-btn btn">
+                                <span>
+                                    <i class="bi bi-chevron-right"></i>
+                                </span>
+                                <i class="bi bi-diagram-2"></i>
+                            </button>
+                            <!-- drop-menu -->
+                            <div class="dropdown-container">
+                                <a class="side-link" href="all-item.html"> All Items</a>
+                                <a class="side-link" href="create-item.html"> Create Items </a>
+                            </div>
+                            <!-- drop-menu -->
+                        </li>
+
+                        <li class="side-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Arts">
+                            <button class="dropdown-btn btn">
+                                <span>
+                                    <i class="bi bi-chevron-right"></i>
+                                </span>
+                                <i class="bi bi-brush-fill"></i>
+
+                            </button>
+                            <!-- drop-menu -->
+                            <div class="dropdown-container">
+                                <a class="side-link" href="all-art.html"> All Arts</a>
+                                <a class="side-link" href="create-arts.html l "> Create Arts </a>
+                            </div>
+                            <!-- drop-menu -->
+                        </li>
+
+                        <li class="side-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Settings">
+                            <a class="side-link" href="settings.html">
+                                <i class="bi bi-gear-fill"></i>
+
+                            </a>
+                        </li>
+                        <li class="side-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Logout">
+                            <a class="side-link" href="#">
+                                <i class="bi bi-box-arrow-left"></i>
+
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- start sidebar collapsed -->
+                <div style="height: 100vh;" class="contect_side change">
                     <div class="upper_section">
                         <div class="time">
                             <span> Time : </span>
@@ -291,7 +454,7 @@
 
     <!-- main js -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/main.js"></script>
     <!-- main js -->
     <!-- sweet alert -->
