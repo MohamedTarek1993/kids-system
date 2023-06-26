@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reciept</title>
+    <!-- main css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- main css -->
+    <!-- ? Favicon -->
+    <link rel="icon" href="image/Icon-black.png" type="image" />
+    <!-- ? Favicon -->
+    <style>
+        * {
+            overflow: visible !important;
+            margin: 0;
+            padding: 0;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            outline: none;
+            text-transform: none;
+            text-decoration: none;
+            direction: ltr;
+
+        }
+
+        .container {
+            width: auto;
+            min-width: unset !important;
+        }
+
+        .w-100 {
+            width: 100% !important;
+        }
+
+        .m-0 {
+            margin: 0 !important;
+        }
+
+        #sale-invoice {
+            height: auto;
+            max-height: unset;
+            overflow-y: scroll;
+            width: auto;
+            background: #fff;
+            visibility: visible;
+            padding: 15px;
+            margin: 0 auto !important;
+        }
+
+        .qr-image {
+            max-width: 100%;
+            height: 100px;
+        }
+
+        .col-sm-7 {
+            -webkit-box-flex: 0;
+            flex: 0 0 58.333333%;
+            max-width: 58.333333%;
+        }
+
+        .col-sm-4 {
+            -webkit-box-flex: 0;
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
+        }
+
+        .col-sm-6 {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+        .row {
+            display: -webkit-box;
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+
+        .col {
+            flex-basis: 0;
+            -webkit-box-flex: 1;
+            flex-grow: 1;
+            max-width: 100%;
+        }
+
+        .col-auto {
+            flex: 0 0 auto;
+            width: auto;
+            max-width: 100%;
+        }
+
+        h3 {
+            font-size: 20px;
+            font-weight: bold;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #707070;
+        }
+
+        a {
+            font-size: 11px;
+            font-weight: bold;
+            padding-bottom: 15px;
+            text-decoration: none;
+            color: black;
+        }
+
+        hr {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 0;
+            list-style: none;
+        }
+
+        li {
+            font-weight: 500;
+            margin-bottom: 3px;
+        }
+
+        .col-sm-12 {
+            -webkit-box-flex: 0;
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        .col-12 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        .col-6 {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+        .col-auto {
+            flex: 0 0 auto;
+            width: auto;
+            max-width: 100%;
+        }
+
+        .bill-info {
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #707070;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        .table-responsive {
+            display: block;
+            width: 100%;
+            overflow-x: auto;
+        }
+
+        .b-table-sticky-header {
+            overflow-y: auto;
+            max-height: 300px;
+        }
+
+        .table {
+            width: 100%;
+            margin-bottom: 1rem;
+            color: #212529;
+            border-collapse: collapse;
+        }
+
+        .table-bordered {
+            border: 1px solid #dee2e6;
+        }
+
+        .table td,
+        .table th {
+            vertical-align: middle;
+            font-size: 0.875rem;
+            line-height: 1;
+            white-space: nowrap;
+            height: 35px;
+            padding: 12px 15px;
+        }
+
+        .table th,
+        .table td {
+            padding: 10px 2px;
+            font-size: 12px;
+            vertical-align: top;
+            border: 1px solid #dee2e6;
+        }
+
+        .table.table-bordered td {
+            border-color: #dee2e6;
+        }
+
+        .table th,
+        .table td {
+            border: 1px solid #dee2e6 !important;
+        }
+
+        td {
+            border: 1px solid #dee2e6 !important;
+        }
+
+        .total {
+            color: #707070;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        tr {
+            height: auto !important;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        .long {
+            width: auto;
+            min-width: 0;
+            max-width: 200px;
+            display: inline-block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        td,
+        th {
+            max-width: 200px;
+            white-space: nowrap;
+            overflow: hidden;
+            line-height: 1.5;
+            vertical-align: middle;
+            word-break: break-all;
+        }
+
+        #print-button {
+            display: block;
+        }
+
+        @media print {
+            #print-button {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="smallInvoice" class="row"
+        style="width: 246px; text-align: center; margin: 0px auto; justify-content: center; direction: rtl;">
+
+        <div class="col-12" style="padding: 0px;">
+            <img src="image/Icon-black.png" class="qr-image">
+        </div>
+        <div class="col-12" style="padding: 0px; max-width: 155px;">
+            <h3 style="font-size: 16px; font-weight: bold; border-bottom: 2px dashed rgb(112, 112, 112); margin: 0px;">
+               <strong>Branch Name : </strong> Lake Yard Branch
+            </h3>
+        </div>
+        <div class="col-12" style="padding: 0px; max-width: 155px;">
+            <p style="font-size: 10px; margin: 0px; padding: 10px 0px; border-bottom: 2px dashed rgb(112, 112, 112);">
+                <strong>Date :</strong> 25, Jun, 2023
+
+            </p>
+        </div>
+        <div class="col-6" style="padding: 0px; max-width: 155px;">
+            <p style="font-size: 10px; margin: 0px; padding: 10px 0px; border-bottom: 2px dashed rgb(112, 112, 112);">
+                <strong>Check-In :</strong> 01:02 AM
+            </p>
+        </div>
+        <div class="col-6" style="padding: 0px; max-width: 155px;">
+            <p style="font-size: 10px; margin: 0px; padding: 10px 0px; border-bottom: 2px dashed rgb(112, 112, 112);">
+                <strong>No. of kids : </strong> 3
+            </p>
+        </div>
+
+        <div class="col-12" style="padding: 10px 0px 0px;">
+            <table class="table">
+                <thead>
+                    <th>No</th>
+                    <th> Name</th>
+                    <th> bar code</th>
+
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>
+                            1
+                        </td>
+                        <td>Hassan</td>
+                        <td>13</td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            1
+                        </td>
+                        <td>Ahmed</td>
+                        <td>13</td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            1
+                        </td>
+                        <td>Ahmed</td>
+                        <td>13</td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <hr>
+        <div class="col-12" style="padding: 0px;">
+            <h3 style="font-size: 13px; text-align: start; padding: 0px; margin: 10px 0px; border-bottom: 0px none;">
+                <strong>Contact Us on: </strong> <br>
+
+                <a class="parg" href="tel:010 29 73 22 99">- Mobile Number: 010 29 73 22 99 </a>
+                <br>
+                <a class="parg" href="mailto:info@kidshub-eg.com"> - E-Mail: info@kidshub-eg.com
+                </a>
+
+
+
+            </h3>
+
+        </div>
+        <hr>
+        <div class="col-12" style="padding: 0px;">
+            <h3 style="font-size: 13px; text-align: start; padding: 0px; margin: 10px 0px; border-bottom: 0px none;">
+                <strong>Instructions and Notes </strong> <br>
+                <ul>
+                    <li>- Prices are not negotiable.
+                    </li>
+                    <li>- Parents are responsible for time
+                        watching.</li>
+                    <li>- Parents are not allowed to stay with
+                        the kids unless they are less than 3 years
+                        old. Personal belongings are your own
+                        responsibility.</li>
+                    <li>- Please keep this receipt and present it
+                        upon check-out</li>
+                </ul>
+
+
+
+
+            </h3>
+
+        </div>
+
+        <div class="col-12" style="padding: 10px 0;">
+            <button class="btn btn-success" id="print-button" onclick="window.print()">Print Page</button>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
