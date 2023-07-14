@@ -18,6 +18,36 @@
     <!-- data table -->
     <!-- ? Favicon -->
     <link rel="icon" href="./image/Icon-black.png" type="image" />
+
+    <style>
+        #customers {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        #customers td,
+        #customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #customers tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #customers tr:hover {
+            background-color: #ddd;
+        }
+
+        #customers th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #04AA6D;
+            color: white;
+        }
+    </style>
     <!-- ? Favicon -->
 </head>
 
@@ -437,7 +467,7 @@
                                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                             data-bs-target="#collapseTwo" aria-expanded="true"
                                             aria-controls="collapseTwo">
-                                            Child Name : Ahmed
+                                            Child Name : ali
                                         </button>
                                     </h2>
                                     <div id="collapseTwo" class="accordion-collapse collapse show"
@@ -445,16 +475,16 @@
                                         <div class="accordion-body">
                                             <div class="row row_det">
 
-                                                <div class="col-lg-4 col-12">
-                                                    <div class="input-group">
+                                                <div class="col-lg-2 col-12">
+                                                    <div class="input-group w-100">
                                                         <label class="form-label">
                                                             Check-In
                                                         </label>
                                                         <input type="text" class="form-control">
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-4 col-12">
-                                                    <div class="input-group">
+                                                <div class="col-lg-2 col-12">
+                                                    <div class="input-group w-100">
                                                         <label class="form-label">
                                                             Check-Out
                                                         </label>
@@ -463,39 +493,62 @@
                                                     </div>
                                                     <button class="btn check">Make Check-Out</button>
                                                 </div>
-                                                <div class="col-lg-4 col-12">
-                                                    <div class="input-group input-group-width">
-                                                        <label class="form-label">
-                                                            Add Item
-                                                        </label>
-                                                        <select id="item-select" class="selectpicker" multiple
-                                                            data-selected-text-format="count > 1"
-                                                            data-icon="bi bi-trash" data-live-search="true">
-                                                            <option value="1">Item1</option>
-                                                            <option value="2">Item2</option>
-                                                            <option value="3">Item3</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-6 col-12">
-                                                    <div class="input-group">
+                                                <div class="col-lg-3 col-12">
+                                                    <div class="input-group w-100">
                                                         <label class="form-label">
                                                             Item Name
                                                         </label>
-                                                        <input disabled id="text-input" type="text"
-                                                            class="form-control">
+                                                        <input type="text" class="form-control"
+                                                            placeholder="Enter Item">
                                                     </div>
-
                                                 </div>
-                                                <div class="col-lg-6 col-12">
-                                                    <div class="input-group">
+                                                <div class="col-lg-2 col-12">
+                                                    <div class="input-group w-100">
                                                         <label class="form-label">
-                                                            Item Price
+                                                            Item Quntity
                                                         </label>
-                                                        <input disabled type="number" class="form-control">
+                                                        <input type="tel" min="1" max="20" class="form-control"
+                                                            placeholder="Enter Quntity">
                                                     </div>
 
                                                 </div>
+                                                <div class="col-lg-3 col-12">
+                                                    <div class="button mt-5">
+                                                        <button class="btn first"> Save</button>
+                                                    </div>
+                                                </div>
+                                                <table id="customers" class="table-responsive">
+                                                    <thead>
+                                                        <tr>
+                                                            <td> id</td>
+                                                            <td>Item Name</td>
+                                                            <td>Item Quntity</td>
+                                                            <td> Price</td>
+
+                                                            <td>Actions</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                1
+                                                            </td>
+                                                            <td> test</td>
+                                                            <td> 11</td>
+                                                            <td>100 LE </td>
+                                                           
+                                                            <td>
+
+                                                                <a class="btn edit" href="#"> <i
+                                                                        class="bi bi-pencil"></i></a>
+                                                                <button class="btn delete"> <i
+                                                                        class="bi bi-trash"></i></button>
+
+                                                            </td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
 
                                                 <div class="col-12">
                                                     <div class="form-check">
