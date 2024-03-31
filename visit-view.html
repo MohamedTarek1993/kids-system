@@ -386,114 +386,151 @@
             </div>
 
             <div class="all-order">
-              <ul class="tabs_visis">
+              <div class="upper_visit">
+                <div class="first_sec">
+                  <!-- CALENDER -->
+                  <!-- <div class="item">
+                    <h5> Today</h5>
+                  </div> -->
+                  <!-- /CALENDER -->
+                  <!-- TOTAL VISIT -->
+                  <div class="item">
+                    <h5>total visit</h5>
+                    <div class="info">
+                        <span>16</span> <i class="bi bi-box-arrow-in-left"></i> <span class="text-success">5</span>
+                    </div>
+                  </div>
+                  <!-- /TOTAL VISIT -->
+                  <!-- TOTAL KIDS -->
+                  <div class="item">
+                    <h5>total kids</h5>
+                    <div class="info">
+                        <span>16</span> <i class="bi bi-box-arrow-in-left"></i> <span class="text-success">5</span>
+                    </div>
+                  </div>
+                  <!-- /TOTAL KIDS -->
+                  <!-- TOTAL ITEMS -->
+                  <div class="item">
+                    <h5>total items</h5>
+                    <div class="info">
+                        <span>50</span>
+                    </div>
+                  </div>
+                  <!-- /TOTAL ITEMS -->
+                  <!-- TOTAL SALES -->
+                  <div class="item">
+                    <h5>total sales</h5>
+                    <div class="info">
+                        <span>5000 LE</span>
+                    </div>
+                  </div>
+                  <!-- /TOTAL ITEMS -->
+              </div>
+              <div class="second_sec">
+                <div class="input-group">
+                    <select class="form-select" >
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="date">
+                    <div class="input-group">
+                        <input class="form-control"  type="date">
+                    </div>
+                    <div class="input-group">
+                        <input class="form-control" type="date">
+                    </div>
+                </div>
+                <div class="expprt">
+                    <i class="bi bi-file-excel"></i>
+                    <a href="#"> export</a>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+
+          <div class="all-order">
+            <ul class="tabs_button">
+                <li class="active"> <a class="btn" href="#">Visit View</a></li>
+                <li> <a class="btn" href="#">Kids View</a></li>
+            </ul>
+            <ul class="tab_button">
                 <li>
-                  <a href="regular-visits.html"> Daily Visits</a>
+                    <a class="btn btn-success" href="#"> New Visist</a>
                 </li>
-                <li class="active">
-                  <button
-                    class="btn offcav_button"
-                    data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasRight"
-                    aria-controls="offcanvasRight"
-                  >
-                    New Visit
-                  </button>
-                </li>
-
                 <li>
-                  <button
-                    class="btn offcav_button"
-                    data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasRight"
-                    aria-controls="offcanvasRight"
-                  >
-                    edit Visit
-                  </button>
+                    <a class="btn btn-danger" href="#"> end shift</a>
                 </li>
-                
-              </ul>
-              <h2 class="main_head">Dialy Visit</h2>
+            </ul>
 
-              <!-- في حالة  وجود  طلبات -->
-
-              <table
-                id="tableOrder"
-                style="width: 100%"
-                class="display table-responsive table"
-              >
+            <table  id="tableOrder" style="width:100%" class="table-striped table-bordered display table_visit table-responsive table">
                 <thead>
-                  <tr>
-                    <th>No</th>
-                    <th>Childs</th>
-                    <th>Parent</th>
-                    <th>Phone</th>
-                    <th>Check-In</th>
-                    <th>Check-Out</th>
-                    <th>Status</th>
-                    <th>Edit</th>
-                  </tr>
+                    <tr>
+                        <th> ID</th>
+                        <th> Parent name</th>
+                        <th> Mobile</th>
+                        <th> no of kids</th>
+                        <th> arrival</th>
+                        
+                        <th>invoice </th>
+                        <th>payment </th>
+                        <th>visit status </th>
+                        <th>action</th>
+                    </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td data-label="No">#251422</td>
-                    <td data-label="Childs">Ahmed,Mohammed,Ali</td>
-                    <td data-label="Parent">Ahmed</td>
-                    <td data-label="Phone">010931420</td>
-                    <td data-label="Check-In">19/5/2023</td>
-                    <td data-label="Check-In"></td>
-                    <td data-label="Status">
-                      <a href="checkout.html">
-                        <span class="check">Check Out</span>
-                      </a>
-                    </td>
-                    <td data-label="Edit">
-                      <a
-                        data-bs-toggle="tooltip"
-                        data-bs-placement="right"
-                        data-bs-title="Edit Visit"
-                        href="edit-visit.html"
-                        class="edit"
-                      >
-                        <i class="bi bi-pencil-square"></i
-                      ></a>
-                      <a
-                        data-bs-toggle="tooltip"
-                        data-bs-placement="right"
-                        data-bs-title="Show Visit"
-                        href="show-visit.html"
-                        class="edit"
-                      >
-                        <i class="bi bi-eye"></i
-                      ></a>
-                    </td>
-                  </tr>
 
-                  <tr>
-                    <td data-label="No">#251422</td>
-                    <td data-label="Childs">Ahmed,Mohammed,Ali</td>
-                    <td data-label="Parent">Ahmed</td>
-                    <td data-label="Phone">010931420</td>
-                    <td data-label="Check-In">19/5/2023</td>
-                    <td data-label="Check-In">19/5/2023 11:15PM</td>
-                    <td data-label="Status">
-                      <span class="closed">Visit Closed</span>
-                    </td>
-                    <td data-label="Edit">
-                      <a
-                        data-bs-toggle="tooltip"
-                        data-bs-placement="right"
-                        data-bs-title="Show Visit"
-                        href="show-visit.html"
-                        class="edit"
-                      >
-                        <i class="bi bi-eye"></i
-                      ></a>
-                    </td>
-                  </tr>
+                    <tr>
+                        <td data-label="ID">#251422 </td>
+                        <td data-label="Parent name">
+                            Cairo</td>
+                        <td data-label="Mobile">
+                            Ahmed </td>
+                        <td data-label="no of kids">010931420</td>
+                        <td data-label="arrival">Cairo</td>
+                        <td data-label="invoice">10 Users</td>
+                        <td  data-label="payment"> <span class="badge bg-danger">Unpaid</span> </td>
+                        <td data-label="visit status"> <span class="badge bg-info text-dark">partial</span></td>
+                        <td data-label="action"><div class="dropdown">
+                            <button class="btn  dropdown-toggle" type="button"  id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                              Options
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                              <a class="dropdown-item" href="#">edit visit</a>
+                              <a class="dropdown-item" href="#">billing</a>
+                              <a class="dropdown-item" href="#">cancel</a>
+                            </div>
+                          </div></td>
+                    </tr>
+
+                    <tr>
+                        <td data-label="ID">#251422 </td>
+                        <td data-label="Parent name">
+                            Cairo</td>
+                        <td data-label="Mobile">
+                            Ahmed </td>
+                        <td data-label="no of kids">010931420</td>
+                        <td data-label="arrival">Cairo</td>
+                        <td data-label="invoice">10 Users</td>
+                        <td  data-label="payment"> <span class="badge bg-success">paid</span> </td>
+                        <td data-label="visit status"> <span class="badge bg-primary">stay in</span></td>
+                        <td data-label="action"><div class="dropdown">
+                            <button class="btn  dropdown-toggle" type="button"  id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                              Options
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                              <a class="dropdown-item" href="#">edit visit</a>
+                              <a class="dropdown-item" href="#">billing</a>
+                              <a class="dropdown-item" href="#">cancel</a>
+                            </div>
+                          </div></td>
+                    </tr>
+
+
                 </tbody>
-              </table>
-            </div>
+            </table>
           </div>
         </div>
       </div>
@@ -510,158 +547,11 @@
 
     <!---------------------- finish footer -------------------------------------------->
 
-    <div
-      class="offcanvas offcanvas-end new_visit_pop"
-      tabindex="-1"
-      id="offcanvasRight"
-      aria-labelledby="offcanvasRightLabel"
-    >
-      <div class="offcanvas-header">
-        <h5 id="offcanvasRightLabel">new Visit</h5>
-        <button
-          type="button"
-          class="btn-close text-reset"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="offcanvas-body">
-        <form action="/">
-        <div class="content">
-          <h2 class="main_head ">Parent Detials</h2>
-          <div class="row">
-            <div class="col-lg-6 col-12">
-              <div class="input-group input-phone">
-                <label class="form-label"> Mobile Number </label>
-                <input type="tel" class="form-control" />
-                <!-- <span class="icon_form"><i class="bi bi-phone-fill"></i></span> -->
-              </div>
-              <!-- <p class="add-phone-btn">
-                Add Anther Phone <i class="bi bi-plus"></i>
-              </p> -->
-
-              <div class="input-group">
-                <label class="form-label"> backup mobile </label>
-                <input type="number" class="form-control" />
-                <!-- <span class="icon_form"><i class="bi bi-upc"></i></span> -->
-              </div>
-            </div>
-
-            <div class="col-lg-6 col-12">
-              <div class="input-group">
-                <label class="form-label"> Parent Name </label>
-                <input type="text" class="form-control" />
-                <!-- <span class="icon_form"><i class="bi bi-person-fill"></i></span> -->
-              </div>
-              <div class="input-group">
-                <label class="form-label"> No Of Nannies </label>
-                <input type="number" class="form-control" />
-                <!-- <span class="icon_form"><i class="bi bi-person-fill"></i></span> -->
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="content">
-          <h2 class="main_head kid_head">
-            <span>Kid(s) Detials</span>
-            <button class="btn" id="addKidBtn">Add Kid</button>
-          </h2>
-          <table id="kidsTable" class="w-100">
-            <thead>
-              <tr>
-                <!-- <th></th> -->
-                <th colspan="2" style="width: 16%">bracelet No .</th>
-                <th class="w-25">kid name</th>
-                <th style="width: 12%">kid age</th>
-                <th>note</th>
-                <th>art</th>
-                <th></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <input
-                    type="checkbox"
-                    class="form-check-input"
-                    id="exampleCheck1"
-                  />
-                </td>
-                <td><input type="number" class="form-control" /></td>
-                <td><input type="text" class="form-control" /></td>
-                <td><input type="number" min="3" class="form-control" /></td>
-                <td><textarea class="form-control"></textarea></td>
-                <td>
-                  <input
-                    type="checkbox"
-                    class="form-check-input"
-                    id="exampleCheck2"
-                  />
-                </td>
-                <td class="trach_row" onclick="deleteRow(this)"></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="content">
-          <h2 class="main_head">payment detials</h2>
-          <div  id="paymentRow" class="row">
-            <div class="col-lg-3 col-12">
-              <div class="input-group input-phone">
-                <label class="form-label"> Payment methods </label>
-                <select
-                  class="form-select form-control"
-                  aria-label="Default select example"
-                >
-                  <option value="1">Cash</option>
-                  <option value="2">credit card</option>
-                </select>
-                <!-- <span class="icon_form"><i class="bi bi-phone-fill"></i></span> -->
-              </div>
-              <!-- <p class="add-phone-btn">
-                    Add Anther Phone <i class="bi bi-plus"></i>
-                  </p> -->
-            </div>
-
-            <div class="col-lg-3 col-12">
-              <div class="input-group">
-                <label class="form-label"> amount </label>
-                <input type="number" class="form-control" />
-                <!-- <span class="icon_form"><i class="bi bi-person-fill"></i></span> -->
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-12">
-              <div class="input-group">
-                <label class="form-label"> Ref/Inv.# </label>
-                <input type="number" class="form-control" />
-                <!-- <span class="icon_form"><i class="bi bi-person-fill"></i></span> -->
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-12">
-              <div class="input-group">
-                <label class="form-label"> NOTE</label>
-                <textarea class="form-control"></textarea>
-                <!-- <span class="icon_form"><i class="bi bi-person-fill"></i></span> -->
-              </div>
-            </div>
-          </div>
-          <div id="addPaymentBtn" class="button_add">
-            <button class="btn">Add</button>
-          </div>
-        </div>
-        <div class="button_form">
-          <button class="btn btn-primary">Check in</button>
-          <button class="btn btn-danger">Cancel</button>
-        </div>
-      </form>
-      </div>
-    </div>
     <!-- main js -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+
     <script src="js/main.js"></script>
     <!-- main js -->
     <!-- sweet alert -->
@@ -675,54 +565,11 @@
       });
     </script>
 
-    <!-- data table -->
-    <script>
-      const tooltipTriggerList = document.querySelectorAll(
-        '[data-bs-toggle="tooltip"]'
-      );
-      const tooltipList = [...tooltipTriggerList].map(
-        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
-      );
-    </script>
-    <script>
-      document
-        .getElementById("addKidBtn")
-        .addEventListener("click", function () {
-          // Clone the first row of the table
-          var newRow = document
-            .querySelector("#kidsTable tbody tr")
-            .cloneNode(true);
-
-          // Replace 'test' with a trash icon
-          newRow.querySelector("td:last-child").innerHTML =
-            '<i class="bi bi-trash"></i>';
-
-          // Append the new row to the table body
-          document.querySelector("#kidsTable tbody").appendChild(newRow);
-        });
-
-        function deleteRow(iconElement) {
-      // Find the parent row of the icon
-      var row = iconElement.closest('tr');
-      
-      // Remove the row from the table
-      row.remove();
-    }
-    </script>
-
 <script>
-  document
-    .getElementById("addPaymentBtn")
-    .addEventListener("click", function () {
-      // Clone the first row of the table
-      var newRow = document
-        .querySelector("#paymentRow")
-        .cloneNode(true);
-      // Append the new row to the table body
-      document.querySelector("#paymentRow").appendChild(newRow);
-    });
+    // $(document).ready(function () {
+    //     $('.form-select').selectpicker();
+    // });
 
-  
 </script>
   </body>
 </html>
