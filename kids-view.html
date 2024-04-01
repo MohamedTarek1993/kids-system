@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kids View</title>
+    <!-- main css -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="scss/main.min.css" />
+    <!-- responsive -->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- data table -->
+    <link rel="stylesheet" href="css/data-table.css" />
+    <!-- data table -->
+    <link rel="stylesheet" href="css/style-mod.css" />
+    <!-- ? Favicon -->
+    <link rel="icon" href="./image/Icon-black.png" type="image" />
+    <!-- ? Favicon -->
+  </head>
+
+  <body>
+    <!---------------------- start loader -------------------------------------------->
+    <!-- <div id="preloader"></div> -->
+    <!---------------------- finish loader -------------------------------------------->
+    <!---------------------- start scroll-up -------------------------------------------->
+    <a id="button" class="scroll-up"><i class="bi bi-chevron-up"></i></a>
+    <!---------------------- finish scroll-up -------------------------------------------->
+    <!-- <div id="toggle">
+        <span class="light " id="light">
+            <i class="bi bi-brightness-high"></i>
+        </span>
+        <span class="dark" id="dark">
+            <i class="bi bi-moon-fill "></i>
+        </span>
+        <div class="indicator">
+        </div>
+    </div> -->
+
+    <section class="system">
+      <div class="container-fluid px-0">
+        <div class="container_page">
+          <!-- strat side bar -->
+          <div class="sidebar collapsed">
+            <div class="logo">
+              <img src="image/Icon-Grey.png" alt="" />
+              <div class="toggle_menu">
+                <i class="bi bi-list"></i>
+              </div>
+              <div class="upper_section_res">
+                <div class="info">
+                  <img src="image/per1.png" alt="person" />
+                  <h6>Admin Name</h6>
+                </div>
+              </div>
+            </div>
+            <ul class="menu-side-bar">
+              <li class="side-item">
+                <a class="side-link active" href="index.html">
+                  <i class="bi bi-bar-chart"></i>
+                  Dashboard
+                </a>
+              </li>
+              <li class="side-item">
+                <button class="dropdown-btn btn">
+                  <span>
+                    <i class="bi bi-chevron-right"></i>
+                  </span>
+                  <i class="bi bi-person-square"></i>
+
+                  Admines
+                </button>
+                <!-- drop-menu -->
+                <div class="dropdown-container">
+                  <a class="side-link" href="all-admins.html"> All Admines</a>
+                  <a class="side-link" href="create-admin.html">
+                    Create Admines
+                  </a>
+                </div>
+                <!-- drop-menu -->
+              </li>
+              <li class="side-item">
+                <button class="dropdown-btn btn">
+                  <span>
+                    <i class="bi bi-chevron-right"></i>
+                  </span>
+                  <i class="bi bi-person-fill"></i>
+                  Users
+                </button>
+                <!-- drop-menu -->
+                <div class="dropdown-container">
+                  <a class="side-link" href="all-users.html"> All Users</a>
+                  <a class="side-link" href="create-user.html">
+                    Create Users
+                  </a>
+                </div>
+                <!-- drop-menu -->
+              </li>
+              <li class="side-item">
+                <a class="side-link" href="regular-visits.html">
+                  <i class="bi bi-card-heading"></i>
+                  Regular Visits
+                </a>
+              </li>
+
+              <li class="side-item">
+                <a class="side-link" href="new-visit.html">
+                  <i class="bi bi-file-earmark-plus-fill"></i>
+                  New Visit
+                </a>
+              </li>
+              <li class="side-item">
+                <a class="side-link" href="acountant.html">
+                  <i class="bi bi-calculator"></i>
+                  Accountant
+                </a>
+              </li>
+
+              <li class="side-item">
+                <button class="dropdown-btn btn">
+                  <span>
+                    <i class="bi bi-chevron-right"></i>
+                  </span>
+                  <i class="bi bi-bar-chart-steps"></i>
+                  Branches
+                </button>
+                <!-- drop-menu -->
+                <div class="dropdown-container">
+                  <a class="side-link" href="all-branches.html">
+                    All Branches</a
+                  >
+                  <a class="side-link" href="create-branche.html">
+                    Create Branches
+                  </a>
+                </div>
+                <!-- drop-menu -->
+              </li>
+
+              <li class="side-item">
+                <button class="dropdown-btn btn">
+                  <span>
+                    <i class="bi bi-chevron-right"></i>
+                  </span>
+                  <i class="bi bi-diagram-2"></i>
+                  Items
+                </button>
+                <!-- drop-menu -->
+                <div class="dropdown-container">
+                  <a class="side-link" href="all-item.html"> All Items</a>
+                  <a class="side-link" href="create-item.html">
+                    Create Items
+                  </a>
+                </div>
+                <!-- drop-menu -->
+              </li>
+
+              <li class="side-item">
+                <button class="dropdown-btn btn">
+                  <span>
+                    <i class="bi bi-chevron-right"></i>
+                  </span>
+                  <i class="bi bi-brush-fill"></i>
+                  Arts
+                </button>
+                <!-- drop-menu -->
+                <div class="dropdown-container">
+                  <a class="side-link" href="all-art.html"> All Arts</a>
+                  <a class="side-link" href="create-arts.html l ">
+                    Create Arts
+                  </a>
+                </div>
+                <!-- drop-menu -->
+              </li>
+
+              <li class="side-item">
+                <a class="side-link" href="settings.html">
+                  <i class="bi bi-gear-fill"></i>
+                  Settings
+                </a>
+              </li>
+              <li class="side-item">
+                <a class="side-link" href="#">
+                  <i class="bi bi-box-arrow-left"></i>
+                  Logout
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- strat side bar -->
+
+          <!-- start sidebar collapsed -->
+          <div class="sidebar sidebar_resize">
+            <div class="logo">
+              <img src="image/Icon-Grey.png" alt="" />
+              <div class="toggle_menu">
+                <i class="bi bi-list"></i>
+              </div>
+              <div class="upper_section_res">
+                <div class="info">
+                  <img src="image/per1.png" alt="person" />
+                  <h6>Admin Name</h6>
+                </div>
+              </div>
+            </div>
+            <ul class="menu-side-bar">
+              <li
+                class="side-item"
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+                title="Dashboard"
+              >
+                <a class="side-link active" href="index.html">
+                  <i class="bi bi-bar-chart"></i>
+                </a>
+              </li>
+              <li
+                class="side-item"
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+                title="Admin"
+              >
+                <button class="dropdown-btn btn">
+                  <span>
+                    <i class="bi bi-chevron-right"></i>
+                  </span>
+                  <i class="bi bi-person-square"></i>
+                </button>
+                <!-- drop-menu -->
+                <div class="dropdown-container">
+                  <a class="side-link" href="all-admins.html"> All Admines</a>
+                  <a class="side-link" href="create-admin.html">
+                    Create Admines
+                  </a>
+                </div>
+                <!-- drop-menu -->
+              </li>
+              <li
+                class="side-item"
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+                title="Users"
+              >
+                <button class="dropdown-btn btn">
+                  <span>
+                    <i class="bi bi-chevron-right"></i>
+                  </span>
+                  <i class="bi bi-person-fill"></i>
+                </button>
+                <!-- drop-menu -->
+                <div class="dropdown-container">
+                  <a class="side-link" href="all-users.html"> All Users</a>
+                  <a class="side-link" href="create-user.html">
+                    Create Users
+                  </a>
+                </div>
+                <!-- drop-menu -->
+              </li>
+              <li
+                class="side-item"
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+                title="Regular Visits"
+              >
+                <a class="side-link" href="regular-visits.html">
+                  <i class="bi bi-card-heading"></i>
+                </a>
+              </li>
+
+              <li
+                class="side-item"
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+                title="New Visit"
+              >
+                <a class="side-link" href="new-visit.html">
+                  <i class="bi bi-file-earmark-plus-fill"></i>
+                </a>
+              </li>
+
+              <li
+                class="side-item"
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+                title="Branches"
+              >
+                <button class="dropdown-btn btn">
+                  <span>
+                    <i class="bi bi-chevron-right"></i>
+                  </span>
+                  <i class="bi bi-bar-chart-steps"></i>
+                </button>
+                <!-- drop-menu -->
+                <div class="dropdown-container">
+                  <a class="side-link" href="all-branches.html">
+                    All Branches</a
+                  >
+                  <a class="side-link" href="create-branche.html">
+                    Create Branches
+                  </a>
+                </div>
+                <!-- drop-menu -->
+              </li>
+
+              <li
+                class="side-item"
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+                title="Items"
+              >
+                <button class="dropdown-btn btn">
+                  <span>
+                    <i class="bi bi-chevron-right"></i>
+                  </span>
+                  <i class="bi bi-diagram-2"></i>
+                </button>
+                <!-- drop-menu -->
+                <div class="dropdown-container">
+                  <a class="side-link" href="all-item.html"> All Items</a>
+                  <a class="side-link" href="create-item.html">
+                    Create Items
+                  </a>
+                </div>
+                <!-- drop-menu -->
+              </li>
+
+              <li
+                class="side-item"
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+                title="Arts"
+              >
+                <button class="dropdown-btn btn">
+                  <span>
+                    <i class="bi bi-chevron-right"></i>
+                  </span>
+                  <i class="bi bi-brush-fill"></i>
+                </button>
+                <!-- drop-menu -->
+                <div class="dropdown-container">
+                  <a class="side-link" href="all-art.html"> All Arts</a>
+                  <a class="side-link" href="create-arts.html l ">
+                    Create Arts
+                  </a>
+                </div>
+                <!-- drop-menu -->
+              </li>
+
+              <li
+                class="side-item"
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+                title="Settings"
+              >
+                <a class="side-link" href="settings.html">
+                  <i class="bi bi-gear-fill"></i>
+                </a>
+              </li>
+              <li
+                class="side-item"
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+                title="Logout"
+              >
+                <a class="side-link" href="#">
+                  <i class="bi bi-box-arrow-left"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- start sidebar collapsed -->
+          <div style="height: 100vh" class="contect_side change">
+            <div class="upper_section">
+              <div class="time">
+                <span> Time : </span>
+                <div id="current-time"></div>
+              </div>
+              <div class="time">
+                <span>Date : </span>
+                <div id="current-date"></div>
+              </div>
+              <div class="info">
+                <img src="image/per1.png" alt="person" />
+                <h6>Admin Name</h6>
+              </div>
+            </div>
+
+            <div class="all-order">
+              <div class="upper_visit">
+                <div class="first_sec">
+                  <!-- CALENDER -->
+                  <!-- <div class="item">
+                    <h5> Today</h5>
+                  </div> -->
+                  <!-- /CALENDER -->
+                  <!-- TOTAL VISIT -->
+                  <div class="item">
+                    <h5>total visit</h5>
+                    <div class="info">
+                        <span>16</span> <i class="bi bi-box-arrow-in-left"></i> <span class="text-success">5</span>
+                    </div>
+                  </div>
+                  <!-- /TOTAL VISIT -->
+                  <!-- TOTAL KIDS -->
+                  <div class="item">
+                    <h5>total kids</h5>
+                    <div class="info">
+                        <span>16</span> <i class="bi bi-box-arrow-in-left"></i> <span class="text-success">5</span>
+                    </div>
+                  </div>
+                  <!-- /TOTAL KIDS -->
+                  <!-- TOTAL ITEMS -->
+                  <div class="item">
+                    <h5>total items</h5>
+                    <div class="info">
+                        <span>50</span>
+                    </div>
+                  </div>
+                  <!-- /TOTAL ITEMS -->
+                  <!-- TOTAL SALES -->
+                  <div class="item">
+                    <h5>total sales</h5>
+                    <div class="info">
+                        <span>5000 LE</span>
+                    </div>
+                  </div>
+                  <!-- /TOTAL ITEMS -->
+              </div>
+              <div class="second_sec">
+                    <div class="select_sec">
+                        <label class="form-label" for=""> Select Branch</label>
+                        <select class="form-select form-control" >
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                
+                <div class="date">
+                    <div class="">
+                        <label class="form-label" for=""> From Data</label>
+                        <input class="form-control"  type="date">
+                    </div>
+                    <div class="">
+                        <label class="form-label" for=""> to Data</label>
+                        <input class="form-control" type="date">
+                    </div>
+                </div>
+                <div class="expprt">
+                    <span>
+                        <i class="bi bi-file-excel"></i>
+                    </span>
+                    <a href="#"> export</a>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+
+          <div class="all-order">
+            <ul class="tabs_button">
+                <li> <a class="btn" href="visit-view.html">Visit View</a></li>
+                <li  class="active"> <a class="btn" href="kids-view.html">Kids View</a></li>
+            </ul>
+            <ul class="tab_button">
+                <li>
+                    <a class="btn btn-success" href="#"> New Visist</a>
+                </li>
+                <li>
+                    <a class="btn btn-danger" href="#"> end shift</a>
+                </li>
+            </ul>
+
+            <table  id="tableOrder" style="width:100%" class="table-striped table-bordered display table_visit table-responsive table">
+                <thead>
+                    <tr>
+                        <th> ID</th>
+                        <th> Visit id</th>
+                        <th> Kid Name</th>
+                        <th> Mobile</th>
+                        <th> arrival</th>
+                        
+                        <th>Departure </th>
+                        <th>Time Spent </th>
+                        <th> status </th>
+                        <th> Extra </th>
+                        <th>Total</th>
+                        <th>action</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td data-label="ID">#251422 </td>
+                        <td data-label="Visit id">
+                            Cairo</td>
+                        <td data-label=" Kid Name">
+                            Ahmed </td>
+                        <td data-label="Mobile">010931420</td>
+                        <td data-label="arrival">Cairo</td>
+                        <td data-label="Departure">10 Users</td>
+                        <td  data-label="Time Spent "> <span class="badge bg-danger">Unpaid</span> </td>
+                      
+                      <td data-label=" status"> <span class="badge bg-info text-dark">partial</span></td>
+                      <td data-label="Extra">10 Users</td>
+                      <td data-label="Extra">10 Users</td>
+                      <td data-label="Total">
+                        <i class="bi bi-cart"></i>
+                        <div class="dropdown">
+                            <button class="btn  dropdown-toggle" type="button"  id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-list"></i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                              <a class="dropdown-item" href="#">edit visit</a>
+                              <a class="dropdown-item" href="#">billing</a>
+                              <a class="dropdown-item" href="#">cancel</a>
+                            </div>
+                          </div></td>
+                    </tr>
+
+                
+
+
+                </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="lower_footer">
+      <div class="container">
+        <p style="text-align: center; color: white">
+          © 2023 <a style="color: #f2a922" href="http://bigbang.me">BIGBAN</a>,
+          ALL RIGHTS RESERVED
+        </p>
+      </div>
+    </div>
+
+    <!---------------------- finish footer -------------------------------------------->
+
+    <!-- main js -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <!-- main js -->
+    <!-- sweet alert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- sweet alert -->
+    <!-- data table -->
+    <script src="js/data-table.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#tableOrder").DataTable();
+      });
+    </script>
+
+<script>
+    // $(document).ready(function () {
+    //     $('.form-select').selectpicker();
+    // });
+
+</script>
+  </body>
+</html>

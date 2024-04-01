@@ -103,12 +103,13 @@ width: 10%;
   .all-order .upper_visit{
     display: flex;
     flex-direction: row;
+    gap: 10px;
   }
   .all-order .upper_visit .first_sec{
     display: flex;
     flex-direction: row;
     /* gap: 20px; */
-    width: 50%;
+    width: 45%;
     justify-content: space-between;
   }
   .all-order .upper_visit .first_sec .item{
@@ -177,7 +178,37 @@ width: 10%;
   .second_sec{
     display: flex;
     flex-direction: row;
-    /* gap: 20px; */
-    width: 50%;
-    justify-content: space-between;
+    gap: 20px;
+    width: 55%;
+  align-items: end;
+  }
+  .second_sec .form-label{
+    font-size: 14px;
+  }
+  .second_sec .date{
+    display: flex;
+    width: 60%;
+    gap: 15px;
+  }
+
+  .second_sec .select_sec{
+    width: 30%;
+  }
+  .second_sec .select_sec .form-control{
+   
+  }
+  .second_sec .expprt{
+width: 8%;
+display: flex;
+flex-direction: row;
+i{
+  color: var(--color-third);
+  font-size: 1rem;
+}
+a{
+  text-decoration: underline;
+  font-size: 14px;
+  font-family: 'bold';
+  color: #000;
+}
   }
