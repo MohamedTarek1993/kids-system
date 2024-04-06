@@ -397,7 +397,8 @@
                   <div class="item">
                     <h5>total visit</h5>
                     <div class="info">
-                        <span>16</span> <i class="bi bi-box-arrow-in-left"></i> <span class="text-success">5</span>
+                      <span>16</span> <i class="bi bi-box-arrow-in-left"></i>
+                      <span class="text-success">5</span>
                     </div>
                   </div>
                   <!-- /TOTAL VISIT -->
@@ -405,7 +406,8 @@
                   <div class="item">
                     <h5>total kids</h5>
                     <div class="info">
-                        <span>16</span> <i class="bi bi-box-arrow-in-left"></i> <span class="text-success">5</span>
+                      <span>16</span> <i class="bi bi-box-arrow-in-left"></i>
+                      <span class="text-success">5</span>
                     </div>
                   </div>
                   <!-- /TOTAL KIDS -->
@@ -413,7 +415,7 @@
                   <div class="item">
                     <h5>total items</h5>
                     <div class="info">
-                        <span>50</span>
+                      <span>50</span>
                     </div>
                   </div>
                   <!-- /TOTAL ITEMS -->
@@ -421,116 +423,150 @@
                   <div class="item">
                     <h5>total sales</h5>
                     <div class="info">
-                        <span>5000 LE</span>
+                      <span>5000 LE</span>
                     </div>
                   </div>
                   <!-- /TOTAL ITEMS -->
-              </div>
-              <div class="second_sec">
-                <div class="input-group">
-                    <select class="form-select" >
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
+                </div>
+                <div class="second_sec">
+                  <div class="input-group">
+                    <select class="form-select">
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
                     </select>
-                </div>
-                <div class="date">
+                  </div>
+                  <div class="date">
                     <div class="input-group">
-                        <input class="form-control"  type="date">
+                      <input class="form-control" type="date" />
                     </div>
                     <div class="input-group">
-                        <input class="form-control" type="date">
+                      <input class="form-control" type="date" />
                     </div>
-                </div>
-                <div class="expprt">
+                  </div>
+                  <div class="expprt">
                     <i class="bi bi-file-excel"></i>
                     <a href="#"> export</a>
+                  </div>
                 </div>
-               
               </div>
             </div>
-          </div>
 
-          <div class="all-order">
-            <ul class="tabs_button">
-                <li class="active"> <a class="btn" href="#">Visit View</a></li>
-                <li> <a class="btn" href="#">Kids View</a></li>
-            </ul>
-            <ul class="tab_button">
+            <div class="all-order">
+              <ul class="tabs_button">
+                <li class="active"><a class="btn" href="#">Visit View</a></li>
+                <li><a class="btn" href="#">Kids View</a></li>
+              </ul>
+              <ul class="tab_button">
                 <li>
-                    <a class="btn btn-success" href="#"> New Visist</a>
+                  <a class="btn btn-success" href="#"> New Visist</a>
                 </li>
                 <li>
-                    <a class="btn btn-danger" href="#"> end shift</a>
+                  <a class="btn btn-danger" href="#"> end shift</a>
                 </li>
-            </ul>
+              </ul>
 
-            <table  id="tableOrder" style="width:100%" class="table-striped table-bordered display table_visit table-responsive table">
+              <table
+                id="tableOrder"
+                style="width: 100%"
+                class="table-striped table-bordered display table_visit table-responsive table"
+              >
                 <thead>
-                    <tr>
-                        <th> ID</th>
-                        <th> Parent name</th>
-                        <th> Mobile</th>
-                        <th> no of kids</th>
-                        <th> arrival</th>
-                        
-                        <th>invoice </th>
-                        <th>payment </th>
-                        <th>visit status </th>
-                        <th>action</th>
-                    </tr>
+                  <tr>
+                    <th>ID</th>
+                    <th>Parent name</th>
+                    <th>Mobile</th>
+                    <th>no of kids</th>
+                    <th>arrival</th>
+
+                    <th>invoice</th>
+                    <th>payment</th>
+                    <th>visit status</th>
+                    <th>action</th>
+                  </tr>
                 </thead>
                 <tbody>
+                  <tr>
+                    <td data-label="ID">#251422</td>
+                    <td data-label="Parent name">Cairo</td>
+                    <td data-label="Mobile">Ahmed</td>
+                    <td data-label="no of kids">010931420</td>
+                    <td data-label="arrival">Cairo</td>
+                    <td data-label="invoice">10 Users</td>
+                    <td data-label="payment">
+                      <span class="badge bg-danger">Unpaid</span>
+                    </td>
+                    <td data-label="visit status">
+                      <span class="badge bg-info text-dark">partial</span>
+                    </td>
+                    <td data-label="action">
+                      <div class="dropdown">
+                        <button
+                          class="btn dropdown-toggle"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Options
+                        </button>
+                        <div
+                          class="dropdown-menu"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <a class="dropdown-item" href="#">edit visit</a>
+                          <button
+                            class="dropdown-item"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight"
+                            aria-controls="offcanvasRight"
+                          >
+                            billing
+                          </button>
+                          <a class="dropdown-item" href="#">cancel</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
 
-                    <tr>
-                        <td data-label="ID">#251422 </td>
-                        <td data-label="Parent name">
-                            Cairo</td>
-                        <td data-label="Mobile">
-                            Ahmed </td>
-                        <td data-label="no of kids">010931420</td>
-                        <td data-label="arrival">Cairo</td>
-                        <td data-label="invoice">10 Users</td>
-                        <td  data-label="payment"> <span class="badge bg-danger">Unpaid</span> </td>
-                        <td data-label="visit status"> <span class="badge bg-info text-dark">partial</span></td>
-                        <td data-label="action"><div class="dropdown">
-                            <button class="btn  dropdown-toggle" type="button"  id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                              Options
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <a class="dropdown-item" href="#">edit visit</a>
-                              <a class="dropdown-item" href="#">billing</a>
-                              <a class="dropdown-item" href="#">cancel</a>
-                            </div>
-                          </div></td>
-                    </tr>
-
-                    <tr>
-                        <td data-label="ID">#251422 </td>
-                        <td data-label="Parent name">
-                            Cairo</td>
-                        <td data-label="Mobile">
-                            Ahmed </td>
-                        <td data-label="no of kids">010931420</td>
-                        <td data-label="arrival">Cairo</td>
-                        <td data-label="invoice">10 Users</td>
-                        <td  data-label="payment"> <span class="badge bg-success">paid</span> </td>
-                        <td data-label="visit status"> <span class="badge bg-primary">stay in</span></td>
-                        <td data-label="action"><div class="dropdown">
-                            <button class="btn  dropdown-toggle" type="button"  id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                              Options
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <a class="dropdown-item" href="#">edit visit</a>
-                              <a class="dropdown-item" href="#">billing</a>
-                              <a class="dropdown-item" href="#">cancel</a>
-                            </div>
-                          </div></td>
-                    </tr>
-
-
+                  <tr>
+                    <td data-label="ID">#251422</td>
+                    <td data-label="Parent name">Cairo</td>
+                    <td data-label="Mobile">Ahmed</td>
+                    <td data-label="no of kids">010931420</td>
+                    <td data-label="arrival">Cairo</td>
+                    <td data-label="invoice">10 Users</td>
+                    <td data-label="payment">
+                      <span class="badge bg-success">paid</span>
+                    </td>
+                    <td data-label="visit status">
+                      <span class="badge bg-primary">stay in</span>
+                    </td>
+                    <td data-label="action">
+                      <div class="dropdown">
+                        <button
+                          class="btn dropdown-toggle"
+                          type="button"
+                          id="dropdownMenuButton1"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Options
+                        </button>
+                        <div
+                          class="dropdown-menu"
+                          aria-labelledby="dropdownMenuButton1"
+                        >
+                          <a class="dropdown-item" href="#">edit visit</a>
+                          <a class="dropdown-item" href="#">billing</a>
+                          <a class="dropdown-item" href="#">cancel</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
                 </tbody>
-            </table>
+              </table>
+            </div>
           </div>
         </div>
       </div>
@@ -546,6 +582,245 @@
     </div>
 
     <!---------------------- finish footer -------------------------------------------->
+
+    <!-- off cavans for billings -->
+
+    <div
+      class="offcanvas offcanvas-end new_visit_pop"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 id="offcanvasRightLabel">Billing</h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="head_billings">
+          <div class="item">
+            <span>Visit No</span>
+            <h6>10</h6>
+          </div>
+
+          <div class="item">
+            <span>Parent</span>
+            <h6>Mohammed</h6>
+          </div>
+
+          <div class="item">
+            <span>Arrival</span>
+            <h6>4/4/2024 <span>10:00 PM</span></h6>
+          </div>
+
+          <div class="item">
+            <span>Departure</span>
+            <h6>4/4/2024 <span>10:00 PM</span></h6>
+          </div>
+
+          <div class="item">
+            <span>No of Kids</span>
+            <h6>3</h6>
+          </div>
+        </div>
+        <div class="billing_detials">
+          <div>
+            <h2>Billing Details</h2>
+            <button class="btn btn-success">Check out</button>
+          </div>
+          <table
+            id="tableOrder"
+            style="width: 100%"
+            class="table-striped table-bordered display table_visit table-responsive table"
+          >
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>BR #</th>
+                <th>Kid</th>
+                <th>Arr.</th>
+                <th>Dep.</th>
+
+                <th>Time</th>
+                <th>T.Amount</th>
+                <th>Extras</th>
+                <th>E.Amount</th>
+                <th>Status</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="ID">#251422</td>
+                <td data-label="Parent name">Cairo</td>
+                <td data-label="Mobile">Ahmed</td>
+                <td data-label="no of kids">010931420</td>
+                <td data-label="arrival">Cairo</td>
+                <td data-label="invoice">10 Users</td>
+                <td data-label="payment">
+                  <span class="badge bg-danger">Unpaid</span>
+                </td>
+                <td data-label="visit status">
+                  <span class="badge bg-info text-dark">partial</span>
+                </td>
+                <td data-label="action">
+                  <div class="dropdown">
+                    <button
+                      class="btn dropdown-toggle"
+                      type="button"
+                      id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Options
+                    </button>
+                    <div
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuButton1"
+                    >
+                      <a class="dropdown-item" href="#">edit visit</a>
+                      <button
+                        class="dropdown-item"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight"
+                        aria-controls="offcanvasRight"
+                      >
+                        billing
+                      </button>
+                      <a class="dropdown-item" href="#">cancel</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+
+              <tr>
+                <td data-label="ID">#251422</td>
+                <td data-label="Parent name">Cairo</td>
+                <td data-label="Mobile">Ahmed</td>
+                <td data-label="no of kids">010931420</td>
+                <td data-label="arrival">Cairo</td>
+                <td data-label="invoice">10 Users</td>
+                <td data-label="payment">
+                  <span class="badge bg-success">paid</span>
+                </td>
+                <td data-label="visit status">
+                  <span class="badge bg-primary">stay in</span>
+                </td>
+                <td data-label="action">
+                  <div class="dropdown">
+                    <button
+                      class="btn dropdown-toggle"
+                      type="button"
+                      id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Options
+                    </button>
+                    <div
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuButton1"
+                    >
+                      <a class="dropdown-item" href="#">edit visit</a>
+                      <a class="dropdown-item" href="#">billing</a>
+                      <a class="dropdown-item" href="#">cancel</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-12">
+            <div class="billing_detials">
+              <div>
+                <h2>Extras Details</h2>
+                <button class="btn btn-success">Add</button>
+                <button class="btn btn-danger">Delete</button>
+              </div>
+              <table
+                id="tableOrder"
+                style="width: 100%"
+                class="table-striped table-bordered display table_visit table-responsive table"
+              >
+                <thead>
+                  <tr>
+                    <th>BR #</th>
+                    <th>Kid</th>
+                    <th>Art #</th>
+                    <th>Art $</th>
+                    <th>Snacks #</th>
+                    <th>Snacks $</th>
+                    <th>Total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="BR">#251422</td>
+                    <td data-label="Kid">Cairo</td>
+                    <td data-label="Art #">Ahmed</td>
+                    <td data-label="Art $">010931420</td>
+                    <td data-label="Snacks #">Cairo</td>
+                    <td data-label="Snacks $">10 Users</td>
+                    <td data-label="Total">10 Users</td>
+                  </tr>
+
+              
+                </tbody>
+              </table>
+            </div>
+
+            <div class="billing_detials">
+              <div>
+                <h2>Transaction Detials </h2>
+               
+              </div>
+              <table
+                id="tableOrder"
+                style="width: 100%"
+                class="table-striped table-bordered display table_visit table-responsive table"
+              >
+                <thead>
+                  <tr>
+                    <th>Time</th>
+                    <th>Ref</th>
+                    <th>Particular</th>
+                    <th>User</th>
+                    <th>Amount</th>
+                  
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="Time">#251422</td>
+                    <td data-label="Ref">Ref</td>
+                    <td data-label="Particular">Particular</td>
+                    <td data-label="User">010931420</td>
+                    <td data-label="Amount">Cairo</td>
+                   
+                  </tr>
+
+              
+                </tbody>
+              </table>
+              <div class="total">
+                <ul>
+                  <li><h6>Total</h6> <div class="price">LE 800.00</div></li>
+                  <li><h6>Paid</h6> <div class="price">LE 500.00</div></li>
+                  <li><h6>Balance</h6> <div class="price">LE 300.00</div></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-12"></div>
+        </div>
+      </div>
+    </div>
 
     <!-- main js -->
     <script src="js/bootstrap.min.js"></script>
@@ -565,11 +840,10 @@
       });
     </script>
 
-<script>
-    // $(document).ready(function () {
-    //     $('.form-select').selectpicker();
-    // });
-
-</script>
+    <script>
+      // $(document).ready(function () {
+      //     $('.form-select').selectpicker();
+      // });
+    </script>
   </body>
 </html>
