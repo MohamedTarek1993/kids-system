@@ -514,7 +514,15 @@
                           class="dropdown-menu"
                           aria-labelledby="dropdownMenuButton1"
                         >
-                          <a class="dropdown-item" href="#">edit visit</a>
+                          <button
+                            class="dropdown-item"
+                            type="button"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasWithBothOptions"
+                            aria-controls="offcanvasWithBothOptions"
+                          >
+                            edit visit
+                          </button>
                           <button
                             class="dropdown-item"
                             data-bs-toggle="offcanvas"
@@ -586,7 +594,7 @@
     <!-- off cavans for billings -->
 
     <div
-      class="offcanvas offcanvas-end new_visit_pop"
+      class="offcanvas offcanvas-end new_visit_pop billing_pop"
       tabindex="-1"
       id="offcanvasRight"
       aria-labelledby="offcanvasRightLabel"
@@ -628,7 +636,7 @@
           </div>
         </div>
         <div class="billing_detials">
-          <div>
+          <div class="head_detials">
             <h2>Billing Details</h2>
             <button class="btn btn-success">Check out</button>
           </div>
@@ -639,7 +647,16 @@
           >
             <thead>
               <tr>
-                <th>ID</th>
+                <th>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                  </div>
+                </th>
                 <th>BR #</th>
                 <th>Kid</th>
                 <th>Arr.</th>
@@ -655,93 +672,86 @@
             </thead>
             <tbody>
               <tr>
-                <td data-label="ID">#251422</td>
-                <td data-label="Parent name">Cairo</td>
-                <td data-label="Mobile">Ahmed</td>
-                <td data-label="no of kids">010931420</td>
-                <td data-label="arrival">Cairo</td>
-                <td data-label="invoice">10 Users</td>
-                <td data-label="payment">
-                  <span class="badge bg-danger">Unpaid</span>
-                </td>
-                <td data-label="visit status">
-                  <span class="badge bg-info text-dark">partial</span>
-                </td>
-                <td data-label="action">
-                  <div class="dropdown">
-                    <button
-                      class="btn dropdown-toggle"
-                      type="button"
-                      id="dropdownMenuButton1"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Options
-                    </button>
-                    <div
-                      class="dropdown-menu"
-                      aria-labelledby="dropdownMenuButton1"
-                    >
-                      <a class="dropdown-item" href="#">edit visit</a>
-                      <button
-                        class="dropdown-item"
-                        data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasRight"
-                        aria-controls="offcanvasRight"
-                      >
-                        billing
-                      </button>
-                      <a class="dropdown-item" href="#">cancel</a>
-                    </div>
+                <td data-label="ID">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
                   </div>
                 </td>
+                <td>10</td>
+                <td>Ahmed</td>
+                <td>010931420</td>
+                <td>Cairo</td>
+                <td>10 Users</td>
+                <td>10 Users</td>
+                <td>10 Users</td>
+                <td>10 Users</td>
+                <!-- if status is Dep -->
+                <td>
+                  <span class="badge bg-success">Dep</span>
+                </td>
+                <!-- if status is Dep -->
+                <td>10 Users</td>
               </tr>
 
               <tr>
-                <td data-label="ID">#251422</td>
-                <td data-label="Parent name">Cairo</td>
-                <td data-label="Mobile">Ahmed</td>
-                <td data-label="no of kids">010931420</td>
-                <td data-label="arrival">Cairo</td>
-                <td data-label="invoice">10 Users</td>
-                <td data-label="payment">
-                  <span class="badge bg-success">paid</span>
-                </td>
-                <td data-label="visit status">
-                  <span class="badge bg-primary">stay in</span>
-                </td>
-                <td data-label="action">
-                  <div class="dropdown">
-                    <button
-                      class="btn dropdown-toggle"
-                      type="button"
-                      id="dropdownMenuButton1"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Options
-                    </button>
-                    <div
-                      class="dropdown-menu"
-                      aria-labelledby="dropdownMenuButton1"
-                    >
-                      <a class="dropdown-item" href="#">edit visit</a>
-                      <a class="dropdown-item" href="#">billing</a>
-                      <a class="dropdown-item" href="#">cancel</a>
-                    </div>
+                <td data-label="ID">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault1"
+                    />
                   </div>
                 </td>
+                <td>10</td>
+                <td>Ahmed</td>
+                <td>010931420</td>
+                <td>Cairo</td>
+                <td>10 Users</td>
+                <td>10 Users</td>
+                <td>10 Users</td>
+                <td>10 Users</td>
+                <!-- if status is stay -->
+                <td>
+                  <span class="badge bg-primary">Stay</span>
+                </td>
+                <!-- if status is stay -->
+                <td>10 Users</td>
               </tr>
+
+              <!-- total -->
+              <tr>
+                <td colspan="2">total</td>
+                <td>2kids</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>500 LE</td>
+                <td>1</td>
+                <td>1000 le</td>
+
+                <td>15000</td>
+              </tr>
+
+              <!-- total -->
             </tbody>
           </table>
         </div>
         <div class="row">
-          <div class="col-lg-6 col-12">
+          <div class="col-lg-7 col-12">
             <div class="billing_detials">
-              <div>
+              <div class="head_detials">
                 <h2>Extras Details</h2>
-                <button class="btn btn-success">Add</button>
-                <button class="btn btn-danger">Delete</button>
+                <div class="btn_coll">
+                  <button class="btn btn-success">Add</button>
+                  <button class="btn btn-danger">Delete</button>
+                </div>
               </div>
               <table
                 id="tableOrder"
@@ -769,16 +779,13 @@
                     <td data-label="Snacks $">10 Users</td>
                     <td data-label="Total">10 Users</td>
                   </tr>
-
-              
                 </tbody>
               </table>
             </div>
 
             <div class="billing_detials">
-              <div>
-                <h2>Transaction Detials </h2>
-               
+              <div class="head_detials">
+                <h2>Transaction Detials</h2>
               </div>
               <table
                 id="tableOrder"
@@ -792,7 +799,6 @@
                     <th>Particular</th>
                     <th>User</th>
                     <th>Amount</th>
-                  
                   </tr>
                 </thead>
                 <tbody>
@@ -802,22 +808,319 @@
                     <td data-label="Particular">Particular</td>
                     <td data-label="User">010931420</td>
                     <td data-label="Amount">Cairo</td>
-                   
                   </tr>
-
-              
                 </tbody>
               </table>
               <div class="total">
                 <ul>
-                  <li><h6>Total</h6> <div class="price">LE 800.00</div></li>
-                  <li><h6>Paid</h6> <div class="price">LE 500.00</div></li>
-                  <li><h6>Balance</h6> <div class="price">LE 300.00</div></li>
+                  <li>
+                    <h6>Total</h6>
+                    <div class="price">LE 800.00</div>
+                  </li>
+                  <li>
+                    <h6>Paid</h6>
+                    <div class="price">LE 500.00</div>
+                  </li>
+                  <li>
+                    <h6>Balance</h6>
+                    <div class="price">LE 300.00</div>
+                  </li>
                 </ul>
+              </div>
+              <div class="btn_group">
+                <div class="dropdown">
+                  <a
+                    class="btn btn-info dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    More Options
+                  </a>
+
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Print Visit</a></li>
+                  </ul>
+                </div>
+                <button class="btn btn-danger">Cancel</button>
+                <button class="btn btn-success">Check out</button>
               </div>
             </div>
           </div>
-          <div class="col-lg-6 col-12"></div>
+          <div class="col-lg-5 col-12">
+            <div class="billing_detials">
+              <div class="head_detials">
+                <h2>Summary</h2>
+              </div>
+              <table
+                id="tableOrder"
+                style="width: 100%"
+                class="table-striped table-bordered display table_visit table-responsive table"
+              >
+                <tbody>
+                  <tr>
+                    <td>Time</td>
+                    <td>3 kids</td>
+                    <td>750.00</td>
+                  </tr>
+                  <tr>
+                    <td>Extras</td>
+                    <td>3 kids</td>
+                    <td>750.00</td>
+                  </tr>
+                  <tr>
+                    <td>Nannies</td>
+                    <td>3 kids</td>
+                    <td>750.00</td>
+                  </tr>
+                  <tr>
+                    <td>Nannies</td>
+                    <td>3 kids</td>
+                    <td>750.00</td>
+                  </tr>
+                  <tr class="total">
+                    <td>Total</td>
+                    <td></td>
+                    <td>750.00</td>
+                  </tr>
+                  <tr class="Paid">
+                    <td>Total</td>
+                    <td></td>
+                    <td>750.00</td>
+                  </tr>
+                  <tr class="Balance">
+                    <td></td>
+                    <td></td>
+                    <td>750.00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="settlment">
+              <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="pills-home-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-home"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-home"
+                    aria-selected="true"
+                  >
+                    Add Payment
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-profile-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-profile"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-profile"
+                    aria-selected="false"
+                  >
+                    Add Discount
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="pills-home"
+                  role="tabpanel"
+                  aria-labelledby="pills-home-tab"
+                  tabindex="0"
+                >
+                  <div class="row">
+                    <div class="col-lg-6 col-12">
+                      <div class="form-group">
+                        <label class="form-label" for=""> Methods</label>
+                        <select class="form-select form-control">
+                          <option value="1">Cas</option>
+                          <option value="2">Two</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label class="form-label" for=""> Amount</label>
+                        <input type="number" class="form-control" />
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                      <div class="form-group">
+                        <label class="form-label" for=""> Ref/Inv. #</label>
+                        <input type="number" class="form-control" />
+                      </div>
+                      <div class="form-group">
+                        <label class="form-label" for=""> Note</label>
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-profile"
+                  role="tabpanel"
+                  aria-labelledby="pills-profile-tab"
+                  tabindex="0"
+                >
+                  <div class="row">
+                    <div class="col-lg-6 col-12">
+                      <div class="form-group">
+                        <label class="form-label" for=""> Apply on</label>
+                        <select class="form-select form-control">
+                          <option value="1">Cas</option>
+                          <option value="2">Two</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label class="form-label" for=""> Dis. Method</label>
+                        <select class="form-select form-control">
+                          <option value="1">Cas</option>
+                          <option value="2">Two</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                      <div class="form-group">
+                        <div class="form-group">
+                          <label class="form-label" for=""> Amount</label>
+                          <input type="number" class="form-control" />
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="form-label" for=""> Note</label>
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- off cavans for billings -->
+
+    <div
+      class="offcanvas offcanvas-end new_visit_pop billing_pop"
+      data-bs-scroll="true"
+      tabindex="-1"
+      id="offcanvasWithBothOptions"
+      aria-labelledby="offcanvasWithBothOptionsLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 id="offcanvasWithBothOptionsLabel">Billing</h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="billing_detials">
+          <div class="head_detials">
+            <h2>Extras Details</h2>
+          </div>
+          <table
+            id="tableOrder"
+            style="width: 100%"
+            class="table-striped table-bordered display table_visit table-responsive table"
+          >
+            <thead>
+              <tr>
+               
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Assigned</th>
+                <th>Type</th>
+
+                <th>Time</th>
+                <th>Price</th>
+                <th>Total</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+             
+                <td>Ahmed</td>
+                <td>010931420</td>
+                <td>Cairo</td>
+                <td>10 Users</td>
+                <td>10 Users</td>
+                <td>10 Users</td>
+                <td>10 Users</td>
+
+                <td style="cursor: pointer;" class="text-danger"><i class="text-danger bi bi-x-circle-fill"></i></td>
+              </tr>
+
+              <!-- total -->
+              <tr>
+                <td>total</td>
+                <td>5</td>
+               
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>175.00</td>
+
+                <td></td>
+              </tr>
+
+              <!-- total -->
+            </tbody>
+          </table>
+        </div>
+        <div class="row">
+          <div class="col-lg-5 col-12">
+            <div class="total">
+              <ul>
+                <li>
+                  <h6>Total</h6>
+                  <div class="price">LE 800.00</div>
+                </li>
+                <li>
+                  <h6>Paid</h6>
+                  <div class="price">LE 500.00</div>
+                </li>
+                <li>
+                  <h6>Balance</h6>
+                  <div class="price">LE 300.00</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-7 col-12">
+            <div class="btn_group">
+              <div class="dropdown">
+                <a
+                  class="btn btn-info dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  More Options
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Print Visit</a></li>
+                </ul>
+              </div>
+              <button class="btn btn-danger">Cancel</button>
+              <button class="btn btn-success">Save Changes</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
