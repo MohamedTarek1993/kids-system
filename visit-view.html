@@ -462,7 +462,15 @@
                   <a class="btn btn-success" href="#"> New Visist</a>
                 </li>
                 <li>
-                  <a class="btn btn-danger" href="#"> end shift</a>
+                  <button
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasWithBothOptions1"
+                    aria-controls="offcanvasWithBothOptions1"
+                    class="btn btn-danger"
+                  >
+                    end shift
+                  </button>
                 </li>
               </ul>
 
@@ -1017,7 +1025,7 @@
       aria-labelledby="offcanvasWithBothOptionsLabel"
     >
       <div class="offcanvas-header">
-        <h5 id="offcanvasWithBothOptionsLabel">Billing</h5>
+        <h5 id="offcanvasWithBothOptionsLabel">Edit Visit</h5>
         <button
           type="button"
           class="btn-close text-reset"
@@ -1028,7 +1036,7 @@
       <div class="offcanvas-body">
         <form action="">
           <div class="content">
-            <h2 class="main_head ">Parent Detials</h2>
+            <h2 class="main_head">Parent Detials</h2>
             <div class="row">
               <div class="col-lg-6 col-12">
                 <div class="input-group input-phone">
@@ -1039,14 +1047,14 @@
                 <!-- <p class="add-phone-btn">
                   Add Anther Phone <i class="bi bi-plus"></i>
                 </p> -->
-  
+
                 <div class="input-group">
                   <label class="form-label"> backup mobile </label>
                   <input type="number" class="form-control" />
                   <!-- <span class="icon_form"><i class="bi bi-upc"></i></span> -->
                 </div>
               </div>
-  
+
               <div class="col-lg-6 col-12">
                 <div class="input-group">
                   <label class="form-label"> Parent Name </label>
@@ -1073,7 +1081,6 @@
           >
             <thead>
               <tr>
-               
                 <th>Item</th>
                 <th>Quantity</th>
                 <th>Assigned</th>
@@ -1087,7 +1094,6 @@
             </thead>
             <tbody>
               <tr>
-             
                 <td>Ahmed</td>
                 <td>010931420</td>
                 <td>Cairo</td>
@@ -1096,14 +1102,16 @@
                 <td>10 Users</td>
                 <td>10 Users</td>
 
-                <td style="cursor: pointer;" class="text-danger"><i class="text-danger bi bi-x-circle-fill"></i></td>
+                <td style="cursor: pointer" class="text-danger">
+                  <i class="text-danger bi bi-x-circle-fill"></i>
+                </td>
               </tr>
 
               <!-- total -->
               <tr>
                 <td>total</td>
                 <td>5</td>
-               
+
                 <td></td>
                 <td></td>
                 <td></td>
@@ -1161,6 +1169,322 @@
       </div>
     </div>
 
+    <!-- off cavans for end shift -->
+    <div
+      class="offcanvas offcanvas-end new_visit_pop end_shift"
+      data-bs-scroll="true"
+      tabindex="-1"
+      id="offcanvasWithBothOptions1"
+      aria-labelledby="offcanvasWithBothOptions1Label"
+    >
+      <div class="offcanvas-header">
+        <h5 id="offcanvasWithBothOptions1Label">End shift</h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <!-- step1 -->
+        <div class="steps" id="step1">
+          <div class="progerss_bar">
+            <div class="step active">
+              <div class="number">1</div>
+              <h6>Stay In Kids</h6>
+            </div>
+            <div class="step">
+              <div class="number">2</div>
+              <h6>Running Visits</h6>
+            </div>
+            <div class="step">
+              <div class="number">3</div>
+              <h6>Summary</h6>
+            </div>
+          </div>
+          <div class="table_container">
+            <table
+              id="tableOrder"
+              style="width: 100%"
+              class="table-striped table-bordered display table_visit table-responsive table"
+            >
+              <thead>
+                <tr>
+                  <th>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                    </div>
+                  </th>
+                  <th>BR #</th>
+                  <th>Visit ID</th>
+                  <th>kid Name</th>
+                  <th>Arrival</th>
+                  <th>Time</th>
+                  <th>Status</th>
+                  <th>Total</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="ID">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                    </div>
+                  </td>
+                  <td>10</td>
+                  <td>Ahmed</td>
+                  <td>010931420</td>
+                  <td>Cairo</td>
+                  <td>10 Users</td>
+                  <td>10 Users</td>
+                  <!-- if status is Dep -->
+                  <td>
+                    <span class="badge bg-success">Stay In</span>
+                  </td>
+                  <!-- if status is Dep -->
+                  <td>
+                    <div class="dropdown">
+                      <button
+                        class="btn dropdown-toggle"
+                        type="button"
+                        id="dropdownMenuButton3"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="bi bi-three-dots-vertical"></i>
+                      </button>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton3"
+                      >
+                        <li><a class="dropdown-item" href="#">Viod Kid</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Check-out </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Edit Vsit</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="btn_col">
+            <button onclick="nextStep()" class="btn btn-next">
+              Next <i class="bi bi-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+        <!-- step1 -->
+
+        <!-- step2 -->
+        <div class="steps" id="step2" style="display: none">
+          <div class="progerss_bar">
+            <div class="step active">
+              <div class="number"><i class="bi bi-check-circle-fill"></i></div>
+              <h6>Stay In Kids</h6>
+            </div>
+            <div class="step active">
+              <div class="number">2</div>
+              <h6>Running Visits</h6>
+            </div>
+            <div class="step">
+              <div class="number">3</div>
+              <h6>Summary</h6>
+            </div>
+          </div>
+          <div class="table_container">
+            <table
+              id="tableOrder"
+              style="width: 100%"
+              class="table-striped table-bordered display table_visit table-responsive table"
+            >
+              <thead>
+                <tr>
+                  <th>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                    </div>
+                  </th>
+                  <th>BR #</th>
+                  <th>Visit ID</th>
+                  <th>kid Name</th>
+                  <th>Arrival</th>
+                  <th>Time</th>
+                  <th>Status</th>
+                  <th>Total</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="ID">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                      />
+                    </div>
+                  </td>
+                  <td>10</td>
+                  <td>Ahmed</td>
+                  <td>010931420</td>
+                  <td>Cairo</td>
+                  <td>10 Users</td>
+                  <td>10 Users</td>
+                  <!-- if status is Dep -->
+                  <td>
+                    <span class="badge bg-success">Stay In</span>
+                  </td>
+                  <!-- if status is Dep -->
+                  <td>
+                    <div class="dropdown">
+                      <button
+                        class="btn dropdown-toggle"
+                        type="button"
+                        id="dropdownMenuButton3"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <i class="bi bi-three-dots-vertical"></i>
+                      </button>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton3"
+                      >
+                        <li><a class="dropdown-item" href="#">Viod Kid</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Check-out </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Edit Vsit</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="btn_col">
+            <button onclick="prevStep()" class="btn btn-prev">
+              <i class="bi bi-chevron-left"></i> Previous
+            </button>
+            <button onclick="nextStep()" class="btn btn-next">
+              Next <i class="bi bi-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+        <!-- step1 -->
+
+        <!-- step3 -->
+        <div class="steps" id="step3" style="display: none">
+          <div class="progerss_bar">
+            <div class="step active">
+              <div class="number"><i class="bi bi-check-circle-fill"></i></div>
+              <h6>Stay In Kids</h6>
+            </div>
+            <div class="step active">
+              <div class="number"><i class="bi bi-check-circle-fill"></i></div>
+              <h6>Running Visits</h6>
+            </div>
+            <div class="step active">
+              <div class="number">3</i></div>
+              <h6>Summary</h6>
+            </div>
+          </div>
+
+          <div class="summery">
+            <h6>Day close summary for day 12 Jan 2024</h6>
+            <div class="collections">
+              <ul>
+                <li>
+                  <h5>16</h5>
+                  <h6>Visit</h6>
+                </li>
+                <li>
+                  <h5>32</h5>
+                  <h6>Kids</h6>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <h5>LE75,873.75</h5>
+                  <h6>Total Revenues</h6>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <h5>LE45,073.75</h5>
+                  <h6>Total Visa</h6>
+                </li>
+                <li>
+                  <h5>LE30,800.00</h5>
+                  <h6>Total cash</h6>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <h5>LE 69,800.00</h5>
+                  <h6>Total Time Rev.</h6>
+                </li>
+                <li>
+                  <h5>LE 3,200.00</h5>
+                  <h6>Total Games Rev.</h6>
+                </li>
+                <li>
+                  <h5>LE45,073.75</h5>
+                  <h6>Total Art Rev.</h6>
+                </li>
+                <li>
+                  <h5>LE30,800.00</h5>
+                  <h6>Total Snacks Rev.</h6>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="day_close">
+            <h6 class="text-danger">You are closing day – 12 Jan 2024</h6>
+            <h6 class="text-danger">
+              After Shift End, data for this date will be frozen
+            </h6>
+            <div class="input-group">
+              <label class="form-label"> Next Audit Day </label>
+              <input type="date" class="form-control" />
+            </div>
+          </div>
+
+          <div class="btn_col">
+            <button onclick="prevStep()" class="btn btn-prev">
+              <i class="bi bi-chevron-left"></i> Previous
+            </button>
+            <button class="btn btn-next">Finish</button>
+          </div>
+        </div>
+        <!-- step1 -->
+      </div>
+    </div>
     <!-- main js -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-3.7.1.min.js"></script>
@@ -1183,6 +1507,23 @@
       // $(document).ready(function () {
       //     $('.form-select').selectpicker();
       // });
+    </script>
+
+    <!-- steps -->
+    <script>
+      var currentStep = 1;
+
+      function nextStep() {
+        document.getElementById("step" + currentStep).style.display = "none";
+        currentStep++;
+        document.getElementById("step" + currentStep).style.display = "block";
+      }
+
+      function prevStep() {
+        document.getElementById("step" + currentStep).style.display = "none";
+        currentStep--;
+        document.getElementById("step" + currentStep).style.display = "block";
+      }
     </script>
   </body>
 </html>
