@@ -477,3 +477,64 @@ font-family: 'bold';
   color: #4c4c4c;
   font-family: 'bold';
 }
+
+.system .all-order .group_list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 1px solid #4c4c4c;
+ 
+  border-radius: 15px;
+  margin-bottom: 10px;
+  align-items: start;
+}
+
+.system .all-order .group_list .list{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  border-right: 1px solid #4c4c4c;
+  padding: 10px;
+}
+.system .all-order .group_list .list:last-child{
+  border-right: unset;
+}
+.system .all-order .group_list .list h6{
+  border-bottom: 1px dashed #4c4c4c;
+  color: #292929;
+  font-size: 15px;
+  font-family: 'bold';
+}
+
+.system .all-order .group_list .list ul{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.system .all-order .group_list .list ul li{
+  padding-inline-end: 20px;
+}
+
+.system .all-order .group_list .list ul li h5{
+  font-size: 20px;
+  font-family: 'regular';
+  color: #94f2ba;
+}
+.system .all-order .group_list .list ul li span{
+  font-size: 20px;
+  font-family: 'bold';
+  color: #000;
+}
+
+.system .all-order .group_list .list ul li span i{
+  color: #94f2ba;
+}
+.system .all-order  .live_report .btn{
+  border: 1px solid #000;
+}
+
+.system .all-order  .live_report .form-check{
+  width: 100%;
+}
