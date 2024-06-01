@@ -1072,6 +1072,83 @@
         </form>
         <div class="billing_detials">
           <div class="head_detials">
+            <h2>kids Details</h2>
+          </div>
+          <table
+            id="tableOrder"
+            style="width: 100%"
+            class="table-striped table-bordered display table_visit table-responsive table"
+          >
+            <thead>
+              <tr>
+                <th>Bracelet</th>
+                <th>Kids Name</th>
+                <th>Age</th>
+                <th>Note</th>
+
+                <th>Arr</th>
+                <th>Dep</th>
+                <th>Time</th>
+                <th>Extras</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Omar</td>
+                <td>10</td>
+                <td>None</td>
+                <td>12:47PM</td>
+                <td>01:15PM</td>
+                <td>Hrs</td>
+                <td>items</td>
+                <td class=" badge bg-success">Dep</td>
+
+
+                <td style="cursor: pointer" class="text-danger" >
+                  <span class="dropdown-toggle btn" type="button" data-bs-toggle="dropdown" data-bs-auto-close="inside" aria-expanded="false">
+                    <i class="bi bi-cart"></i>
+                  </span>
+                  <ul class="dropdown-menu">
+                    <li> <strong>Water</strong> 20le 
+                      <span class="counter">  
+                        <i class="bi bi-plus-circle increase"></i>
+                        <input type="number" value="0" class="counterInput">
+                        <i class="bi bi-dash-circle decrease"></i>
+                    </span>
+                    </li>
+                   
+                  </ul>
+                  <span>
+                    <i class="text-danger bi bi-x-circle-fill"></i>
+                  </span>
+                  
+                </td>
+             
+              </tr>
+
+              <!-- total -->
+              <tr>
+                <td>total</td>
+                <td>5</td>
+
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>175.00</td>
+
+                <td></td>
+              </tr>
+
+              <!-- total -->
+            </tbody>
+          </table>
+        </div>
+        <div class="billing_detials">
+          <div class="head_detials">
             <h2>Extras Details</h2>
           </div>
           <table
@@ -1525,5 +1602,28 @@
         document.getElementById("step" + currentStep).style.display = "block";
       }
     </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+          const increaseButtons = document.querySelectorAll('.increase');
+          const decreaseButtons = document.querySelectorAll('.decrease');
+
+          increaseButtons.forEach(button => {
+              button.addEventListener('click', () => {
+                  const counterInput = button.nextElementSibling;
+                  counterInput.value = parseInt(counterInput.value) + 1;
+              });
+          });
+
+          decreaseButtons.forEach(button => {
+              button.addEventListener('click', () => {
+                  const counterInput = button.previousElementSibling;
+                  const currentValue = parseInt(counterInput.value);
+                  if (currentValue > 0) {
+                      counterInput.value = currentValue - 1;
+                  }
+              });
+          });
+      });
+  </script>
   </body>
 </html>
