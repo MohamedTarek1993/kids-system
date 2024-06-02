@@ -538,3 +538,35 @@ font-family: 'bold';
 .system .all-order  .live_report .form-check{
   width: 100%;
 }
+
+.menu_cart{
+  display: none;
+  position: absolute;
+  left: -140px;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+.menu_cart li{
+  border-bottom: 1px solid #94f2ba;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 13px;
+  font-family: 'regular';
+  color: #000;
+}
+.menu_cart li strong{
+  font-size: 13px;
+  font-family: 'bold';
+  color: #000;
+}
+.menu_cart li .counter{
+  margin-inline-start: 10px;
+}
+.menu_cart li .counter i{
+font-size: 1rem;
+color: #94f2ba;
+}
+.menu-visible {
+  display: block;
+}

@@ -1107,11 +1107,11 @@
                 <td class=" badge bg-success">Dep</td>
 
 
-                <td style="cursor: pointer" class="text-danger" >
-                  <span class="dropdown-toggle btn" type="button" data-bs-toggle="dropdown" data-bs-auto-close="inside" aria-expanded="false">
+                <td style="cursor: pointer; position: relative;" class="text-danger" >
+                  <span class="toggleButton">
                     <i class="bi bi-cart"></i>
                   </span>
-                  <ul class="dropdown-menu">
+                  <ul class="menu_cart">
                     <li> <strong>Water</strong> 20le 
                       <span class="counter">  
                         <i class="bi bi-plus-circle increase"></i>
@@ -1625,5 +1625,14 @@
           });
       });
   </script>
+
+<script>
+ document.querySelectorAll('.toggleButton').forEach(function(button) {
+      button.addEventListener('click', function() {
+        var menu = this.nextElementSibling;
+        menu.classList.toggle('menu-visible');
+      });
+    });
+</script>
   </body>
 </html>
