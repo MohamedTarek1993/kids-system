@@ -542,7 +542,9 @@ font-family: 'bold';
 .menu_cart{
   display: none;
   position: absolute;
-  left: -140px;
+ width: 350px;
+  left: -260px;
+
   background: white;
   padding: 10px;
   border-radius: 10px;
@@ -562,6 +564,13 @@ font-family: 'bold';
 }
 .menu_cart li .counter{
   margin-inline-start: 10px;
+}
+.menu_cart li .bootstrap-select{
+  width: 33% !important;
+  padding: 0px !important;
+}
+.menu_cart li .counter input{
+  width: 50px;
 }
 .menu_cart li .counter i{
 font-size: 1rem;

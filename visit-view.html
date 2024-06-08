@@ -8,6 +8,8 @@
     <!-- main css -->
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/css/bootstrap-select.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="scss/main.min.css" />
     <!-- responsive -->
     <link rel="stylesheet" href="css/responsive.css" />
@@ -1112,12 +1114,18 @@
                     <i class="bi bi-cart"></i>
                   </span>
                   <ul class="menu_cart">
-                    <li> <strong>Water</strong> 20le 
+                    <li> 
+                      <select class="selectpicker">
+                        <option value="water">Water</option>
+                        <option value="sinacola">Sinacola</option>
+                    </select>
+                      20le 
                       <span class="counter">  
                         <i class="bi bi-plus-circle increase"></i>
                         <input type="number" value="0" class="counterInput">
                         <i class="bi bi-dash-circle decrease"></i>
                     </span>
+                    <button class="btn  btn-info" > Add </button>
                     </li>
                    
                   </ul>
@@ -1571,6 +1579,10 @@
     <!-- main js -->
     <!-- sweet alert -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.18/js/bootstrap-select.min.js"></script>
+
     <!-- sweet alert -->
     <!-- data table -->
     <script src="js/data-table.js"></script>
@@ -1579,7 +1591,11 @@
         $("#tableOrder").DataTable();
       });
     </script>
-
+<script>
+  $(document).ready(function() {
+      $('.selectpicker').selectpicker();
+  });
+</script>
     <script>
       // $(document).ready(function () {
       //     $('.form-select').selectpicker();
